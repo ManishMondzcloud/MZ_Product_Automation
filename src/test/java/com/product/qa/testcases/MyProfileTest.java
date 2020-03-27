@@ -37,7 +37,7 @@ public class MyProfileTest extends TestBase {
 			
 	 }
 	 
-	 @Test(priority = 1, enabled=true)
+	 @Test(priority = 1, enabled=false)
 	 public void verifyBesicDetailTest()
 		{
 		profile.verifyFirstName();
@@ -57,7 +57,12 @@ public class MyProfileTest extends TestBase {
 	 @Test(priority = 2, enabled = false)
 	 public void verifyContactInformationTest()
 	 {
-		 
+		 profile.verifyContactMobile();
+		 System.out.println("COntact Mobile number is displayed");
+		 profile.verifyContactEmail();
+		 System.out.println("Contact email is displayed");
+		 profile.verifyContactLocation();
+		 System.out.println("Contact Location is display");
 	 }
 	
 	 @Test(priority = 3, enabled = false)
@@ -65,11 +70,12 @@ public class MyProfileTest extends TestBase {
 	 {
 		 profile.verifyPhoneNumber();
 	 }
-	/* @Test(priority = 4)
+	 
+	@Test(priority = 4,enabled=true)
 	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException
 	 {
 		 profile.UpdateProfile();
-	 }*/
+	 }
 	 
 		@AfterMethod
 		public void tearDown() {

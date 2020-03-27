@@ -7,7 +7,7 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="verifyNumberTest"/>
+          <include name="ValidateUpdateProfileTest"/>
         </methods>
       </class> <!-- com.product.qa.testcases.MyProfileTest -->
     </classes>

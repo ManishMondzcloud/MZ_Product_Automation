@@ -74,8 +74,8 @@ public class TestBase
 		driver.manage().window().maximize();
 		// Delete all Cookies
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 }
 }

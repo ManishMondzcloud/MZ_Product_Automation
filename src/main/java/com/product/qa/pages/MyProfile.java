@@ -40,7 +40,11 @@ public class MyProfile extends TestBase{
 	@FindBy(xpath="//body/div[@id='root']/div/div/div/div/div/div/div/div/div[2]/div[2]/div[1]")
 	WebElement ContactEmail;
 	
+	@FindBy(xpath="//div[3]//div[2]//div[1]")
+	WebElement contactLocation;
 	
+	@FindBy(xpath="//body/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div[1]")
+	WebElement ContactMobile;
 	
 	@FindBy(xpath="//button[contains(text(),'Choose image')]")
 	WebElement chooseimageBtn;
@@ -51,10 +55,10 @@ public class MyProfile extends TestBase{
 	@FindBy(xpath="//*[@id=\"country\"]")
 	WebElement state;
 	
-	@FindBy(xpath="//*[@id=\"city\"]")
+	@FindBy(xpath="//select[@id='city']")
 	WebElement city;
 	
-	@FindBy(xpath=" //button[@class='btn btn-primary disabled']")
+	@FindBy(xpath="")
 	WebElement UptBwn;
 	
 	@FindBy(xpath = "//button[contains(text(),'Choose image')]")
@@ -94,24 +98,52 @@ public class MyProfile extends TestBase{
 			{
 				return Department.isDisplayed();
 			}
+			public boolean verifyContactMobile()
+			{
+				return ContactMobile.isDisplayed();
+			}
+			public boolean verifyContactEmail()
+			{
+				return ContactEmail.isDisplayed();
+			}
+			public boolean verifyContactLocation()
+			{
+				return contactLocation.isDisplayed();
+			}
+			
 			public void UpdateProfile() throws InterruptedException, AWTException
 			{
 				Editbwt.click();
-				Thread.sleep(2000);
+				Thread.sleep(5000);
 				chooseimageBtn.click();
+				Thread.sleep(5000);
+				
+			//Uploading image
 				Robot r= new Robot();
 				r.setAutoDelay(5000);
-				StringSelection s= new StringSelection("C:\\\\img_4.png");
+				StringSelection s= new StringSelection("C:\\img_1.jpg");
 				Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null);
 				r.keyPress(KeyEvent.VK_CONTROL);
 				r.keyPress(KeyEvent.VK_V);
 				r.keyRelease(KeyEvent.VK_CONTROL);
-				r.keyPress(KeyEvent.VK_CONTROL);
-				r.keyPress(KeyEvent.VK_V);
-				r.keyRelease(KeyEvent.VK_ENTER);
-				r.setAutoDelay(5000);
+				r.keyRelease(KeyEvent.VK_V);
+				r.keyPress(KeyEvent.VK_ENTER);
+				Thread.sleep(10000);
+				System.out.println("Profile Image Selected");
 				
+			//Selecting states
+				Select s1= new Select(state);
+				s1.selectByVisibleText("Maharashtra");
+				System.out.println("Maharashtra state selected");
+				Select s2= new Select(city);
+				Thread.sleep(2000);
+				s2.selectByVisibleText("Akola");
+				System.out.println("City is state selected");
+				UptBwn.click();
+				Thread.sleep(10000);
+				System.out.println("Profile Updated Successfuly");
 				
+					
 			}
 	
 			
