@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Product Automation Testing Suite">
 
+<listeners>
+<listener class-name="com.crm.qa.util.TestListener"/>
+<listener class-name="com.qa.extentReportListener.ExtentReportListener"/>
+</listeners>
 <test name="MZ Prduct Page Test Cases">
 
 <classes>

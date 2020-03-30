@@ -97,8 +97,9 @@ public class TestUtil extends TestBase {
     	   FileInputStream file = null;
    		try {
    			file = new FileInputStream(test_Data);
-   		} catch (FileNotFoundException e) {
+   		} catch (FileNotFoundException e){
    			e.printStackTrace();
+   			
    		}
    		try {
    			book1 = WorkbookFactory.create(file);

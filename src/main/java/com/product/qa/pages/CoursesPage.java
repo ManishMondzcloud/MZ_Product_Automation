@@ -63,7 +63,7 @@ public class CoursesPage extends TestBase {
 		
 		  for(int i=8; i<FilterLinks.size();i++) {
 		         FilterLinks.get(i).click();
-		         Thread.sleep(5000);
+		         Thread.sleep(10000);
 		         //System.out.println(i+"--" + LinkDetails);
 		         //System.out.println(i+"--" + LinkDetails.toString().contains("Proxy"));
 				
