@@ -5,6 +5,7 @@ import java.util.List;
 import javax.xml.xpath.XPath;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -16,27 +17,21 @@ import com.product.qa.base.TestBase;
 public class CoursesPage extends TestBase {
 
 	@FindBy(xpath = "//li[@class='nav-item linkmenu']//a[text()='Courses']")
-	@CacheLookup
 	WebElement CoursesLink;
 	
 	@FindBy(xpath = "//div[@class='section-title']//h2[text()='Courses']")
-	@CacheLookup
 	WebElement Courseslabel;
 	
 	@FindBy(xpath = "//div[@class='section-title']/following::h2[text()='Filters'][2]")
-	@CacheLookup
 	WebElement FiltersTitle;
 	
 	@FindBy(xpath="(//div[@id='accordion']//li//a[text()='Business'])[2]")
-	@CacheLookup
 	WebElement BussinessLink;
 	
 	@FindBy(xpath="(//div[@id='accordion']//li//a[text()='Design'])[2]")
-	@CacheLookup
 	WebElement DesignLink;
 	
 	@FindBy(xpath = "//div[@class='section-title']//h2[text()='Blogs']")
-	@CacheLookup
 	WebElement BlogsTitle;
 	
 	@FindBy(xpath = "//div//p[text()='No Courses Found']")
@@ -45,8 +40,9 @@ public class CoursesPage extends TestBase {
 	@FindBy(xpath = "//div[@class='blog-info']//a[text()='View']")
 	WebElement ViewLink;
 	
-	@FindBy(xpath = "//div[@class='chapter-unlock']//p/following::a[text()='Access Course']")
-	WebElement AccessCourse;
+	@FindBy(xpath = "//div//h2[text()='Sessions']")
+	WebElement Sessions;
+	
 	
 	public CoursesPage() {
 		//initializing WebElement
@@ -61,7 +57,8 @@ public class CoursesPage extends TestBase {
 	
 	
 	public CoursesPage ValidateFilterLinks() throws InterruptedException {
-		  List<WebElement>  FilterLinks = driver.findElements(By.xpath("//div[@id='accordion']//li//a"));
+		  
+		List<WebElement>  FilterLinks = driver.findElements(By.xpath("//div[@id='accordion']//li//a"));
 		  System.out.println(FilterLinks.size());
 		
 		  for(int i=8; i<FilterLinks.size();i++) {
@@ -89,16 +86,45 @@ public class CoursesPage extends TestBase {
 		
 		}
 	
-	public CoursesPage VerifyCoursesLink() throws InterruptedException {
-		List<WebElement> ListViewlink= driver.findElements(By.xpath("//div[@class='blog-info']//a[text()='View']"));
-		for(int j=0; j<=ListViewlink.size();j++) {
-			ListViewlink.get(j).click();
-			Thread.sleep(7000);
-			//if(AccessCourse.getText().equalsIgnoreCase("Access Course")) {
-				Assert.assertTrue(AccessCourse.isDisplayed(),"No Courses Found");
-			
+	public void VerifyCourses(String session) throws InterruptedException {
+		WebElement ListViewlink = driver.findElement(By.xpath("//div[@class='blog-info']//a[text()='View']"));
+			//for(int j=0; j<ListViewlink.size();j++) {
+				Thread.sleep(5000);
+				ListViewlink.click();
+				Thread.sleep(5000);
+				//Assert.assertTrue(Sessions.isDisplayed(),"No Courses Found");
+				List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"));
+					for(int k=0; k<SessionList.size();k++) {
+					 System.out.println(SessionList.get(k).getText());
+				if(session.equalsIgnoreCase(SessionList.get(k).getText())) {
+					System.out.println("Matched");
+				}
+				else {
+					Assert.fail();
+				}
+					}
+		
+					
+					/*
+		 * Thread.sleep(5000); CoursesLink.click();
+		 * 
+		 * 
+		 * WebElement ListViewLink2= driver.findElement(By.xpath(
+		 * "//div[@class='course-head']/following::div[@class='blog-info'][2]//a[text()='View']"
+		 * )); WebElement element = ListViewLink2; JavascriptExecutor executor =
+		 * (JavascriptExecutor)driver; executor.executeScript("arguments[0].click();",
+		 * element);
+		 * 
+		 * // ListViewLink2.click(); Thread.sleep(5000);
+		 * //Assert.assertTrue(Sessions.isDisplayed(),"No Courses Found");
+		 * List<WebElement> SessionList2=driver.findElements(By.
+		 * xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"
+		 * )); for(int p=0; p<SessionList2.size();p++) {
+		 * System.out.println(SessionList2.get(p).getText()); }
+		 */			
 		}
-		return new CoursesPage();
-	}
+			
+		//return new CoursesPage();
+	//}
 	
 }

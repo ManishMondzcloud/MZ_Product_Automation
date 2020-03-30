@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Product Automation Testing Suite]">
+  <test thread-count="5" name="MZ Prduct Page Test Cases(failed)">
+    <classes>
+      <class name="com.product.qa.testcases.CoursesPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="VerifyCoursesPageFilterLinksTest"/>
+          <include name="VerifyCoursesPageLabelTest"/>
+        </methods>
+      </class> <!-- com.product.qa.testcases.CoursesPageTest -->
+    </classes>
+  </test> <!-- MZ Prduct Page Test Cases(failed) -->
+</suite> <!-- Failed suite [Product Automation Testing Suite] -->
