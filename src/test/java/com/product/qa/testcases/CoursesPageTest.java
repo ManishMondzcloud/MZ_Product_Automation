@@ -38,7 +38,7 @@ public class CoursesPageTest extends TestBase {
 		Assert.assertTrue(coursespage.VerifyCoursesLabel());
 	}
 	
-	@Test(priority=2, enabled=true)
+	@Test(priority=2, enabled=false)
 	public void VerifyCoursesPageFilterLinksTest() throws InterruptedException {
 		coursespage.ValidateFilterLinks();
 	}
@@ -51,6 +51,7 @@ public class CoursesPageTest extends TestBase {
 	@Test(priority=3,dataProvider = "getTestData1", enabled=true)
 	public void VerifyCoursesTest(String session) throws InterruptedException {
 		coursespage.VerifyCourses(session);
+		
 	}
 	@AfterMethod
 	public void tearDown() {

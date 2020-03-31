@@ -41,8 +41,8 @@ public class TestUtil extends TestBase {
 	static String test_Data="src\\main\\java\\com\\product\\qa\\testdata\\TestData2.xlsx";
 	static Workbook book;
 	static Sheet sheet;
-	static Workbook book1;
-	static Sheet sheet1;
+	//static Workbook book1;
+	//static Sheet sheet1;
 		
 	public void windowHandle(WebDriver driver) {
 
@@ -93,7 +93,44 @@ public class TestUtil extends TestBase {
     	}
 
        
-       public static Object[] getTestData1(String sheetName) {
+       public static Object[][] getTestData1(String sheetName)  {
+   		FileInputStream file = null;
+   		try {
+   			file = new FileInputStream(test_Data);
+   		} catch (FileNotFoundException e) {
+   			e.printStackTrace();
+   		}
+   		try {
+   			book = WorkbookFactory.create(file);
+   		} catch (InvalidFormatException e) {
+   			e.printStackTrace();
+   		} catch (IOException e) {
+   			e.printStackTrace();
+   		} 
+   		sheet = book.getSheet(sheetName);
+   		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+   		// System.out.println(sheet.getLastRowNum() + "--------" +
+   		 //sheet.getRow(0).getLastCellNum());
+   		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+   			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
+   				if(null == sheet.getRow(i + 1).getCell(k))
+   				{
+   					data[i][k]="";
+   				}
+   				else
+   				{
+   					data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+   					// System.out.println(data[i][k]);
+   				}
+   				
+   			}
+   			
+   		}
+   		
+   		return data;
+   	}
+       
+       /*public static Object[] getTestData1(String sheetName) {
     	   FileInputStream file = null;
    		try {
    			file = new FileInputStream(test_Data);
@@ -129,7 +166,7 @@ public class TestUtil extends TestBase {
    		}
    		return data;
    	
-       }
+       }*/
        
        
 	public static void takeScreenshotAtEndOfTest()throws IOException {

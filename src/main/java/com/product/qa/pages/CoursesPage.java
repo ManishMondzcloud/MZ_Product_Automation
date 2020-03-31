@@ -89,21 +89,24 @@ public class CoursesPage extends TestBase {
 	public void VerifyCourses(String session) throws InterruptedException {
 		WebElement ListViewlink = driver.findElement(By.xpath("//div[@class='blog-info']//a[text()='View']"));
 			//for(int j=0; j<ListViewlink.size();j++) {
-				Thread.sleep(5000);
-				ListViewlink.click();
-				Thread.sleep(5000);
-				//Assert.assertTrue(Sessions.isDisplayed(),"No Courses Found");
-				List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"));
-					for(int k=0; k<SessionList.size();k++) {
-					 System.out.println(SessionList.get(k).getText());
-				if(session.equalsIgnoreCase(SessionList.get(k).getText())) {
-					System.out.println("Matched");
-				}
-				else {
-					Assert.fail();
-				}
+		boolean ismatch=false;		
+		Thread.sleep(5000);
+		ListViewlink.click();
+		Thread.sleep(5000);
+		List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"));
+				for(int k=0; k<SessionList.size();k++) {
+						//System.out.println(SessionList.get(k).getText());
+					//	System.out.println(session);
+						if(session.equalsIgnoreCase(SessionList.get(k).getText())) {
+							System.out.println("Matched");
+							ismatch=true;
+							break;
+							}
 					}
-		
+						if(!ismatch) {
+							Assert.fail();
+							}
+					
 					
 					/*
 		 * Thread.sleep(5000); CoursesLink.click();

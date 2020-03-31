@@ -1,76 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="11" failed="0" ignored="1" total="13" passed="1">
+<testng-results skipped="9" failed="1" ignored="2" total="13" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="269859" started-at="2020-03-30T10:57:58 IST" finished-at="2020-03-30T11:02:28 IST">
+  <suite name="Product Automation Testing Suite" duration-ms="133068" started-at="2020-03-30T21:33:34 IST" finished-at="2020-03-30T21:35:47 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="269859" started-at="2020-03-30T10:57:58 IST" finished-at="2020-03-30T11:02:28 IST">
+    <test name="MZ Prduct Page Test Cases" duration-ms="133068" started-at="2020-03-30T21:33:34 IST" finished-at="2020-03-30T21:35:47 IST">
       <class name="com.product.qa.testcases.CoursesPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="46126" started-at="2020-03-30T10:57:58 IST" finished-at="2020-03-30T10:58:44 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="30175" started-at="2020-03-30T21:33:35 IST" finished-at="2020-03-30T21:34:06 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="VerifyCoursesPageFilterLinksTest()[pri:2, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesPageFilterLinksTest" duration-ms="159516" started-at="2020-03-30T10:58:44 IST" finished-at="2020-03-30T11:01:24 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCoursesPageFilterLinksTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="1111" started-at="2020-03-30T11:01:24 IST" finished-at="2020-03-30T11:01:25 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="FAIL" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="60202" started-at="2020-03-30T11:01:28 IST" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="15128" started-at="2020-03-30T21:34:06 IST" data-provider="getTestData1" finished-at="2020-03-30T21:34:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Introduction to ]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+              <![CDATA[Not Matched]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+              <![CDATA[java.lang.AssertionError: Not Matched
+at org.testng.Assert.fail(Assert.java:97)
+at com.product.qa.pages.CoursesPage.VerifyCourses(CoursesPage.java:107)
+at com.product.qa.testcases.CoursesPageTest.VerifyCoursesTest(CoursesPageTest.java:53)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
 at java.lang.reflect.Method.invoke(Unknown Source)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:669)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:496)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:570)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:170)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:790)
@@ -94,120 +57,52 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
-  (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:131)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:61)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:669)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:496)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:170)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:790)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:143)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at org.testng.TestRunner.privateRun(TestRunner.java:763)
-at org.testng.TestRunner.run(TestRunner.java:594)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:398)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:392)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
-at org.testng.SuiteRunner.run(SuiteRunner.java:304)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1146)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1067)
-at org.testng.TestNG.runSuites(TestNG.java:997)
-at org.testng.TestNG.run(TestNG.java:965)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348313" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="910" started-at="2020-03-30T21:34:21 IST" finished-at="2020-03-30T21:34:22 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348315" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="23356" started-at="2020-03-30T21:34:22 IST" finished-at="2020-03-30T21:34:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="PASS" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="10873" started-at="2020-03-30T21:34:45 IST" data-provider="getTestData1" finished-at="2020-03-30T21:34:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Install and setup android studio]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyCoursesTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="977" started-at="2020-03-30T21:34:56 IST" finished-at="2020-03-30T21:34:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="50048" started-at="2020-03-30T21:34:57 IST" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -218,15 +113,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -260,41 +149,29 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348324" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348327" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -305,15 +182,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -347,41 +218,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348343" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347470" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348349" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347473" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -392,15 +259,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -434,41 +295,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348379" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347478" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348382" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347480" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -479,15 +336,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -521,41 +372,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348390" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347487" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348396" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347488" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -566,15 +413,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -608,41 +449,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348403" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347500" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348411" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347504" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -653,15 +490,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -695,41 +526,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348416" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347515" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348460" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347518" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -740,15 +567,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -782,41 +603,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348469" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347523" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348474" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347524" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -827,15 +644,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -869,41 +680,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348487" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347528" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348489" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347529" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -914,15 +721,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -956,41 +757,37 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348499" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347533" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="setup" is-config="true" duration-ms="-1585546348502" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="setup()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="setup" is-config="true" duration-ms="-1585584347539" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T11:02:28 IST" data-provider="getTestData1" finished-at="2020-03-30T11:02:28 IST">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="SKIP" signature="VerifyCoursesTest(java.lang.String)[pri:3, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="VerifyCoursesTest" duration-ms="0" started-at="2020-03-30T21:35:47 IST" data-provider="getTestData1" finished-at="2020-03-30T21:35:47 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[text()="Courses"]"}
+              <![CDATA[org.openqa.selenium.TimeoutException: timeout
   (Session info: chrome=80.0.3987.149)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'RCHAUHAN', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_211'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55489}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 11be62711df807fc0d0a8f4ee69b1ab6
-*** Element info: {Using=xpath, value=//a[text()="Courses"]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.149, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\RUSHIK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53518}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0e0c99e585a03916a91093d9e56f9201
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -1001,15 +798,9 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCo
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy10.click(Unknown Source)
-at com.product.qa.pages.HomePage.ClickOnCoursesLink(HomePage.java:43)
-at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:33)
+at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+at com.product.qa.base.TestBase.initialization(TestBase.java:81)
+at com.product.qa.testcases.CoursesPageTest.setup(CoursesPageTest.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -1043,15 +834,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyCoursesTest -->
-        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@7d70d1b1]" name="tearDown" is-config="true" duration-ms="-1585546348510" started-at="2020-03-30T11:02:28 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:com.product.qa.testcases.CoursesPageTest@3cb1ffe6]" name="tearDown" is-config="true" duration-ms="-1585584347548" started-at="2020-03-30T21:35:47 IST" finished-at="1970-01-01T05:30:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.product.qa.testcases.CoursesPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- MZ Prduct Page Test Cases -->
+  </suite> <!-- Product Automation Testing Suite -->
 </testng-results>

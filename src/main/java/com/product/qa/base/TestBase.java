@@ -10,6 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
+import com.product.qa.util.TestUtil;
+
 
 
 
@@ -74,8 +76,8 @@ public class TestBase
 		driver.manage().window().maximize();
 		// Delete all Cookies
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(25,TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(TestUtil.IMPICIT_WAIT,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 }
 }
