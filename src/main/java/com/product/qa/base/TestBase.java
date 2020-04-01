@@ -10,8 +10,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
-import com.product.qa.util.TestUtil;
-
 
 
 
@@ -30,7 +28,7 @@ public class TestBase
 			// fileInputStream making a Streaming between your java code and
 			// config.properties file.
 			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\Rushikesh Chauhan\\Documents\\MZProduct\\MZ\\src\\main\\java\\com\\product\\qa\\config\\config.properties");
+					"C:\\Users\\Manish Patil\\Documents\\MZProduct\\MZ\\src\\main\\java\\com\\product\\qa\\config\\config.properties");
 			try {
 				// Load all the properties which are available in config.properties file.
 				prop.load(ip);
@@ -76,8 +74,8 @@ public class TestBase
 		driver.manage().window().maximize();
 		// Delete all Cookies
 		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(TestUtil.IMPICIT_WAIT,TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
 }
 }

@@ -5,6 +5,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -55,14 +56,17 @@ public class MyProfile extends TestBase{
 	@FindBy(xpath="//*[@id=\"country\"]")
 	WebElement state;
 	
-	@FindBy(xpath="//select[@id='city']")
+	@FindBy(xpath="//*[@id='city']")
 	WebElement city;
 	
-	@FindBy(xpath="")
+	@FindBy(xpath="//span[contains(text(),'Update Profile')]")  
 	WebElement UptBwn;
 	
 	@FindBy(xpath = "//button[contains(text(),'Choose image')]")
 	WebElement UploadImage;
+	
+	@FindBy(xpath="//button[contains(text(),'Remove Image')]")
+	WebElement RemoveImage;
 	
 	//Create Constructor for Initialize the webElements
 			public MyProfile() {
@@ -115,8 +119,33 @@ public class MyProfile extends TestBase{
 			{
 				Editbwt.click();
 				Thread.sleep(5000);
+				
+				
+			//Selecting states
+				state.click();
+				List<WebElement> states= driver.findElements(By.cssSelector("#country>option"));
+				for (WebElement stateList: states) {
+					 if(stateList.getText().equals("Maharashtra"))
+					 {
+						 stateList.click(); 
+						 break;
+					 }
+					
+				}
+		  //Selecting city
+				city.click();
+				List<WebElement> cities= driver.findElements(By.cssSelector("#city>option"));
+				for (WebElement cityList: cities) {
+					 if(cityList.getText().equals("Nagpur"))
+					 {
+						 cityList.click(); 
+						 break;
+					 }
+					
+				}
+				
 				chooseimageBtn.click();
-				Thread.sleep(5000);
+				Thread.sleep(3000);
 				
 			//Uploading image
 				Robot r= new Robot();
@@ -128,22 +157,25 @@ public class MyProfile extends TestBase{
 				r.keyRelease(KeyEvent.VK_CONTROL);
 				r.keyRelease(KeyEvent.VK_V);
 				r.keyPress(KeyEvent.VK_ENTER);
-				Thread.sleep(10000);
+				Thread.sleep(5000);
 				System.out.println("Profile Image Selected");
+				Thread.sleep(5000);
 				
-			//Selecting states
-				Select s1= new Select(state);
-				s1.selectByVisibleText("Maharashtra");
-				System.out.println("Maharashtra state selected");
-				Select s2= new Select(city);
-				Thread.sleep(2000);
-				s2.selectByVisibleText("Akola");
-				System.out.println("City is state selected");
+				
 				UptBwn.click();
 				Thread.sleep(10000);
 				System.out.println("Profile Updated Successfuly");
 				
 					
+			}
+			
+			public void VerifyRemoveImage() throws InterruptedException
+			{
+				Editbwt.click();
+				Thread.sleep(5000);
+				RemoveImage.click();
+				Thread.sleep(5000);
+				
 			}
 	
 			

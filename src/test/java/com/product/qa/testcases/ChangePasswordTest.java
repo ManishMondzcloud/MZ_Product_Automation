@@ -34,11 +34,12 @@ public class ChangePasswordTest extends TestBase  {
 		}
 	
 	@Test(priority=1,enabled = true)
-	public void validatePasswordLabelTest(){
+	public void verifyPasswordLabelTest(){
 		
 		Assert.assertTrue(changepassword.changePasswordLabel());
 		
 	 }
+	
 	
 	@Test(priority=2,enabled = true)
 	public void verifyChangePasswordTest()
@@ -47,7 +48,7 @@ public class ChangePasswordTest extends TestBase  {
 		
 	}
 	@Test(priority=3, enabled=true)
-	public void VerifyChangePasswordTest()
+	public void VerifyChangePasswordTextTest()
 	{
 		changepassword.verifyPleaseEnterPasswordText();
 		
@@ -58,9 +59,14 @@ public class ChangePasswordTest extends TestBase  {
 		changepassword.verifyPleaseEnterValidPasswordText();
 	}
 	@Test(priority=5,enabled=true)
-	public void verifyPleasereEnterPasswordTextTest()
+	public void verifyPleaseReEnterPasswordTextTest()
 	{
 		changepassword.verifyPleaseReEnterPasswordText();
+	}
+	@Test(priority=6,enabled=true)
+	public void verifyPasswordMisMatchTextTest()
+	{
+		changepassword.verifyPasswordMisMatchTextTest();
 	}
 	
 	@AfterMethod

@@ -1,6 +1,7 @@
 package com.product.qa.pages;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -21,6 +22,10 @@ public class HomePage extends TestBase {
 	   @FindBy(xpath = "//a[text()=\"Events\"]")
 	   WebElement EventsLink;
 	   
+	   @FindBy(xpath="//div[@id='navbarText']//a[@id='userDropdown']/span")
+		@CacheLookup
+		WebElement Profile;
+	   
 	   public HomePage() {
 		   PageFactory.initElements(driver, this);
 	   }
@@ -30,8 +35,7 @@ public class HomePage extends TestBase {
 		   return driver.getTitle();
 	   }
 	   
-	   public boolean VerifyMzLogo() throws InterruptedException {
-		   Thread.sleep(5000);
+	   public boolean VerifyMzLogo() {
 		 return MzLogo.isDisplayed();
 	   }
 	   public DashboardPage ClickOnDashboardLink() {
@@ -44,9 +48,10 @@ public class HomePage extends TestBase {
 		   return new CoursesPage();
 	   }
 	   
-	   
-	   public EventsPage ClickOnEventsLink() {
-		   EventsLink.click();
-		   return new EventsPage();
+	   public void clickOnProfile()
+	   {
+		   Profile.click();
 	   }
+	   
+
 }
