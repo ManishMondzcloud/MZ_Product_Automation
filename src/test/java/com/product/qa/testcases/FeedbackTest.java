@@ -33,7 +33,7 @@ public class FeedbackTest extends TestBase{
 	}
 	 	
 	@Test(priority=1,enabled=true)
-	public void validateFeedbackLabelTest()
+	public void FeedbackLabelTest()
 	{
 		Assert.assertTrue(feedback.validateFeedbackLabel());
 	}
@@ -44,12 +44,23 @@ public class FeedbackTest extends TestBase{
 		
 	}
 	@Test(priority = 3,enabled=true)
-	public void submitFeedbackTest()
+	public void submitFeedbackWith500CharecterTest() throws InterruptedException
 	{
-		feedback.submitFeedback();
+		feedback.submitFeedbackWith500Charecter();
 		
 	}
-	
+	@Test(priority = 4,enabled=true)
+	public void submitFeedbackWith501CharecterTest() throws InterruptedException
+	{
+		feedback.submitFeedbackWith501Charecter();
+		
+	}
+	@Test(priority = 5,enabled=true)
+	public void CharecterLimitTest() throws InterruptedException
+	{
+		feedback.countCharecter();
+		
+	}
 	
 	@AfterMethod
 	public void tearDown() {

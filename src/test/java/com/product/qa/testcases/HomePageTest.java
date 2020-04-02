@@ -40,7 +40,7 @@ public class HomePageTest extends TestBase{
 	 
 	 @Test(priority=2)
 	 public void VerifyMzLogotest() throws InterruptedException {
-		 Thread.sleep(7000);
+		 Thread.sleep(5000);
 		 Assert.assertTrue(homepage.VerifyMzLogo());
 	 }
 	 

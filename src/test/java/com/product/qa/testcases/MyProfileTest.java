@@ -65,17 +65,19 @@ public class MyProfileTest extends TestBase {
 		 System.out.println("Contact Location is display");
 	 }
 	
-	 @Test(priority = 3, enabled = false)
-	 public void verifyNumberTest()
-	 {
-		 profile.verifyPhoneNumber();
-	 }
 	 
-	@Test(priority = 4,enabled=true)
+	 
+	@Test(priority = 3,enabled=false)
 	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException
 	 {
 		 profile.UpdateProfile();
 	 }
+	
+	@Test(priority=4,enabled=true)
+	public void ValidateRemoveImageTest() throws InterruptedException
+	{
+		profile.VerifyRemoveImage();
+	}
 	 
 		@AfterMethod
 		public void tearDown() {

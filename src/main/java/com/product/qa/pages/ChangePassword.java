@@ -34,6 +34,9 @@ public class ChangePassword extends TestBase{
 	@FindBy(xpath="//div[contains(text(),'Please enter a valid password')]")
 	WebElement PleaseEnterValidPasswordMessage;
 	
+	@FindBy(xpath="//div[contains(text(),'Password mismatch')]")
+	WebElement PasswordMissMatchMessage;
+	
 	@FindBy(xpath="//div[contains(text(),'Please re-enter password')]")
 	WebElement PleaseReEnterPassword;
 	
@@ -66,7 +69,7 @@ public class ChangePassword extends TestBase{
 		NewPwd.sendKeys("123");
 		ConfirmPwd.click();
 		String s1=PleaseEnterValidPasswordMessage.getText();
-		Assert.assertEquals(s1,"Please enter a valid password ");
+		Assert.assertEquals(s1,"Please enter a valid password");
 	}
 	
 	public void verifyPleaseReEnterPasswordText()
@@ -77,6 +80,16 @@ public class ChangePassword extends TestBase{
 		String s2=PleaseReEnterPassword.getText();
 		Assert.assertEquals(s2,"Please re-enter password");
 		
+	}
+	
+	public void verifyPasswordMisMatchTextTest()
+	{
+		currentPwd.sendKeys("12345");
+		NewPwd.sendKeys("Ma@123456789");
+		ConfirmPwd.sendKeys("123");
+		updateBtn.click();
+		String s2=PasswordMissMatchMessage.getText();
+		Assert.assertEquals(s2,"Password mismatch");
 	}
 	
 	public void verifyChangePassword()
