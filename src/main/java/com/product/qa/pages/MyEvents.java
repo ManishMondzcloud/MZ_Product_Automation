@@ -74,23 +74,11 @@ public class MyEvents extends TestBase{
 			
 	//Check Unsubscribe event is removed from myEvent
 			
-			/*Profile.click();
-			Thread.sleep(5000);
-			Myevents.click();
-			Thread.sleep(5000);
-			if(ReactjsEvent.isDisplayed())
-			{
-				System.out.println("Event is not removed from my event. Please check ");
-			}
-			else
-			{
-				System.out.println("Event is successfully removed from MyEvent");
-			}*/
+			
 			Profile.click();
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
-		   // String m1=ReactjsEvent.getText();
 			if(driver.getPageSource().contains("React JSS"))
 			{
 				System.out.println("Event is not removed from my event. Please check ");

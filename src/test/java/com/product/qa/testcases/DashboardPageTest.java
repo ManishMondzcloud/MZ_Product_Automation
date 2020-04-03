@@ -1,13 +1,16 @@
 package com.product.qa.testcases;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
+import com.product.qa.base.TestBase;
 import com.product.qa.pages.DashboardPage;
 import com.product.qa.pages.HomePage;
 import com.product.qa.pages.LoginPage;
 
 
-public class DashboardPageTest {
+public class DashboardPageTest extends TestBase {
 	LoginPage login;
 	DashboardPage dashboard;
 	HomePage homepage;
@@ -22,5 +25,79 @@ public class DashboardPageTest {
 		homepage=login.login();
 		Thread.sleep(9000);
 	}
+	@Test(priority = 1,enabled = false)
+	public void courseCountTest() throws InterruptedException 
+	{
+		dashboard.verifyCoursesCount();
+	}
+	@Test(priority = 2,enabled = false)
+	public void BlogsCountTest() throws InterruptedException 
+	{
+		dashboard.verifyBlogsCount();
+	}
+	@Test(priority = 3,enabled = true)
+	public void EventsCountTest() throws InterruptedException 
+	{
+		dashboard.verifyEventsCount();
+	}
+	
+	
+	@Test(priority=1,enabled=false)
+	public void LearnigPathLabelTest()
+	{
+		dashboard.verifyLearningPathLabel();
+	}
+	@Test(priority=2,enabled=false)
+	public void resumeButtonTest() throws InterruptedException
+	{
+	   dashboard.verifyResumeCourse();
+	}
+	@Test(priority=3,enabled=false)
+	public void startButtonTest() throws InterruptedException
+	{
+		dashboard.verifyStartCourse();
+	}
+	
+	@Test(priority=4, enabled = false)
+	public void upcomingEventLabelTest() 
+	{
+      dashboard.verifyUpcomingEventlabel();
+	}
+	
+	@Test(priority=5,enabled= false)
+	public void verifyEventOpenTest() throws InterruptedException
+	{
+		dashboard.verifyEventOpen();
+	}
+	@Test(priority=6,enabled = false)
+	public void EventViewAllBtnTest() throws InterruptedException
+	{
+		dashboard.verifyEventViewAllBtn();
+	}
+	
+	@Test(priority = 6,enabled = false)
+	public void BlogsLabelTest()
+	{
+		dashboard.verifyLettestBlogsLabel();
+	}
+	@Test(priority = 7,enabled = false)
+	public void BlogsOpenTest() throws InterruptedException
+	{
+		dashboard.verifyBlogOpen();
+	}
+	@Test(priority = 8,enabled = false)
+	public void BlogsViewAllBtnTest() throws InterruptedException
+	{
+		dashboard.verifyBlogsViewAllBtn();
+		Thread.sleep(4000);
+	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+	
 
 }
+}
+
+

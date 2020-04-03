@@ -8,11 +8,14 @@ import java.awt.event.KeyEvent;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.google.appengine.tools.util.Action;
 import com.product.qa.base.TestBase;
 
 public class MyProfile extends TestBase{
@@ -123,11 +126,15 @@ public class MyProfile extends TestBase{
 				
 			//Selecting states
 				state.click();
-				List<WebElement> states= driver.findElements(By.cssSelector("#country>option"));
+				
+	List<WebElement> states= driver.findElements(By.cssSelector("#country>option"));
 				for (WebElement stateList: states) {
 					 if(stateList.getText().equals("Maharashtra"))
 					 {
-						 stateList.click(); 
+						 stateList.click();
+						 Actions sl= new Actions(driver);
+						 sl.sendKeys(Keys.ENTER);
+						 
 						 break;
 					 }
 					

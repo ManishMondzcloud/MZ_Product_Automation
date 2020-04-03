@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="11" total="12" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="89307" started-at="2020-04-01T14:20:01Z" finished-at="2020-04-01T14:21:30Z">
+  <suite name="Default suite" duration-ms="50993" started-at="2020-04-03T17:24:10Z" finished-at="2020-04-03T17:25:01Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="89307" started-at="2020-04-01T14:20:01Z" finished-at="2020-04-01T14:21:30Z">
-      <class name="com.product.qa.testcases.MyEventsTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.MyEventsTest@3a5ed7a6]" name="setUp" is-config="true" duration-ms="31513" started-at="2020-04-01T19:50:01Z" finished-at="2020-04-01T19:50:32Z">
+    <test name="Default test" duration-ms="50993" started-at="2020-04-03T17:24:10Z" finished-at="2020-04-03T17:25:01Z">
+      <class name="com.product.qa.testcases.DashboardPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@6325a3ee]" name="setUp" is-config="true" duration-ms="33576" started-at="2020-04-03T22:54:10Z" finished-at="2020-04-03T22:54:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyMyEvent()[pri:1, instance:com.product.qa.testcases.MyEventsTest@3a5ed7a6]" name="VerifyMyEvent" duration-ms="56935" started-at="2020-04-01T19:50:32Z" finished-at="2020-04-01T19:51:29Z">
+        <test-method status="PASS" signature="EventsCountTest()[pri:3, instance:com.product.qa.testcases.DashboardPageTest@6325a3ee]" name="EventsCountTest" duration-ms="14946" started-at="2020-04-03T22:54:43Z" finished-at="2020-04-03T22:54:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyMyEvent -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.MyEventsTest@3a5ed7a6]" name="tearDown" is-config="true" duration-ms="798" started-at="2020-04-01T19:51:29Z" finished-at="2020-04-01T19:51:30Z">
+        </test-method> <!-- EventsCountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@6325a3ee]" name="tearDown" is-config="true" duration-ms="2430" started-at="2020-04-03T22:54:58Z" finished-at="2020-04-03T22:55:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.product.qa.testcases.MyEventsTest -->
+      </class> <!-- com.product.qa.testcases.DashboardPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
