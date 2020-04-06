@@ -3,13 +3,15 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.DashboardPageTest">
+      <class name="com.product.qa.testcases.BlogsPageTest">
         <methods>
-          <include name="courseCountTest"/>
           <include name="setUp"/>
+          <include name="relatedEventsOpenTest"/>
+          <include name="relatedTagsOpenTest"/>
+          <include name="addingCommentTest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.DashboardPageTest -->
+      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

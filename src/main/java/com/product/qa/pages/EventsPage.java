@@ -1,9 +1,13 @@
 package com.product.qa.pages;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.product.qa.base.TestBase;
 
@@ -30,11 +34,50 @@ public class EventsPage extends TestBase {
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
 	WebElement NoBtn;
 	
+	@FindBy(xpath = "//div//p[text()='No Courses Found']")
+	WebElement LinkDetails;
+	
+	@FindBy(xpath = "//div[@class='blog-info']//a[text()='View']")
+	WebElement ViewLink;
+	
 	public EventsPage()
 	{
 		//Initializing WebElements
 		PageFactory.initElements(driver,this);
 	}
+	
+	
+	public CoursesPage ValidateFilterLinks() throws InterruptedException {
+		  List<WebElement>  FilterLinks = driver.findElements(By.xpath("//div[@id='accordion']//li//a"));
+		  System.out.println(FilterLinks.size());
+		
+		  for(int i=8; i<FilterLinks.size();i++) {
+		         FilterLinks.get(i).click();
+		         Thread.sleep(5000);
+		         //System.out.println(i+"--" + LinkDetails);
+		         //System.out.println(i+"--" + LinkDetails.toString().contains("Proxy"));
+				
+		         if(!LinkDetails.toString().contains("Proxy") && LinkDetails.getText().equalsIgnoreCase("No Courses Found") ) {
+		        	 //Thread.sleep(5000);
+		        	 Assert.assertTrue(LinkDetails.isDisplayed(),"Courses Found");
+		        	 System.out.println("Course Not Found");
+		         }
+		         else{
+			
+		        	 //List<WebElement> ListViewlink= driver.findElements(By.xpath("//div[@class='blog-info']//a[text()='View']"));
+		        	 //Thread.sleep(5000);
+			
+		        	 Assert.assertTrue(ViewLink.isDisplayed(),"No Courses Found");
+		        	 System.out.println("Courses Found");
+			
+		         }	
+		  }
+		return new CoursesPage();
+		
+		}
+	
+	
+	
 	public void VerfyEventSubscribe() throws InterruptedException
 	{
 		EventsTab.click();
