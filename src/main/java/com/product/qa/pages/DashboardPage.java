@@ -15,8 +15,6 @@ import com.product.qa.base.TestBase;
 
 import junit.framework.Assert;
 
-public class DashboardPage extends TestBase {
-
 	@FindBy(xpath="//a[@class='nav-link active active']")
 	@CacheLookup
 	WebElement DashboardLink;

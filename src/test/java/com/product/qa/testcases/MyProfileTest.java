@@ -67,7 +67,7 @@ public class MyProfileTest extends TestBase {
 	
 	 
 	 
-	@Test(priority = 3,enabled=true)
+	@Test(priority = 3,enabled=false)
 	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException
 	 {
 		 profile.UpdateProfile();
