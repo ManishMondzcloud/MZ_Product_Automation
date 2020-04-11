@@ -1,5 +1,7 @@
 package com.product.qa.testcases;
 
+import java.awt.AWTException;
+
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,7 +18,7 @@ public class DashboardPageTest extends TestBase {
 	HomePage homepage;
 	
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() throws InterruptedException, AWTException {
 	
 		initialization();
 		login=new LoginPage();	
@@ -25,17 +27,17 @@ public class DashboardPageTest extends TestBase {
 		homepage=login.login();
 		Thread.sleep(9000);
 	}
-	@Test(priority = 1,enabled = false)
+	@Test(priority = 1,enabled = true)
 	public void courseCountTest() throws InterruptedException 
 	{
 		dashboard.verifyCoursesCount();
 	}
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2,enabled = true)
 	public void BlogsCountTest() throws InterruptedException 
 	{
 		dashboard.verifyBlogsCount();
 	}
-	@Test(priority = 3,enabled = true)
+	@Test(priority = 3,enabled = false)
 	public void EventsCountTest() throws InterruptedException 
 	{
 		dashboard.verifyEventsCount();

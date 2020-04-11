@@ -22,7 +22,7 @@ public class MyProfileTest extends TestBase {
 		}
 	 
 	 @BeforeMethod
-		public void setUp() throws InterruptedException {
+		public void setUp() throws InterruptedException, AWTException {
 		 
 		    initialization();
 			profile=new MyProfile();

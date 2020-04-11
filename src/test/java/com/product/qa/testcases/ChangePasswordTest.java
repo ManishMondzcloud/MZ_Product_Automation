@@ -1,5 +1,7 @@
 package com.product.qa.testcases;
 
+import java.awt.AWTException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -20,7 +22,7 @@ public class ChangePasswordTest extends TestBase  {
 		super();
 	}
 	@BeforeMethod
-	public void setUp() throws InterruptedException {
+	public void setUp() throws InterruptedException, AWTException {
 	
 		initialization();
 		changepassword=new ChangePassword();

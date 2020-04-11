@@ -1,5 +1,7 @@
 package com.product.qa.testcases;
 
+import java.awt.AWTException;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +24,7 @@ public class HomePageTest extends TestBase{
 	 }
 	 
 	 @BeforeMethod
-		public void setUp() throws InterruptedException {
+		public void setUp() throws InterruptedException, AWTException {
 		
 			initialization();
 			login=new LoginPage();

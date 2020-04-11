@@ -1,5 +1,11 @@
 package com.product.qa.pages;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -17,6 +23,15 @@ public class LoginPage extends TestBase {
 	WebElement loginBtn;
 	@FindBy(xpath="//img[@class=\"logo1\"]")
 	WebElement MzLogo;
+	
+	@FindBy(xpath="//button[@id='unblocked-allow']")
+	WebElement PopUpContinueBtn;
+	
+	@FindBy(xpath="//button[@id='onesignal-popover-allow-button']")
+	WebElement popUpAllow;
+	
+	
+	
 	
 	//Create Constructor for Initialize the webElements
 		public LoginPage() {
@@ -36,11 +51,48 @@ public class LoginPage extends TestBase {
 		}
 		
 		
-		public HomePage login() {
+		public HomePage login() throws InterruptedException, AWTException {
 			email.sendKeys(prop.getProperty("username"));
 			password.sendKeys(prop.getProperty("password"));
 			loginBtn.click();
+			Thread.sleep(9000);
+		
 			
-			return new HomePage();
+			// Allowing the notification pop-up
+			String MainWindow=driver.getWindowHandle();		
+			
+	        // To handle all new opened window.				
+	            Set<String> s1=driver.getWindowHandles();		
+	        Iterator<String> i1=s1.iterator();		
+	        		
+	        while(i1.hasNext())			
+	        {		
+	            String ChildWindow=i1.next();		
+	            		
+	            if(!MainWindow.equalsIgnoreCase(ChildWindow))			
+	            {    		
+	                 
+	                    // Switching to Child window
+	                    driver.switchTo().window(ChildWindow);                                                                         			
+	                    Thread.sleep(8000);	
+	        			PopUpContinueBtn.click();
+	        			Thread.sleep(2000);
+	        			
+	        			Robot robot = new Robot();
+	        			robot.delay(3000);
+	        			robot.keyPress(KeyEvent.VK_TAB);
+	        			robot.keyPress(KeyEvent.VK_ENTER);
+	        				
+	        	        //Thread.sleep(8000);
+	                   // Closing the Child Window.
+	                      // driver.close();		
+	            }		
+	        }		
+	        // Switching to Parent window i.e Main Window.
+	            driver.switchTo().window(MainWindow);	
+	            Thread.sleep(3000);
+				popUpAllow.click();
+				Thread.sleep(3000);
+				return new HomePage();
 		}
 }

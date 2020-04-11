@@ -1,14 +1,21 @@
  package com.product.qa.base;
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.FindBy;
 
 
 
@@ -41,7 +48,7 @@ public class TestBase
 
 	}
     
-	public static void initialization() throws InterruptedException {
+	public static void initialization() throws InterruptedException, AWTException {
 		// by using getProperty we are using the value of 'browser' from
 		// config.properties file.
 		// and saving into String Variable 'browserName'.
@@ -77,5 +84,8 @@ public class TestBase
 		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+	
+
 }
+
 }
