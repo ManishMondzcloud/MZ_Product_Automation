@@ -30,32 +30,32 @@ public class BlogsPageTest extends TestBase
 		Thread.sleep(14000);
 	}
 	
-	@Test(priority = 1,enabled = false)
+	@Test(priority = 1,enabled = true)
     public void verifyBlogopenByLinkTest() throws InterruptedException
     {
      blog.verifyBlogOpenByLink();	
     }
-	@Test(priority = 2,enabled = false)
+	@Test(priority = 2,enabled = true)
     public void verifyReadMoreBtnTest() throws InterruptedException
     {
     	blog.verifyReadMoreBtn();
     }
-	@Test(priority = 3,enabled = false)
+	@Test(priority = 3,enabled = true)
     public void relatedCourseOpenTest() throws InterruptedException, AWTException
     {
     	blog.verifyRelatedCourseOpen();
     }
-	@Test(priority = 4,enabled = false)//pass
+	@Test(priority = 4,enabled = true)
     public void relatedEventsOpenTest() throws InterruptedException
     {
     	blog.verifyRelatedEventsOpen();
     }
-	@Test(priority = 5,enabled = false)//Pass
+	@Test(priority = 5,enabled = true)
     public void relatedTagsOpenTest() throws InterruptedException
     {
     	blog.verifyTagsOpen();
     }
-	@Test(priority = 6,enabled = false)//pass
+	@Test(priority = 6,enabled = true)
 	public void addingCommentTest() throws InterruptedException
 	{
 		blog.verifyAddingComment();

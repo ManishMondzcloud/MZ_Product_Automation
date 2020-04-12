@@ -30,7 +30,7 @@ public class CoursesPageTest extends TestBase {
 		coursespage=homepage.ClickOnCoursesLink();
 	}
 	
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
 	public void VerifyCoursesPageLabelTest() {
 		Assert.assertTrue(coursespage.VerifyCoursesLabel());
 	}
@@ -40,7 +40,7 @@ public class CoursesPageTest extends TestBase {
 		coursespage.ValidateFilterLinks();
 	}
 	
-	@Test(priority=3)
+	@Test(priority=3,enabled=true)
 	public void VerifyCoursesLinkTest() throws InterruptedException {
 		coursespage.VerifyCoursesLink();
 	}

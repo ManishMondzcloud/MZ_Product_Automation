@@ -1,25 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="6" total="7" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="107444" started-at="2020-04-11T14:22:39Z" finished-at="2020-04-11T14:24:26Z">
+  <suite name="Default suite" duration-ms="10" started-at="2020-04-12T17:49:43Z" finished-at="2020-04-12T17:49:43Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="107444" started-at="2020-04-11T14:22:39Z" finished-at="2020-04-11T14:24:26Z">
-      <class name="com.product.qa.testcases.BlogsPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@3a5ed7a6]" name="setUp" is-config="true" duration-ms="76381" started-at="2020-04-11T19:52:39Z" finished-at="2020-04-11T19:53:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="EditCommentTest()[pri:7, instance:com.product.qa.testcases.BlogsPageTest@3a5ed7a6]" name="EditCommentTest" duration-ms="29724" started-at="2020-04-11T19:53:55Z" finished-at="2020-04-11T19:54:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EditCommentTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@3a5ed7a6]" name="tearDown" is-config="true" duration-ms="1280" started-at="2020-04-11T19:54:25Z" finished-at="2020-04-11T19:54:26Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
+    <test name="Default test" duration-ms="10" started-at="2020-04-12T17:49:43Z" finished-at="2020-04-12T17:49:43Z">
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

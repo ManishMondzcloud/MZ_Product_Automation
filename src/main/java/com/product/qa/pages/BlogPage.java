@@ -118,10 +118,7 @@ public class BlogPage extends TestBase{
 				ReadMorebtn.click();
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
-				//js.executeScript("window.scrollBy(0,300)");
 				js.executeScript("arguments[0].click();", JavaScriptRelaterEvent);
-				//Thread.sleep(4000);
-			    //JavaScriptRelaterEvent.click();
 				Thread.sleep(10000);
 				System.out.println("Related Event open");
 				
@@ -133,7 +130,6 @@ public class BlogPage extends TestBase{
 				ReadMorebtn.click();
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
-				//js.executeScript("window.scrollBy(0,1000)");
 				js.executeScript("arguments[0].scrollIntoView();", AndroidDevelopmentTags);
 				Thread.sleep(4000);
 				AndroidDevelopmentTags.click();
@@ -166,9 +162,6 @@ public class BlogPage extends TestBase{
 				//WebElement element = driver.findElement(By.xpath("//button[@id='edit'][1]")); 
 				//Actions actions = new Actions(driver);
 				//actions.moveToElement(element).click().perform();
-				Thread.sleep(3000);
-				
-				
 	            //EditBtn.click();
 				Thread.sleep(5000);
 				commentTextBox.sendKeys("Edited Text");

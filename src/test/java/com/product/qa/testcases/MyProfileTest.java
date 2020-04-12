@@ -37,7 +37,7 @@ public class MyProfileTest extends TestBase {
 			
 	 }
 	 
-	 @Test(priority = 1, enabled=false)
+	 @Test(priority = 1, enabled=true)
 	 public void verifyBesicDetailTest()
 		{
 		profile.verifyFirstName();
@@ -54,7 +54,7 @@ public class MyProfileTest extends TestBase {
 		System.out.println("Dept is displayed");
 		}
 	 
-	 @Test(priority = 2, enabled = false)
+	 @Test(priority = 2, enabled = true)
 	 public void verifyContactInformationTest()
 	 {
 		 profile.verifyContactMobile();
@@ -67,7 +67,7 @@ public class MyProfileTest extends TestBase {
 	
 	 
 	 
-	@Test(priority = 3,enabled=false)
+	@Test(priority = 3,enabled=true)
 	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException
 	 {
 		 profile.UpdateProfile();

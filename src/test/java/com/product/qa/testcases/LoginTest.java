@@ -48,7 +48,7 @@ public class LoginTest extends TestBase{
 		homepage=login.login();
 	}
 	
-	@Test(enabled=false,priority=4) 
+	@Test(priority=4,enabled=false) 
 	  public void ValidateForgotPassword() throws InterruptedException 
 	  {
 	  forgotPasswordPage.VerifyForgotPassword();

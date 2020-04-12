@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
--<suite name="Product Automation Testing Suite">
+<suite name="Product Automation Testing Suite">
 
 
--<listeners>
+<listeners>
 <listener class-name="com.product.qa.util.TestListener"/>
 <listener class-name="com.product.qa.extentReportListener.ExtentReportListener"/>
 </listeners>
--<test name="MZ Prduct Page Test Cases">
+<test name="MZ Prduct Page Test Cases">
 
 
--<classes>
+<classes>
 
-<!-- <class name="com.product.qa.testcases.LoginTest"/> -->
-<!-- <class name="com.product.qa.testcases.HomePageTest"/> -->
-  <!--   <class name="com.product.qa.testcases.CoursesPageTest"/>  -->
-   <!--<class name="com.product.qa.testcases.ChangePasswordTest"/>  -->
+<class name="com.product.qa.testcases.LoginTest"/>   
+<class name="com.product.qa.testcases.HomePageTest"/> 
+  <class name="com.product.qa.testcases.CoursesPageTest"/>  
+  <class name="com.product.qa.testcases.ChangePasswordTest"/> 
   <class name="com.product.qa.testcases.DashboardPageTest"/>
- <!--   <class name="com.product.qa.testcases.EventsPageTest"/>   -->
- <!--    <class name="com.product.qa.testcases.FeedbackTest"/>   -->
- <!--     <class name="com.product.qa.testcases.MyEventsTest"/>   -->
-  <!--    <class name="com.product.qa.testcases.MyProfileTest"/>   -->
+ <class name="com.product.qa.testcases.EventsPageTest"/>  
+ <class name="com.product.qa.testcases.FeedbackTest"/>  
+ <class name="com.product.qa.testcases.MyEventsTest"/>  
+ <class name="com.product.qa.testcases.MyProfileTest"/>
 </classes>
 
 </test>
 
-
-</classes>>
-</test>
 </suite>
