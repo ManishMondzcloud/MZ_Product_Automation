@@ -56,7 +56,7 @@ public class MyProfileTest extends TestBase {
 		System.out.println("Dept is displayed");
 		}
 	 
-	 @Test(priority = 2, enabled = false)
+	 @Test(priority = 2, enabled = true)
 	 public void verifyContactInformationTest()
 	 {
 		 profile.verifyContactMobile();
