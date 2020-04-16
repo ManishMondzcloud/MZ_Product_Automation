@@ -89,16 +89,30 @@ public class CoursesPage extends TestBase {
 		
 		}
 	
-	public CoursesPage VerifyCoursesLink() throws InterruptedException {
-		List<WebElement> ListViewlink= driver.findElements(By.xpath("//div[@class='blog-info']//a[text()='View']"));
-		for(int j=0; j<=ListViewlink.size();j++) {
-			ListViewlink.get(j).click();
-			Thread.sleep(7000);
-			//if(AccessCourse.getText().equalsIgnoreCase("Access Course")) {
-				Assert.assertTrue(AccessCourse.isDisplayed(),"No Courses Found");
-			
-		}
-		return new CoursesPage();
-	}
 	
-}
+		public CoursesPage VerifyCoursesSession(String session) throws InterruptedException {
+			WebElement ListViewlink = driver.findElement(By.xpath("//div[@class='blog-info']//a[text()='View']"));
+				//for(int j=0; j<ListViewlink.size();j++) {
+			boolean ismatch=false;		
+			Thread.sleep(5000);
+			ListViewlink.click();
+			Thread.sleep(5000);
+			List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"));
+					for(int k=0; k<SessionList.size();k++) {
+							//System.out.println(SessionList.get(k).getText());
+						//	System.out.println(session);
+							if(session.equalsIgnoreCase(SessionList.get(k).getText())) {
+								System.out.println("Courses are Matched");
+								ismatch=true;
+								break;
+								}
+						}
+							if(!ismatch) {
+								Assert.fail();
+								}
+						
+							return new CoursesPage();
+				}
+
+	}
+

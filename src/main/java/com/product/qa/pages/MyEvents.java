@@ -1,5 +1,7 @@
 package com.product.qa.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -40,7 +42,11 @@ public class MyEvents extends TestBase{
 	}
 	public void VerfyEventSubscribe() throws InterruptedException
 	{
-		EventsTab.click();
+		//EventsTab.click();
+		 WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+		 JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element);
+		
 		Thread.sleep(5000);
 		ReactjsEvent.click();
 		Thread.sleep(5000);
@@ -55,7 +61,11 @@ public class MyEvents extends TestBase{
 			Thread.sleep(5000);
 			
    //Checking subscribed event in MYEvent
-			Profile.click();
+			//Profile.click();
+			WebElement element1 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element1);
+			
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -63,7 +73,11 @@ public class MyEvents extends TestBase{
 			System.out.println("Subscribed event is displayed in MyEvent");
 			
 	//Unsubscribing the subscribe event 
-			EventsTab.click();
+			//EventsTab.click();
+			 WebElement element2 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+			 JavascriptExecutor executor2 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element2);
+			
 			Thread.sleep(5000);
 			ReactjsEvent.click();
 			Thread.sleep(5000);
@@ -74,19 +88,13 @@ public class MyEvents extends TestBase{
 			
 	//Check Unsubscribe event is removed from myEvent
 			
-			/*Profile.click();
-			Thread.sleep(5000);
-			Myevents.click();
-			Thread.sleep(5000);
-			if(ReactjsEvent.isDisplayed())
-			{
-				System.out.println("Event is not removed from my event. Please check ");
-			}
-			else
-			{
-				System.out.println("Event is successfully removed from MyEvent");
-			}*/
-			Profile.click();
+			
+			//Profile.click();
+			
+			WebElement element3 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor3= (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element3);
+			
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -105,7 +113,10 @@ public class MyEvents extends TestBase{
   else
 		{
 	//Checking subscribed event in MyEvents
-			Profile.click();
+			//Profile.click();
+	    WebElement element4 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+		JavascriptExecutor executor4= (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element4);
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -113,7 +124,10 @@ public class MyEvents extends TestBase{
 			System.out.println("Subscribed event is displayed in MyEvent");
 			
 	//Unsubscribe the subscribed event
-			EventsTab.click();
+			//EventsTab.click();
+			 WebElement element5 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+			 JavascriptExecutor executor5 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element5);
 			Thread.sleep(5000);
 			ReactjsEvent.click();
 			Thread.sleep(5000);
@@ -123,7 +137,11 @@ public class MyEvents extends TestBase{
 			System.out.println("Event is unsubscribed successful");
 			
 	//Checking unsubscribe event is removed from MyEvents
-			Profile.click();
+			//Profile.click();
+			WebElement element6 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor6= (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element6);
+			
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -138,7 +156,10 @@ public class MyEvents extends TestBase{
 			}
 			
 	 //Subscribe the event
-			EventsTab.click();
+			//EventsTab.click();
+			 WebElement element7 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+			 JavascriptExecutor executor7 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element7);
 			Thread.sleep(3000);
 			ReactjsEvent.click();
 			Thread.sleep(3000);

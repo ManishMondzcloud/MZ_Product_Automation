@@ -58,7 +58,7 @@ public class LoginPage extends TestBase {
 			Thread.sleep(9000);
 		
 			
-			// Allowing the notification pop-up
+	/*		// Allowing the notification pop-up
 			String MainWindow=driver.getWindowHandle();		
 			
 	        // To handle all new opened window.				
@@ -92,7 +92,7 @@ public class LoginPage extends TestBase {
 	            driver.switchTo().window(MainWindow);	
 	            Thread.sleep(3000);
 				popUpAllow.click();
-				Thread.sleep(3000);
+				Thread.sleep(3000);    */
 				return new HomePage();
 		}
 }

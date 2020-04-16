@@ -5,9 +5,11 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -41,7 +43,7 @@ public class MyProfile extends TestBase{
 	@FindBy(xpath="//div[contains(text(),'Information Technology')]")
 	WebElement Department;
 	
-	@FindBy(xpath="//body/div[@id='root']/div/div/div/div/div/div/div/div/div[2]/div[2]/div[1]")
+	@FindBy(xpath="//div[text()='admin@gmail.com']")
 	WebElement ContactEmail;
 	
 	@FindBy(xpath="//div[3]//div[2]//div[1]")
@@ -78,7 +80,10 @@ public class MyProfile extends TestBase{
 			}
 			
 			public void ClickOnMyProfileOption() {
-				MyProfileOption.click();
+				//MyProfileOption.click();
+				WebElement element = driver.findElement(By.xpath("//div[@id='navbarText']//ul//li//div//a[contains(text(),'My Profile')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 			}
 			
 			public boolean verifyFirstName()
@@ -118,7 +123,7 @@ public class MyProfile extends TestBase{
 				return contactLocation.isDisplayed();
 			}
 			
-			public void UpdateProfile() throws InterruptedException, AWTException
+			public void UpdateProfile() throws InterruptedException, AWTException, IOException
 			{
 				Editbwt.click();
 				Thread.sleep(5000);
@@ -149,27 +154,34 @@ public class MyProfile extends TestBase{
 						 break;
 					 }
 					
-				}
+				}  
 				
 				chooseimageBtn.click();
-				Thread.sleep(3000);
+				
 				
 			//Uploading image
-				Robot r= new Robot();
+				/*Robot r= new Robot();
 				r.setAutoDelay(5000);
-				StringSelection s= new StringSelection("C:\\img_1.jpg");
-				Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null);
+		
+				    
+				StringSelection s= new StringSelection("Images/img_1.jpg");
+				Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null); 
 				r.keyPress(KeyEvent.VK_CONTROL);
 				r.keyPress(KeyEvent.VK_V);
 				r.keyRelease(KeyEvent.VK_CONTROL);
 				r.keyRelease(KeyEvent.VK_V);
 				r.keyPress(KeyEvent.VK_ENTER);
-				Thread.sleep(5000);
+				Thread.sleep(5000);*/
+				
+				Runtime.getRuntime().exec("Images/UploadFile.exe");
 				System.out.println("Profile Image Selected");
 				Thread.sleep(5000);
 				
 				
-				UptBwn.click();
+				//UptBwn.click();
+				WebElement element = driver.findElement(By.xpath("//span[contains(text(),'Update Profile')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 				Thread.sleep(10000);
 				System.out.println("Profile Updated Successfuly");
 				

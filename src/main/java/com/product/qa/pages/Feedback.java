@@ -89,7 +89,7 @@ public class Feedback extends TestBase {
 			{
 				messageBox.sendKeys("12345");
 				String s=CharecterLimit.getText();
-				System.out.println("495 charecter should be left."+s);
+				System.out.println("After sending 5 charecter 495 charecter should be left."+s);
 			}
 
 }

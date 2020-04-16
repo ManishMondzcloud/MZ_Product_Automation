@@ -66,7 +66,13 @@ public class BlogPage extends TestBase{
 	
 	@FindBy(xpath="//button[text()='No']")
     WebElement NoBtnDoyouWantToEdit;
-
+   
+	@FindBy(xpath="//button[2][text()='Delete']")
+	WebElement DeleteComment;
+	
+	@FindBy(xpath="//p[@class='comment-error']")
+	WebElement AbuseWordsError;
+	
 	
 	//Create Constructor for Initialize the webElements
 			public BlogPage() {
@@ -77,14 +83,21 @@ public class BlogPage extends TestBase{
 						
 			public boolean verifyBlogsLabel() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 				Thread.sleep(2000);
 				return BlogsLabel.isDisplayed();
 			}
 			
 			public void verifyBlogOpenByLink() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
+				
 				Thread.sleep(2000);
 				AndroidAppDevelopmentBlogs.click();
 				Thread.sleep(3000);
@@ -93,7 +106,11 @@ public class BlogPage extends TestBase{
 			
 			public void verifyReadMoreBtn() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
+				
 				Thread.sleep(2000);
 				ReadMorebtn.click();
 				Thread.sleep(3000);
@@ -102,7 +119,10 @@ public class BlogPage extends TestBase{
 			public void verifyRelatedCourseOpen() throws InterruptedException, AWTException
 			{
 				
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 				Thread.sleep(10000);
 				ReadMorebtn.click();
 				Thread.sleep(10000);
@@ -113,7 +133,10 @@ public class BlogPage extends TestBase{
 			}
 			public void verifyRelatedEventsOpen() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 				Thread.sleep(10000);
 				ReadMorebtn.click();
 				Thread.sleep(10000);
@@ -125,21 +148,31 @@ public class BlogPage extends TestBase{
 			}
 			public void verifyTagsOpen() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 				Thread.sleep(10000);
 				ReadMorebtn.click();
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				js.executeScript("arguments[0].scrollIntoView();", AndroidDevelopmentTags);
 				Thread.sleep(4000);
-				AndroidDevelopmentTags.click();
+				//AndroidDevelopmentTags.click();
+				WebElement element1 = driver.findElement(By.xpath("//a[contains(text(),'Android Development')]"));
+				JavascriptExecutor executor1= (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element1);
+				
 				Thread.sleep(10000);
 				System.out.println(" Android appdevelopment tag open");
 			}
 			
 			public void verifyAddingComment() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
 				Thread.sleep(5000);
 				ReadMorebtn.click();
 				Thread.sleep(3000);
@@ -151,7 +184,11 @@ public class BlogPage extends TestBase{
 			}
 			public void verifyEditComment() throws InterruptedException
 			{
-				BlogsLink.click();
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
+				
 				Thread.sleep(5000);
 				ReadMorebtn.click();
 				Thread.sleep(5000);
@@ -172,6 +209,27 @@ public class BlogPage extends TestBase{
 				System.out.println("Comment Edited");
 			}
 			
-		
+			public void verifyAbuseWords() throws InterruptedException
+			{
+				
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
+				
+				Thread.sleep(5000);
+				ReadMorebtn.click();
+				Thread.sleep(3000);
+				Textbox.sendKeys("Fuck");
+				Thread.sleep(2000);
+				SubmitBtn.click();
+				Thread.sleep(2000);
+				String s1=AbuseWordsError.getText();
+				Assert.assertEquals(s1,"Your comment contains abusive words please remove them to proceed");
+				Thread.sleep(2000);
+				System.out.println("Waring message displayed");
+				
+			}
+			
 
 }

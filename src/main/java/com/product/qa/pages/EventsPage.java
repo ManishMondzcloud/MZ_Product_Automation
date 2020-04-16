@@ -3,6 +3,7 @@ package com.product.qa.pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -47,7 +48,7 @@ public class EventsPage extends TestBase {
 	}
 	
 	
-	public CoursesPage ValidateFilterLinks() throws InterruptedException {
+	public EventsPage ValidateFilterLinks() throws InterruptedException {
 		  List<WebElement>  FilterLinks = driver.findElements(By.xpath("//div[@id='accordion']//li//a"));
 		  System.out.println(FilterLinks.size());
 		
@@ -57,22 +58,22 @@ public class EventsPage extends TestBase {
 		         //System.out.println(i+"--" + LinkDetails);
 		         //System.out.println(i+"--" + LinkDetails.toString().contains("Proxy"));
 				
-		         if(!LinkDetails.toString().contains("Proxy") && LinkDetails.getText().equalsIgnoreCase("No Courses Found") ) {
+		         if(!LinkDetails.toString().contains("Proxy") && LinkDetails.getText().equalsIgnoreCase("No Events Found") ) {
 		        	 //Thread.sleep(5000);
-		        	 Assert.assertTrue(LinkDetails.isDisplayed(),"Courses Found");
-		        	 System.out.println("Course Not Found");
+		        	 Assert.assertTrue(LinkDetails.isDisplayed(),"Events Found");
+		        	 System.out.println("Events Not Found");
 		         }
 		         else{
 			
 		        	 //List<WebElement> ListViewlink= driver.findElements(By.xpath("//div[@class='blog-info']//a[text()='View']"));
 		        	 //Thread.sleep(5000);
 			
-		        	 Assert.assertTrue(ViewLink.isDisplayed(),"No Courses Found");
-		        	 System.out.println("Courses Found");
+		        	 Assert.assertTrue(ViewLink.isDisplayed(),"No Events Found");
+		        	 System.out.println("events Found");
 			
 		         }	
 		  }
-		return new CoursesPage();
+		return new EventsPage();
 		
 		}
 	
@@ -80,7 +81,11 @@ public class EventsPage extends TestBase {
 	
 	public void VerfyEventSubscribe() throws InterruptedException
 	{
-		EventsTab.click();
+		//EventsTab.click();
+		 WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+		 JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element);
+		
 		Thread.sleep(5000);
 		ReactjsEvent.click();
 		Thread.sleep(5000);
@@ -95,7 +100,11 @@ public class EventsPage extends TestBase {
 			Thread.sleep(5000);
 			
    //Checking subscribed event in MYEvent
-			Profile.click();
+			//Profile.click();
+			WebElement element1 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element1);
+			
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -103,7 +112,11 @@ public class EventsPage extends TestBase {
 			System.out.println("Subscribed event is displayed in MyEvent");
 			
 	//Unsubscribing the subscribe event 
-			EventsTab.click();
+			//EventsTab.click();
+			 WebElement element2 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+			 JavascriptExecutor executor2 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element2);
+			
 			Thread.sleep(5000);
 			ReactjsEvent.click();
 			Thread.sleep(5000);
@@ -115,10 +128,16 @@ public class EventsPage extends TestBase {
 	//Check Unsubscribe event is removed from myEvent
 			
 			
-			Profile.click();
+			//Profile.click();
+			
+			WebElement element3 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor3= (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element3);
+			
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
+		   // String m1=ReactjsEvent.getText();
 			if(driver.getPageSource().contains("React JSS"))
 			{
 				System.out.println("Event is not removed from my event. Please check ");
@@ -133,7 +152,10 @@ public class EventsPage extends TestBase {
   else
 		{
 	//Checking subscribed event in MyEvents
-			Profile.click();
+			//Profile.click();
+	    WebElement element4 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+		JavascriptExecutor executor4= (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element4);
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -141,7 +163,10 @@ public class EventsPage extends TestBase {
 			System.out.println("Subscribed event is displayed in MyEvent");
 			
 	//Unsubscribe the subscribed event
-			EventsTab.click();
+			//EventsTab.click();
+			 WebElement element5 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+			 JavascriptExecutor executor5 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element5);
 			Thread.sleep(5000);
 			ReactjsEvent.click();
 			Thread.sleep(5000);
@@ -151,7 +176,11 @@ public class EventsPage extends TestBase {
 			System.out.println("Event is unsubscribed successful");
 			
 	//Checking unsubscribe event is removed from MyEvents
-			Profile.click();
+			//Profile.click();
+			WebElement element6 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor6= (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element6);
+			
 			Thread.sleep(5000);
 			Myevents.click();
 			Thread.sleep(5000);
@@ -166,7 +195,10 @@ public class EventsPage extends TestBase {
 			}
 			
 	 //Subscribe the event
-			EventsTab.click();
+			//EventsTab.click();
+			 WebElement element7 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+			 JavascriptExecutor executor7 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element7);
 			Thread.sleep(3000);
 			ReactjsEvent.click();
 			Thread.sleep(3000);
@@ -187,6 +219,6 @@ public class EventsPage extends TestBase {
 		
 	}
 
-}
 
-}
+	}
+	}

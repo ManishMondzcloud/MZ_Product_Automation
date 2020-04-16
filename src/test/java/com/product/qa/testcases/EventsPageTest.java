@@ -2,20 +2,25 @@ package com.product.qa.testcases;
 
 import java.awt.AWTException;
 
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.product.qa.base.TestBase;
 import com.product.qa.pages.EventsPage;
 import com.product.qa.pages.HomePage;
 import com.product.qa.pages.LoginPage;
+import com.product.qa.util.TestUtil;
 
 
 public class EventsPageTest extends TestBase{
 	LoginPage login;
 	EventsPage event;
 	HomePage homepage;
+	TestUtil testutil;
+	String sheetName2="Courses";
 	
 	@BeforeMethod
 	public void setUp() throws InterruptedException, AWTException {
@@ -28,12 +33,25 @@ public class EventsPageTest extends TestBase{
 		Thread.sleep(9000);
 	}
 	
-	
 	@Test(priority=1,enabled=true)
-	public void VerifyMyEvent() throws InterruptedException
+	public void VerifyEventTest() throws InterruptedException
 	{
 		event.VerfyEventSubscribe();
 	}
+	
+	
+	
+	@Test(priority=3, enabled=true)
+	public void VerifyEventPageFilterLinksTest() throws InterruptedException {
+		event.ValidateFilterLinks();
+	}
+	
+	@DataProvider
+	public Object[][] getTestData2() {
+		Object data[][]=TestUtil.getTestData(sheetName2);
+		return data;
+	}
+	
 	
 	@AfterMethod
 	public void tearDown()

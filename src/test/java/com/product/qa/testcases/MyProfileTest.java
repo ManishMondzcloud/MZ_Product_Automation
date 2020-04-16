@@ -1,6 +1,7 @@
 package com.product.qa.testcases;
 
 import java.awt.AWTException;
+import java.io.IOException;
 
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -19,6 +20,8 @@ public class MyProfileTest extends TestBase {
 	
 	 public MyProfileTest() {
 			super();
+			
+			
 		}
 	 
 	 @BeforeMethod
@@ -34,10 +37,9 @@ public class MyProfileTest extends TestBase {
 			profile.ClickOnMyProfileOption();
 			Thread.sleep(9000);
 			
-			
-	 }
+		 }
 	 
-	 @Test(priority = 1, enabled=true)
+	 @Test(priority = 1, enabled=false)
 	 public void verifyBesicDetailTest()
 		{
 		profile.verifyFirstName();
@@ -54,7 +56,7 @@ public class MyProfileTest extends TestBase {
 		System.out.println("Dept is displayed");
 		}
 	 
-	 @Test(priority = 2, enabled = true)
+	 @Test(priority = 2, enabled = false)
 	 public void verifyContactInformationTest()
 	 {
 		 profile.verifyContactMobile();
@@ -68,15 +70,16 @@ public class MyProfileTest extends TestBase {
 	 
 	 
 	@Test(priority = 3,enabled=true)
-	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException
+	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException, IOException
 	 {
 		 profile.UpdateProfile();
 	 }
 	
-	@Test(priority=4,enabled=true)
+	@Test(priority=4,enabled=false)
 	public void ValidateRemoveImageTest() throws InterruptedException
 	{
 		profile.VerifyRemoveImage();
+		
 	}
 	 
 		@AfterMethod

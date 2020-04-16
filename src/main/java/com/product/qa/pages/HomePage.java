@@ -1,5 +1,7 @@
 package com.product.qa.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -44,13 +46,19 @@ public class HomePage extends TestBase {
 	   }
 	   
 	   public CoursesPage ClickOnCoursesLink() {
-		   CoursesLink.click();
+		   //CoursesLink.click();
+		   WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[text()='Courses']"));
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element);
 		   return new CoursesPage();
 	   }
 	   
 	   public void clickOnProfile()
 	   {
-		   Profile.click();
+		   //Profile.click();
+		   WebElement element = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element);
 	   }
 	   
 

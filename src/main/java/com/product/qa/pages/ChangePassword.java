@@ -1,5 +1,7 @@
 package com.product.qa.pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -48,7 +50,10 @@ public class ChangePassword extends TestBase{
 	
 	public void clickOnChangePassword()
 	{
-		changePwdOption.click();
+		//changePwdOption.click();
+		 WebElement element = driver.findElement(By.xpath("//div[@id='navbarText']//ul//li//div//a[contains(text(),'Change Password')]"));
+		 JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element);
 	}
 	
 	public boolean changePasswordLabel()

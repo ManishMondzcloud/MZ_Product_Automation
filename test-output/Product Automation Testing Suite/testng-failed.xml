@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Product Automation Testing Suite]">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Product Automation Testing Suite]">
   <listeners>
     <listener class-name="com.product.qa.util.TestListener"/>
     <listener class-name="com.product.qa.extentReportListener.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="MZ Prduct Page Test Cases(failed)">
+  <test name="MZ Prduct Page Test Cases(failed)">
     <classes>
-      <class name="com.product.qa.testcases.CoursesPageTest">
+      <class name="com.product.qa.testcases.FeedbackTest">
         <methods>
+          <include name="submitFeedbackWith501CharecterTest"/>
+          <include name="submitFeedbackWith500CharecterTest"/>
+          <include name="cancelButtonTest"/>
+          <include name="CharecterLimitTest"/>
+          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="VerifyCoursesTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.CoursesPageTest -->
+      </class> <!-- com.product.qa.testcases.FeedbackTest -->
     </classes>
   </test> <!-- MZ Prduct Page Test Cases(failed) -->
 </suite> <!-- Failed suite [Product Automation Testing Suite] -->

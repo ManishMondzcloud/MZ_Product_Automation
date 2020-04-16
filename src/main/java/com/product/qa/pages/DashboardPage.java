@@ -87,7 +87,11 @@ import junit.framework.Assert;
 		System.out.println("Courses count on dashboard=" + n1);
 		
 	//Counting course on courses page
-		CoursesLink.click();
+		WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[text()='Courses']"));
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element);
+		
+	//CoursesLink.click();
 		Thread.sleep(4000);
 		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
 		int n2=m1.size();
@@ -107,7 +111,10 @@ import junit.framework.Assert;
 		System.out.println("Blogs count on dashboard=" + n1);
 		
 	//Counting blogs on blogs page
-		BlogsLink.click();
+		//BlogsLink.click();
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element);
 		Thread.sleep(4000);
 		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
 		int n2=m1.size();
@@ -126,7 +133,10 @@ import junit.framework.Assert;
 		System.out.println("Events count on dashboard=" + n1);
 		
 	//Counting events on events page
-		EventsTab.click();
+		//EventsTab.click();
+		WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();",element);
 		Thread.sleep(4000);
 		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
 		int n2=m1.size();

@@ -32,7 +32,8 @@ public class DashboardPageTest extends TestBase {
 	{
 		dashboard.verifyCoursesCount();
 	}
-	@Test(priority = 2,enabled = true)
+	@Test(priority = 2,enabled = true)	
+	
 	public void BlogsCountTest() throws InterruptedException 
 	{
 		dashboard.verifyBlogsCount();
@@ -42,52 +43,52 @@ public class DashboardPageTest extends TestBase {
 	{
 		dashboard.verifyEventsCount();
 	}
-	
-	
-	@Test(priority=1,enabled=true)
-	public void LearnigPathLabelTest()
-	{
-		dashboard.verifyLearningPathLabel();
-	}
-	@Test(priority=2,enabled=true)
+	@Test(priority=4,enabled=true)
 	public void resumeButtonTest() throws InterruptedException
 	{
 	   dashboard.verifyResumeCourse();
 	}
-	@Test(priority=3,enabled=true)
+	
+	@Test(priority=5,enabled=true)
+	public void LearnigPathLabelTest()
+	{
+		dashboard.verifyLearningPathLabel();
+	}
+	
+	@Test(priority=6,enabled=false)
 	public void startButtonTest() throws InterruptedException
 	{
 		dashboard.verifyStartCourse();
 	}
 	
-	@Test(priority=4, enabled = true)
+	@Test(priority=7, enabled = true)
 	public void upcomingEventLabelTest() 
 	{
       dashboard.verifyUpcomingEventlabel();
 	}
 	
-	@Test(priority=5,enabled= true)
+	@Test(priority=8,enabled= true)
 	public void verifyEventOpenTest() throws InterruptedException
 	{
 		dashboard.verifyEventOpen();
 	}
-	@Test(priority=6,enabled = true)
+	@Test(priority=9,enabled = true)
 	public void EventViewAllBtnTest() throws InterruptedException
 	{
 		dashboard.verifyEventViewAllBtn();
 	}
 	
-	@Test(priority = 6,enabled = true)
+	@Test(priority = 10,enabled = true)
 	public void BlogsLabelTest()
 	{
 		dashboard.verifyLettestBlogsLabel();
 	}
-	@Test(priority = 7,enabled = true)
+	@Test(priority = 11,enabled = true)
 	public void BlogsOpenTest() throws InterruptedException
 	{
 		dashboard.verifyBlogOpen();
 	}
-	@Test(priority = 8,enabled = true)
+	@Test(priority = 12,enabled = true)
 	public void BlogsViewAllBtnTest() throws InterruptedException
 	{
 		dashboard.verifyBlogsViewAllBtn();

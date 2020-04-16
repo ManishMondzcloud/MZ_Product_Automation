@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.support.FindBy;
 
@@ -34,8 +35,7 @@ public class TestBase
 			// By using fileInputStream we have to give Path of config.properties file
 			// fileInputStream making a Streaming between your java code and
 			// config.properties file.
-			FileInputStream ip = new FileInputStream(
-					"C:\\Users\\Manish Patil\\Documents\\MZProduct\\MZ\\src\\main\\java\\com\\product\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("src\\main\\java\\com\\product\\qa\\config\\config.properties");
 			try {
 				// Load all the properties which are available in config.properties file.
 				prop.load(ip);
@@ -58,14 +58,32 @@ public class TestBase
 		String browserName = prop.getProperty("Browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-			// set the path for ChromeDriver
+		
+			
+            //Headless testing 
+			
+			//ChromeOptions option=new ChromeOptions();
+			//option.addArguments("window-size=1400,800");
+			//option.addArguments("headless");//.setHeadless(true);
+			
+			
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("headless").setHeadless(true);
+	        options.addArguments("window-size=1920x1080","--disable-gpu","--ignore-certificate-errors", "--silent");
+	        options.addArguments("--disable-features=VizDisplayCompositor");
+	       
+			
+			
+			
+			
+			
 			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
 			// Create object for ChromeDriver
 
 			//ChromeOptions options = new ChromeOptions();
 			//options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
 			//		"--ignore-certificate-errors", "--silent");
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 
 		} else if (browserName.equals("edge")) {
 			// Set the path for EdgeDriver
