@@ -39,7 +39,7 @@ public class MyProfileTest extends TestBase {
 			
 		 }
 	 
-	 @Test(priority = 1, enabled=false)
+	 @Test(priority = 1, enabled=true)
 	 public void verifyBesicDetailTest()
 		{
 		profile.verifyFirstName();

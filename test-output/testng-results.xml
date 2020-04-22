@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
+<testng-results skipped="0" failed="0" ignored="11" total="12" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="78694" started-at="2020-04-16T16:53:27Z" finished-at="2020-04-16T16:54:46Z">
+  <suite name="Default suite" duration-ms="56551" started-at="2020-04-20T12:45:45Z" finished-at="2020-04-20T12:46:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="78694" started-at="2020-04-16T16:53:27Z" finished-at="2020-04-16T16:54:46Z">
-      <class name="com.product.qa.testcases.MyProfileTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.MyProfileTest@335eadca]" name="setUp" is-config="true" duration-ms="46937" started-at="2020-04-16T22:23:27Z" finished-at="2020-04-16T22:24:14Z">
+    <test name="Default test" duration-ms="56551" started-at="2020-04-20T12:45:45Z" finished-at="2020-04-20T12:46:42Z">
+      <class name="com.product.qa.testcases.DashboardPageTest">
+        <test-method status="PASS" signature="config()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@1d16f93d]" name="config" is-config="true" duration-ms="701" started-at="2020-04-20T18:15:45Z" finished-at="2020-04-20T18:15:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- config -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@1d16f93d]" name="setUp" is-config="true" duration-ms="41370" started-at="2020-04-20T18:15:46Z" finished-at="2020-04-20T18:16:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateUpdateProfileTest()[pri:3, instance:com.product.qa.testcases.MyProfileTest@335eadca]" name="ValidateUpdateProfileTest" duration-ms="31015" started-at="2020-04-16T22:24:14Z" finished-at="2020-04-16T22:24:45Z">
+        <test-method status="PASS" signature="courseCountTest()[pri:1, instance:com.product.qa.testcases.DashboardPageTest@1d16f93d]" name="courseCountTest" duration-ms="13729" started-at="2020-04-20T18:16:27Z" finished-at="2020-04-20T18:16:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateUpdateProfileTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.MyProfileTest@335eadca]" name="tearDown" is-config="true" duration-ms="697" started-at="2020-04-16T22:24:45Z" finished-at="2020-04-16T22:24:46Z">
+        </test-method> <!-- courseCountTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@1d16f93d]" name="tearDown" is-config="true" duration-ms="640" started-at="2020-04-20T18:16:41Z" finished-at="2020-04-20T18:16:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.product.qa.testcases.MyProfileTest -->
+      </class> <!-- com.product.qa.testcases.DashboardPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

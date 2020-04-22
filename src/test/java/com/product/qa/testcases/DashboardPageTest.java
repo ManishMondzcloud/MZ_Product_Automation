@@ -5,7 +5,6 @@ import java.awt.AWTException;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import com.product.qa.base.TestBase;
 import com.product.qa.pages.DashboardPage;
 import com.product.qa.pages.HomePage;
@@ -16,6 +15,8 @@ public class DashboardPageTest extends TestBase {
 	LoginPage login;
 	DashboardPage dashboard;
 	HomePage homepage;
+	
+	
 	
 	@BeforeMethod
 	public void setUp() throws InterruptedException, AWTException {
@@ -31,25 +32,26 @@ public class DashboardPageTest extends TestBase {
 	public void courseCountTest() throws InterruptedException 
 	{
 		dashboard.verifyCoursesCount();
+		
 	}
-	@Test(priority = 2,enabled = true)	
+	@Test(priority = 2,enabled = false)	
 	
 	public void BlogsCountTest() throws InterruptedException 
 	{
 		dashboard.verifyBlogsCount();
 	}
-	@Test(priority = 3,enabled = true)
+	@Test(priority = 3,enabled = false)
 	public void EventsCountTest() throws InterruptedException 
 	{
 		dashboard.verifyEventsCount();
 	}
-	@Test(priority=4,enabled=true)
+	@Test(priority=4,enabled=false)
 	public void resumeButtonTest() throws InterruptedException
 	{
 	   dashboard.verifyResumeCourse();
 	}
 	
-	@Test(priority=5,enabled=true)
+	@Test(priority=5,enabled=false)
 	public void LearnigPathLabelTest()
 	{
 		dashboard.verifyLearningPathLabel();
@@ -61,34 +63,34 @@ public class DashboardPageTest extends TestBase {
 		dashboard.verifyStartCourse();
 	}
 	
-	@Test(priority=7, enabled = true)
+	@Test(priority=7, enabled = false)
 	public void upcomingEventLabelTest() 
 	{
       dashboard.verifyUpcomingEventlabel();
 	}
 	
-	@Test(priority=8,enabled= true)
+	@Test(priority=8,enabled= false)
 	public void verifyEventOpenTest() throws InterruptedException
 	{
 		dashboard.verifyEventOpen();
 	}
-	@Test(priority=9,enabled = true)
+	@Test(priority=9,enabled = false)
 	public void EventViewAllBtnTest() throws InterruptedException
 	{
 		dashboard.verifyEventViewAllBtn();
 	}
 	
-	@Test(priority = 10,enabled = true)
+	@Test(priority = 10,enabled = false)
 	public void BlogsLabelTest()
 	{
 		dashboard.verifyLettestBlogsLabel();
 	}
-	@Test(priority = 11,enabled = true)
+	@Test(priority = 11,enabled = false)
 	public void BlogsOpenTest() throws InterruptedException
 	{
 		dashboard.verifyBlogOpen();
 	}
-	@Test(priority = 12,enabled = true)
+	@Test(priority = 12,enabled = false)
 	public void BlogsViewAllBtnTest() throws InterruptedException
 	{
 		dashboard.verifyBlogsViewAllBtn();
