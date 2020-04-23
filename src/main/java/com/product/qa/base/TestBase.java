@@ -3,6 +3,7 @@
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -11,6 +12,9 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.codehaus.plexus.util.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -47,6 +51,17 @@ public class TestBase
 		}
 
 	}
+	
+	public String getScreenshotPath(String TestCaseName,WebDriver driver) throws IOException
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File source=ts.getScreenshotAs(OutputType.FILE);
+		String destPath=System.getProperty("User.dir")+"\\reports\\"+TestCaseName+".png";
+		File file= new File(destPath);
+		FileUtils.copyFile(source, file);
+		return destPath;
+		
+	}
     
 	public static void initialization() throws InterruptedException, AWTException {
 		// by using getProperty we are using the value of 'browser' from
@@ -72,9 +87,8 @@ public class TestBase
 	        options.addArguments("window-size=1920x1080","--disable-gpu","--ignore-certificate-errors", "--silent");
 	        options.addArguments("--disable-features=VizDisplayCompositor");
 	       
-			
-			
-			
+	        options.addArguments("--disable-dev-shm-usage");
+	        options.addArguments("--no-sandbox");
 			
 			
 			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");

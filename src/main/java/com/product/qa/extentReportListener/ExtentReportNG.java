@@ -11,7 +11,7 @@ public class ExtentReportNG {
 	{
 		
 		//ExtentReport, ExtentSparxReporter
-		 String path=System.getProperty("User.dir")+"\\reports\\index.html";
+		String path=System.getProperty("User.dir")+"\\reports\\index.html";
 		 ExtentSparkReporter report=new ExtentSparkReporter(path);
 		 report.config().setReportName("MZ Product Results");
 		 report.config().setDocumentTitle("Test Results");

@@ -22,13 +22,10 @@ import junit.framework.Assert;
 	@CacheLookup
 	WebElement DashboardLink;
 	
-	@FindBy(xpath="//div[@class='container']//div[1]//div[1]//div[2]//div[1]//a[1]")
-	WebElement StartBtn;
-	
 	@FindBy(xpath="//div[@class='row']//div[2]//div[1]//div[2]//div[1]//a[1]")
 	WebElement ResumeBtn;
 	
-	@FindBy(xpath="//h2[contains(text(),'Learning Paths')]")
+	@FindBy(xpath= "//h2[contains(text(),'Learning Paths')]")
 	WebElement LearningPathLabel;
 	
 	@FindBy(xpath="//h2[contains(text(),'Upcoming Events')]")
@@ -98,6 +95,8 @@ import junit.framework.Assert;
 		System.out.println("Courses available on course page =" + n2);
 		Assert.assertEquals(n1,n2);
 		
+	
+		
 		
 	}
 	
@@ -121,6 +120,7 @@ import junit.framework.Assert;
 		System.out.println("Blogs available on blogs page =" + n2);
 		Assert.assertEquals(n1,n2);
 		
+		
 	}
 	
 	public void verifyEventsCount() throws InterruptedException
@@ -134,7 +134,7 @@ import junit.framework.Assert;
 		
 	//Counting events on events page
 		//EventsTab.click();
-		WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+		WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events11')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
 		Thread.sleep(4000);
@@ -148,6 +148,7 @@ import junit.framework.Assert;
 	public boolean verifyLearningPathLabel()
 	{
 		return LearningPathLabel.isDisplayed();
+	
 	}
 
 //Verifying the resume button
@@ -159,19 +160,11 @@ import junit.framework.Assert;
 		driver.getPageSource().contains("Course Content");
 		System.out.println("Resume button work properly");
 	}
-//Verify start button
-	
-	public void verifyStartCourse() throws InterruptedException
-	{
-		StartBtn.click();
-		Thread.sleep(3000);
-		driver.getPageSource().contains("Course Content");
-		System.out.println("Start button work properly");
-	}
-	
+
 	public boolean verifyUpcomingEventlabel()
 	{
 		return upcomingEventsLabels.isDisplayed();
+		
 	}
 	
 //Verify single javascript event open	
