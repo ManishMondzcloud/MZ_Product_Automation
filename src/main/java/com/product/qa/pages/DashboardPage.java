@@ -11,9 +11,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
 import com.product.qa.base.TestBase;
 
-import junit.framework.Assert;
+
 
  public class DashboardPage extends TestBase
  {
@@ -134,7 +136,7 @@ import junit.framework.Assert;
 		
 	//Counting events on events page
 		//EventsTab.click();
-		WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events11')]"));
+		WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
 		Thread.sleep(4000);

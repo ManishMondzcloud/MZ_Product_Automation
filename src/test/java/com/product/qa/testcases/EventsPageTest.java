@@ -46,12 +46,6 @@ public class EventsPageTest extends TestBase{
 		event.ValidateFilterLinks();
 	}
 	
-	@DataProvider
-	public Object[][] getTestData2() {
-		Object data[][]=TestUtil.getTestData(sheetName2);
-		return data;
-	}
-	
 	
 	@AfterMethod
 	public void tearDown()

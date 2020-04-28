@@ -67,8 +67,10 @@ public class BlogPage extends TestBase{
 	@FindBy(xpath="//button[text()='No']")
     WebElement NoBtnDoyouWantToEdit;
    
-	@FindBy(xpath="//button[2][text()='Delete']")
+	@FindBy(xpath="//div[@class='5ea5474dbb352818dc762b7c']//button[2]")
 	WebElement DeleteComment;
+	@FindBy(xpath="//button[@class='btn-danger btn btn-secondary' and text()='Delete']")
+	WebElement DoyouWantToDeleteYesBtn;
 	
 	@FindBy(xpath="//p[@class='comment-error']")
 	WebElement AbuseWordsError;
@@ -207,6 +209,32 @@ public class BlogPage extends TestBase{
 				Thread.sleep(5000);
 				YesBtnDoyouWantToEdit.click();
 				System.out.println("Comment Edited");
+			}
+			
+			public void verifyDeletComment() throws InterruptedException
+			{
+				//BlogsLink.click();
+				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
+				JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
+				
+				Thread.sleep(5000);
+				ReadMorebtn.click();
+				Thread.sleep(5000);
+				JavascriptExecutor js= (JavascriptExecutor)driver;
+				//js.executeScript("window.scrollBy(0,1000)");
+				js.executeScript("arguments[0].click();", DeleteComment);
+				
+				//WebElement element = driver.findElement(By.xpath("//button[@id='edit'][1]")); 
+				//Actions actions = new Actions(driver);
+				//actions.moveToElement(element).click().perform();
+	            //EditBtn.click();
+				
+				Thread.sleep(5000);
+				DoyouWantToDeleteYesBtn.click();
+				System.out.println("Comment Deleted");
+
+				
 			}
 			
 			public void verifyAbuseWords() throws InterruptedException

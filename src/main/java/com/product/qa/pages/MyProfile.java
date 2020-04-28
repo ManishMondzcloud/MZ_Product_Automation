@@ -123,6 +123,8 @@ public class MyProfile extends TestBase{
 				return contactLocation.isDisplayed();
 			}
 			
+			
+			
 			public void UpdateProfile() throws InterruptedException, AWTException, IOException
 			{
 				Editbwt.click();

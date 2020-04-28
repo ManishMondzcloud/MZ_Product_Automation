@@ -72,8 +72,14 @@ public class BlogsPageTest extends TestBase
 	{
 		blog.verifyEditComment();
 	}
-	
 	@Test(priority = 9,enabled = true)
+	public void deleteCommentTest() throws InterruptedException
+	{
+	  blog.verifyDeletComment();
+		
+	}
+	
+	@Test(priority = 10,enabled = true)
 	public void AbusingWordTest() throws InterruptedException
 	{
 		blog.verifyAbuseWords();	}

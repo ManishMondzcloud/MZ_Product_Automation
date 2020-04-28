@@ -96,7 +96,6 @@ public class DashboardPageTest extends TestBase {
 	public void tearDown() {
 		driver.quit();
 	
-
 }
 }
 

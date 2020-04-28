@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Product_Automation_Testing_Suite">
-              <span class="suite-name border-skipped">Product Automation Testing Suite</span>
+              <span class="suite-name border-passed">Product Automation Testing Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,26 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,  2 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Product_Automation_Testing_Suite" class="hide-methods skipped suite-Product_Automation_Testing_Suite"> (hide)</a> <!-- hide-methods skipped suite-Product_Automation_Testing_Suite -->
-                      <a href="#" panel-name="suite-Product_Automation_Testing_Suite" class="show-methods skipped suite-Product_Automation_Testing_Suite"> (show)</a> <!-- show-methods skipped suite-Product_Automation_Testing_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Product_Automation_Testing_Suite">
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Product_Automation_Testing_Suite" title="com.product.qa.testcases.DashboardPageTest" hash-for-method="BlogsCountTest">BlogsCountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Product_Automation_Testing_Suite" title="com.product.qa.testcases.DashboardPageTest" hash-for-method="EventsCountTest">EventsCountTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Product_Automation_Testing_Suite -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +100,16 @@
                       <a href="#" panel-name="suite-Product_Automation_Testing_Suite" class="show-methods passed suite-Product_Automation_Testing_Suite"> (show)</a> <!-- show-methods passed suite-Product_Automation_Testing_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Product_Automation_Testing_Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Product_Automation_Testing_Suite" title="com.product.qa.testcases.DashboardPageTest" hash-for-method="BlogsCountTest">BlogsCountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Product_Automation_Testing_Suite" title="com.product.qa.testcases.DashboardPageTest" hash-for-method="EventsCountTest">EventsCountTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Product_Automation_Testing_Suite" title="com.product.qa.testcases.DashboardPageTest" hash-for-method="courseCountTest">courseCountTest</a> <!-- method navigator-link -->
@@ -136,9 +127,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Product_Automation_Testing_Suite" class="panel Product_Automation_Testing_Suite">
-          <div class="suite-Product_Automation_Testing_Suite-class-skipped">
+          <div class="suite-Product_Automation_Testing_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.product.qa.testcases.DashboardPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -147,24 +138,6 @@
                   <a name="BlogsCountTest">
                   </a> <!-- BlogsCountTest -->
                   <span class="method-name">BlogsCountTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
-  (Session info: headless chrome=79.0.3945.88)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MPATIL&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MANISH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64377}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 34c21f4708773b01119c396019b6a6aa
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.product.qa.base.TestBase.initialization(TestBase.java:119)
-	at com.product.qa.testcases.DashboardPageTest.setUp(DashboardPageTest.java:24)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -172,34 +145,8 @@ Session ID: 34c21f4708773b01119c396019b6a6aa
                   <a name="EventsCountTest">
                   </a> <!-- EventsCountTest -->
                   <span class="method-name">EventsCountTest</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout
-  (Session info: headless chrome=79.0.3945.88)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;MPATIL&apos;, ip: &apos;192.168.43.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\MANISH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64377}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 34c21f4708773b01119c396019b6a6aa
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.product.qa.base.TestBase.initialization(TestBase.java:119)
-	at com.product.qa.testcases.DashboardPageTest.setUp(DashboardPageTest.java:24)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Product_Automation_Testing_Suite-class-skipped -->
-          <div class="suite-Product_Automation_Testing_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.product.qa.testcases.DashboardPageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="courseCountTest">
@@ -268,20 +215,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'courseCountTest')
 data.setCell(0, 2, 'com.product.qa.testcases.DashboardPageTest')
-data.setCell(0, 3, 13373);
+data.setCell(0, 3, 13916);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'BlogsCountTest')
 data.setCell(1, 2, 'com.product.qa.testcases.DashboardPageTest')
-data.setCell(1, 3, 0);
+data.setCell(1, 3, 13305);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'EventsCountTest')
 data.setCell(2, 2, 'com.product.qa.testcases.DashboardPageTest')
-data.setCell(2, 3, 0);
+data.setCell(2, 3, 13215);
 window.suiteTableData['Product_Automation_Testing_Suite']= { tableData: data, tableDiv: 'times-div-Product_Automation_Testing_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 40 seconds</span>
               <div id="times-div-Product_Automation_Testing_Suite">
               </div> <!-- times-div-Product_Automation_Testing_Suite -->
             </div> <!-- times-div -->
@@ -335,26 +282,36 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">courseCountTest</span>
-                <span class="method-start">45929 ms</span>
+                <span class="method-start">46422 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">59320 ms</span>
+                <span class="method-start">60362 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">setUp</span>
-                <span class="method-start">60124 ms</span>
+                <span class="method-start">61026 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">BlogsCountTest</span>
-                <span class="method-start">-1587641576745 ms</span>
+                <span class="method-start">112757 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">126065 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">126736 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">EventsCountTest</span>
-                <span class="method-start">-1587641576745 ms</span>
+                <span class="method-start">167058 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">180275 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

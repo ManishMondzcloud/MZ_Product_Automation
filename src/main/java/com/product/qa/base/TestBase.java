@@ -77,9 +77,6 @@ public class TestBase
 			
             //Headless testing 
 			
-			//ChromeOptions option=new ChromeOptions();
-			//option.addArguments("window-size=1400,800");
-			//option.addArguments("headless");//.setHeadless(true);
 			
 			
 			ChromeOptions options = new ChromeOptions();
