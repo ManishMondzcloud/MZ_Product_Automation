@@ -2,6 +2,8 @@ package com.product.qa.testcases;
 
 import java.awt.AWTException;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -16,6 +18,8 @@ public class DashboardPageTest extends TestBase {
 	DashboardPage dashboard;
 	HomePage homepage;
 	
+	
+	private static final Logger logger = LogManager.getLogger(DashboardPageTest.class);
 	
 	
 	@BeforeMethod
@@ -32,7 +36,7 @@ public class DashboardPageTest extends TestBase {
 	public void courseCountTest() throws InterruptedException 
 	{
 		dashboard.verifyCoursesCount();
-		
+			
 	}
 	@Test(priority = 2,enabled = true)	
 	
@@ -40,7 +44,7 @@ public class DashboardPageTest extends TestBase {
 	{
 		dashboard.verifyBlogsCount();
 	}
-	@Test(priority = 3,enabled = true)
+	@Test(priority = 3,enabled = false)
 	public void EventsCountTest() throws InterruptedException 
 	{
 		dashboard.verifyEventsCount();

@@ -6,6 +6,8 @@ import java.awt.event.KeyEvent;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -14,6 +16,8 @@ import org.openqa.selenium.support.PageFactory;
 import com.product.qa.base.TestBase;
 
 public class LoginPage extends TestBase {
+	
+	 private static final Logger logger = LogManager.getLogger(LoginPage.class);
 
 	@FindBy(xpath = "//div//input[@name='email']")
 	WebElement email;
@@ -48,13 +52,17 @@ public class LoginPage extends TestBase {
 		public boolean ValidateMzLogo() throws InterruptedException {
 			Thread.sleep(5000);
 			return MzLogo.isDisplayed();
+		
 		}
 		
 		
 		public HomePage login() throws InterruptedException, AWTException {
 			email.sendKeys(prop.getProperty("username"));
+			logger.info("---------Send User Name -------------");
 			password.sendKeys(prop.getProperty("password"));
+			logger.info("---------Send Password -------------");
 			loginBtn.click();
+			logger.info("---------Click on login button-------------");
 			Thread.sleep(9000);
 		
 			

@@ -5,6 +5,9 @@ package com.product.qa.pages;
 
 import java.util.List;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -19,6 +22,8 @@ import com.product.qa.base.TestBase;
 
  public class DashboardPage extends TestBase
  {
+	 
+	 private static final Logger logger = LogManager.getLogger(DashboardPage.class);
 
 	@FindBy(xpath="//a[@class='nav-link active active']")
 	@CacheLookup
@@ -84,20 +89,23 @@ import com.product.qa.base.TestBase;
 		String actual=countCourse.getText();
 		int n1= Integer.parseInt(actual);
 		System.out.println("Courses count on dashboard=" + n1);
+		logger.info("-----------Count the course from Dashbord-------------");
 		
 	//Counting course on courses page
+		
 		WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[text()='Courses']"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
-		
-	//CoursesLink.click();
+		//CoursesLink.click();
+		logger.info("-----------Click on the courses Link-------------");
+	
 		Thread.sleep(4000);
 		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
 		int n2=m1.size();
 		System.out.println("Courses available on course page =" + n2);
 		Assert.assertEquals(n1,n2);
+		logger.info("-----------Match the courses count-------------");
 		
-	
 		
 		
 	}
@@ -110,6 +118,7 @@ import com.product.qa.base.TestBase;
 		String actual=countCourse.getText();
 		int n1= Integer.parseInt(actual);
 		System.out.println("Blogs count on dashboard=" + n1);
+		logger.info("-----------Count the Blogs on dashboard-------------");
 		
 	//Counting blogs on blogs page
 		//BlogsLink.click();
@@ -118,9 +127,11 @@ import com.product.qa.base.TestBase;
 		executor.executeScript("arguments[0].click();",element);
 		Thread.sleep(4000);
 		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
+		logger.info("-----------Count the blogs on blogs page-------------");
 		int n2=m1.size();
 		System.out.println("Blogs available on blogs page =" + n2);
 		Assert.assertEquals(n1,n2);
+		logger.info("-----------Match the blogs count-------------");
 		
 		
 	}
@@ -133,6 +144,7 @@ import com.product.qa.base.TestBase;
 		String actual=countCourse.getText();
 		int n1= Integer.parseInt(actual);
 		System.out.println("Events count on dashboard=" + n1);
+		logger.info("-----------Count the Events on the dashboard page-------------");
 		
 	//Counting events on events page
 		//EventsTab.click();
@@ -141,15 +153,18 @@ import com.product.qa.base.TestBase;
 		executor.executeScript("arguments[0].click();",element);
 		Thread.sleep(4000);
 		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
+		logger.info("-----------Count the Events on the events page-------------");
 		int n2=m1.size();
 		System.out.println("Events available on events page =" + n2);
 		Assert.assertEquals(n1,n2);
+		logger.info("-----------Compare and match the events-------------");
 		
 	}
 	
 	public boolean verifyLearningPathLabel()
 	{
 		return LearningPathLabel.isDisplayed();
+		
 	
 	}
 
@@ -158,8 +173,10 @@ import com.product.qa.base.TestBase;
 	public void verifyResumeCourse() throws InterruptedException
 	{
 		ResumeBtn.click();
+		logger.info("-----------Click on the resume button-------------");
 		Thread.sleep(3000);
 		driver.getPageSource().contains("Course Content");
+		logger.info("-----------Resume button work properly-------------");
 		System.out.println("Resume button work properly");
 	}
 
@@ -176,7 +193,9 @@ import com.product.qa.base.TestBase;
 		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Javascript')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
+		logger.info("---------click on java script event-------------");
 		Thread.sleep(9000);
+		
 		System.out.println("Event is open");
 		
 	}
@@ -187,6 +206,7 @@ import com.product.qa.base.TestBase;
 		WebElement element = driver.findElement(By.xpath("//section[4]//div[1]//div[3]//div[1]//a[1]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
+		logger.info("---------click on Event View All button-------------");
 		Thread.sleep(9000);
 		System.out.println("View All events button working fine");
 	}
@@ -203,6 +223,7 @@ import com.product.qa.base.TestBase;
 		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App De...')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
+		logger.info("---------click on Android app developenemt blog -------------");
 		Thread.sleep(9000);
 		System.out.println("Blogs is open");
 	}
@@ -213,6 +234,7 @@ import com.product.qa.base.TestBase;
 		WebElement element = driver.findElement(By.xpath("//section[@class='latest-blogs']//a[@class='blue-btn w-100']"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
+		logger.info("---------click on Blogs View all button -------------");
 		Thread.sleep(9000);
 		System.out.println("View All blogs button working fine");
 	}

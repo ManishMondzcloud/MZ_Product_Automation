@@ -1,10 +1,6 @@
-2020-04-13 00:51:37,448 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-04-13 00:51:37,463 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2020-04-13 00:51:37,463 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2020-04-13 00:51:37,463 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2020-04-13 00:51:37,463 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
-2020-04-13 00:51:37,981 DEBUG [main] cache:45 - Couldn't find template in cache for "Extent.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-04-13 00:51:37,982 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en_IN.ftl"): Not found
-2020-04-13 00:51:37,983 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent_en.ftl"): Not found
-2020-04-13 00:51:37,984 DEBUG [main] cache:45 - TemplateLoader.findTemplateSource("Extent.ftl"): Found
-2020-04-13 00:51:37,984 DEBUG [main] cache:45 - Loading template for "Extent.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/relevantcodes/extentreports/2.41.2/extentreports-2.41.2.jar!/com/relevantcodes/extentreports/view/Extent.ftl"
+2020-04-29 19:06:13,706  INFO [main] DashboardPage:92 - -----------Count the course from Dashbord-------------
+2020-04-29 19:06:14,560  INFO [main] DashboardPage:100 - -----------Click on the courses Link-------------
+2020-04-29 19:06:18,635  INFO [main] DashboardPage:107 - -----------Match the courses count-------------
+2020-04-29 19:07:09,606  INFO [main] DashboardPage:121 - -----------Count the Blogs on dashboard-------------
+2020-04-29 19:07:13,747  INFO [main] DashboardPage:130 - -----------Count the blogs on blogs page-------------
+2020-04-29 19:07:13,748  INFO [main] DashboardPage:134 - -----------Match the blogs count-------------

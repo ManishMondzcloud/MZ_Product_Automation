@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="11" passed="3">
+<testng-results skipped="0" failed="0" ignored="9" total="11" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Product Automation Testing Suite" duration-ms="180947" started-at="2020-04-28T08:21:24Z" finished-at="2020-04-28T08:24:25Z">
+  <suite name="Default suite" duration-ms="116047" started-at="2020-04-29T13:35:18Z" finished-at="2020-04-29T13:37:14Z">
     <groups>
     </groups>
-    <test name="MZ Prduct Page Test Cases" duration-ms="180947" started-at="2020-04-28T08:21:24Z" finished-at="2020-04-28T08:24:25Z">
+    <test name="Default test" duration-ms="116047" started-at="2020-04-29T13:35:18Z" finished-at="2020-04-29T13:37:14Z">
       <class name="com.product.qa.testcases.DashboardPageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="setUp" is-config="true" duration-ms="46422" started-at="2020-04-28T13:51:24Z" finished-at="2020-04-28T13:52:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="46012" started-at="2020-04-29T19:05:18Z" finished-at="2020-04-29T19:06:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="courseCountTest()[pri:1, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="courseCountTest" duration-ms="13916" started-at="2020-04-28T13:52:11Z" finished-at="2020-04-28T13:52:25Z">
+        <test-method status="PASS" signature="courseCountTest()[pri:1, instance:com.product.qa.testcases.DashboardPageTest@6b09bb57]" name="courseCountTest" duration-ms="14038" started-at="2020-04-29T19:06:04Z" finished-at="2020-04-29T19:06:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- courseCountTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="tearDown" is-config="true" duration-ms="662" started-at="2020-04-28T13:52:25Z" finished-at="2020-04-28T13:52:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="770" started-at="2020-04-29T19:06:18Z" finished-at="2020-04-29T19:06:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="setUp" is-config="true" duration-ms="51731" started-at="2020-04-28T13:52:25Z" finished-at="2020-04-28T13:53:17Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="41127" started-at="2020-04-29T19:06:19Z" finished-at="2020-04-29T19:07:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="BlogsCountTest()[pri:2, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="BlogsCountTest" duration-ms="13305" started-at="2020-04-28T13:53:17Z" finished-at="2020-04-28T13:53:30Z">
+        <test-method status="PASS" signature="BlogsCountTest()[pri:2, instance:com.product.qa.testcases.DashboardPageTest@6b09bb57]" name="BlogsCountTest" duration-ms="13211" started-at="2020-04-29T19:07:00Z" finished-at="2020-04-29T19:07:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BlogsCountTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="tearDown" is-config="true" duration-ms="670" started-at="2020-04-28T13:53:30Z" finished-at="2020-04-28T13:53:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="setUp" is-config="true" duration-ms="40322" started-at="2020-04-28T13:53:31Z" finished-at="2020-04-28T13:54:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="EventsCountTest()[pri:3, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="EventsCountTest" duration-ms="13215" started-at="2020-04-28T13:54:11Z" finished-at="2020-04-28T13:54:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EventsCountTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@515c6049]" name="tearDown" is-config="true" duration-ms="615" started-at="2020-04-28T13:54:25Z" finished-at="2020-04-28T13:54:25Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.DashboardPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="823" started-at="2020-04-29T19:07:13Z" finished-at="2020-04-29T19:07:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.product.qa.testcases.DashboardPageTest -->
-    </test> <!-- MZ Prduct Page Test Cases -->
-  </suite> <!-- Product Automation Testing Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
