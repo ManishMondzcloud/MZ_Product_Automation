@@ -19,9 +19,6 @@ public class DashboardPageTest extends TestBase {
 	HomePage homepage;
 	
 	
-	private static final Logger logger = LogManager.getLogger(DashboardPageTest.class);
-	
-	
 	@BeforeMethod
 	public void setUp() throws InterruptedException, AWTException {
 	

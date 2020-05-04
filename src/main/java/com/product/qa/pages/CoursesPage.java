@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.xml.xpath.XPath;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -14,6 +16,8 @@ import org.testng.Assert;
 import com.product.qa.base.TestBase;
 
 public class CoursesPage extends TestBase {
+	
+	private static final Logger logger = LogManager.getLogger(CoursesPage.class);
 
 	@FindBy(xpath = "//li[@class='nav-item linkmenu']//a[text()='Courses']")
 	@CacheLookup

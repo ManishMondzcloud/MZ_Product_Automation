@@ -1,25 +1,30 @@
 package com.product.qa.pages;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
+//import java.awt.Robot;
+//import java.awt.event.KeyEvent;
+//import java.util.Iterator;
+//import java.util.List;
+//import java.util.Set;
 
-import org.openqa.selenium.Alert;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+//import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+//import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.google.apphosting.utils.config.ApplicationXml.Modules.Web;
+//import com.google.apphosting.utils.config.ApplicationXml.Modules.Web;
 import com.product.qa.base.TestBase;
 
+
 public class BlogPage extends TestBase{
+	
+	private static final Logger logger = LogManager.getLogger(BlogPage.class);
 	
 	
 	@FindBy(xpath="//a[contains(text(),'Blog')]")
@@ -99,9 +104,11 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on Blogs link-------------");
 				
 				Thread.sleep(2000);
 				AndroidAppDevelopmentBlogs.click();
+				logger.info("-----------Android appdevelopment blog open-------------");
 				Thread.sleep(3000);
 				System.out.println("Blog open by link");
 			}
@@ -112,9 +119,11 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on Blogs link-------------");
 				
 				Thread.sleep(2000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read More button-------------");
 				Thread.sleep(3000);
 				System.out.println("Blogs open by read more button");
 			}
@@ -125,10 +134,13 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read More button-------------");
 				Thread.sleep(10000);
 				AndroidRelatedCourse.click();
+				logger.info("-----------Click on Android related course-------------");
 				Thread.sleep(10000);
 				System.out.println("Related course open");
 				
@@ -139,11 +151,14 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read More button-------------");
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				js.executeScript("arguments[0].click();", JavaScriptRelaterEvent);
+				logger.info("-----------Related Event open-------------");
 				Thread.sleep(10000);
 				System.out.println("Related Event open");
 				
@@ -154,8 +169,10 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read More-------------");
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				js.executeScript("arguments[0].scrollIntoView();", AndroidDevelopmentTags);
@@ -164,7 +181,7 @@ public class BlogPage extends TestBase{
 				WebElement element1 = driver.findElement(By.xpath("//a[contains(text(),'Android Development')]"));
 				JavascriptExecutor executor1= (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element1);
-				
+				logger.info("-----------Click on Android development tag-------------");
 				Thread.sleep(10000);
 				System.out.println(" Android appdevelopment tag open");
 			}
@@ -175,12 +192,16 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on the Blogs link-------------");
 				Thread.sleep(5000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read More button -------------");
 				Thread.sleep(3000);
 				Textbox.sendKeys("Test11");
+				logger.info("-----------Enter Text in comment box-------------");
 				Thread.sleep(2000);
 				SubmitBtn.click();
+				logger.info("-----------Click on the subit button-------------");
 				Thread.sleep(2000);
 				System.out.println("New Comment added");
 			}
@@ -190,13 +211,16 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on the Blogs link-------------");
 				
 				Thread.sleep(5000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on the Read More button-------------");
 				Thread.sleep(5000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				//js.executeScript("window.scrollBy(0,1000)");
 				js.executeScript("arguments[0].click();", EditBtn);
+				logger.info("-----------Click on Edit comment button-------------");
 				
 				//WebElement element = driver.findElement(By.xpath("//button[@id='edit'][1]")); 
 				//Actions actions = new Actions(driver);
@@ -204,8 +228,10 @@ public class BlogPage extends TestBase{
 	            //EditBtn.click();
 				Thread.sleep(5000);
 				commentTextBox.sendKeys("Edited Text");
+				logger.info("-----------Enter Edited text-------------");
 				Thread.sleep(5000);
 				EditBoxSubmitBtn.click();
+				logger.info("-----------Enter Edited text-------------");
 				Thread.sleep(5000);
 				YesBtnDoyouWantToEdit.click();
 				System.out.println("Comment Edited");
@@ -217,13 +243,16 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on Blogs link-------------");
 				
 				Thread.sleep(5000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read more button-------------");
 				Thread.sleep(5000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				//js.executeScript("window.scrollBy(0,1000)");
 				js.executeScript("arguments[0].click();", DeleteComment);
+				logger.info("-----------Click on delete comment-------------");
 				
 				//WebElement element = driver.findElement(By.xpath("//button[@id='edit'][1]")); 
 				//Actions actions = new Actions(driver);
@@ -232,6 +261,7 @@ public class BlogPage extends TestBase{
 				
 				Thread.sleep(5000);
 				DoyouWantToDeleteYesBtn.click();
+				logger.info("-----------Click on yes button-------------");
 				System.out.println("Comment Deleted");
 
 				
@@ -244,16 +274,20 @@ public class BlogPage extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
-				
+				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(5000);
 				ReadMorebtn.click();
+				logger.info("-----------Click on Read More button-------------");
 				Thread.sleep(3000);
 				Textbox.sendKeys("Fuck");
+				logger.info("-----------send abusing words in text box-------------");
 				Thread.sleep(2000);
 				SubmitBtn.click();
+				logger.info("-----------click on the submit button-------------");
 				Thread.sleep(2000);
 				String s1=AbuseWordsError.getText();
 				Assert.assertEquals(s1,"Your comment contains abusive words please remove them to proceed");
+				logger.info("-----------compare the warning message-------------");
 				Thread.sleep(2000);
 				System.out.println("Waring message displayed");
 				

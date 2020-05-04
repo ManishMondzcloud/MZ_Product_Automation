@@ -8,6 +8,8 @@ import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.util.List;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -21,6 +23,8 @@ import com.google.appengine.tools.util.Action;
 import com.product.qa.base.TestBase;
 
 public class MyProfile extends TestBase{
+	
+	private static final Logger logger = LogManager.getLogger(MyProfile.class);
 	
 	@FindBy(xpath="//div[@id='navbarText']//ul//li//div//a[contains(text(),'My Profile')]")
 	WebElement MyProfileOption;
@@ -84,6 +88,7 @@ public class MyProfile extends TestBase{
 				WebElement element = driver.findElement(By.xpath("//div[@id='navbarText']//ul//li//div//a[contains(text(),'My Profile')]"));
 				JavascriptExecutor executor = (JavascriptExecutor)driver;
 				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on the My Profile Option-------------");
 			}
 			
 			public boolean verifyFirstName()
@@ -128,11 +133,13 @@ public class MyProfile extends TestBase{
 			public void UpdateProfile() throws InterruptedException, AWTException, IOException
 			{
 				Editbwt.click();
+				logger.info("-----------Click on Edit button-------------");
 				Thread.sleep(5000);
 				
 				
 			//Selecting states
 				state.click();
+				logger.info("-----------Click on the state-------------");
 				
 	List<WebElement> states= driver.findElements(By.cssSelector("#country>option"));
 				for (WebElement stateList: states) {
@@ -141,24 +148,28 @@ public class MyProfile extends TestBase{
 						 stateList.click();
 						 Actions sl= new Actions(driver);
 						 sl.sendKeys(Keys.ENTER);
-						 
+						 logger.info("-----------State is selected-------------");
 						 break;
 					 }
 					
 				}
 		  //Selecting city
 				city.click();
+				logger.info("-----------Click on the city-------------");
 				List<WebElement> cities= driver.findElements(By.cssSelector("#city>option"));
 				for (WebElement cityList: cities) {
 					 if(cityList.getText().equals("Nagpur"))
 					 {
 						 cityList.click(); 
+						 logger.info("-----------City is selected-------------");
 						 break;
+						 
 					 }
 					
 				}  
 				
 				chooseimageBtn.click();
+				logger.info("-----------Click on the choose image button -------------");
 				
 				
 			//Uploading image
@@ -193,8 +204,10 @@ public class MyProfile extends TestBase{
 			public void VerifyRemoveImage() throws InterruptedException
 			{
 				Editbwt.click();
+				logger.info("-----------Click On the Edit button-------------");
 				Thread.sleep(5000);
 				RemoveImage.click();
+				logger.info("-----------Click on the removed image button-------------");
 				Thread.sleep(5000);
 				
 			}
