@@ -8,9 +8,10 @@
     <classes>
       <class name="com.product.qa.testcases.DashboardPageTest">
         <methods>
+          <include name="courseCountTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="EventsCountTest"/>
+          <include name="BlogsCountTest"/>
         </methods>
       </class> <!-- com.product.qa.testcases.DashboardPageTest -->
     </classes>
