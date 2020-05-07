@@ -5,6 +5,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -39,6 +40,9 @@ public class MyEvents extends TestBase{
 	@FindBy(xpath="//button[contains(text(),'Cancel')]")
 	WebElement NoBtn;
 	
+	@FindBy(xpath="//div[contains(@class,'_loading_overlay_wrapper css-79elbk')]//li[6]//a[1]")
+	WebElement nextpage;
+	
 	public MyEvents()
 	{
 		//Initializing WebElements
@@ -53,6 +57,12 @@ public class MyEvents extends TestBase{
 		logger.info("-----------Click on the 'Event Tab'-------------");
 		
 		Thread.sleep(5000);
+		
+		WebElement elementA1=nextpage;
+		Actions actions = new Actions(driver);
+		actions.moveToElement(elementA1).click().build().perform();
+		logger.info("-----------Click on the next Page-------------");
+		Thread.sleep(7000);
 		ReactjsEvent.click();
 		logger.info("-----------open the ReactJS event-------------");
 		Thread.sleep(5000);
@@ -91,6 +101,8 @@ public class MyEvents extends TestBase{
 			logger.info("-----------Click on the My Event-------------");
 			
 			Thread.sleep(5000);
+			nextpage.click();
+			Thread.sleep(3000);
 			ReactjsEvent.click();
 			logger.info("-----------Open the Reactjs Event -------------");
 			Thread.sleep(5000);
@@ -152,6 +164,8 @@ public class MyEvents extends TestBase{
 			executor.executeScript("arguments[0].click();",element5);
 			logger.info("-----------Click on the Event Tab-------------");
 			Thread.sleep(5000);
+			nextpage.click();
+			Thread.sleep(3000);
 			ReactjsEvent.click();
 			logger.info("-----------Open ReactJS event-------------");
 			Thread.sleep(5000);
@@ -191,6 +205,8 @@ public class MyEvents extends TestBase{
 			 JavascriptExecutor executor7 = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();",element7);
 			logger.info("-----------Click on the My Events-------------");
+			Thread.sleep(3000);
+			nextpage.click();
 			Thread.sleep(3000);
 			ReactjsEvent.click();
 			logger.info("-----------Open the ReactJS event-------------");

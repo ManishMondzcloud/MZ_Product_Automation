@@ -83,82 +83,127 @@ import com.product.qa.base.TestBase;
 	
 	public void verifyCoursesCount() throws InterruptedException
 	{
+		
+	int totalCourseCount = 0;
 	// Counting course on dashboard
-		Thread.sleep(9000);
-		WebElement countCourse= driver.findElement(By.xpath("//a[@class='latst-add-block new-blogs animated']//h2"));
-		String actual=countCourse.getText();
-		int n1= Integer.parseInt(actual);
-		System.out.println("Courses count on dashboard=" + n1);
-		logger.info("-----------Count the course from Dashbord-------------");
+		Thread.sleep(3000);
+		WebElement DashboardCourse= driver.findElement(By.xpath("//a[@class='latst-add-block latest-courses']//h2"));
+		String actual=DashboardCourse.getText();
+		int DashboardCourseCount= Integer.parseInt(actual);
+		System.out.println("Courses count on dashboard=" + DashboardCourseCount);
+		logger.info("---------Count the course on dashboard-------------");
 		
 	//Counting course on courses page
-		
 		WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[text()='Courses']"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
-		//CoursesLink.click();
-		logger.info("-----------Click on the courses Link-------------");
-	
-		Thread.sleep(4000);
-		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
-		int n2=m1.size();
-		System.out.println("Courses available on course page =" + n2);
-		Assert.assertEquals(n1,n2);
-		logger.info("-----------Match the courses count-------------");
+		logger.info("---------click on Courses Page-------------");
 		
 		
+		while(totalCourseCount < DashboardCourseCount)
+		{
+			if(totalCourseCount != 0)
+			{
+				// fetch for first page
+				WebElement element1 = driver.findElement(By.xpath("//a[@class='prev  page-link']/i[@class='fas fa-angle-right']"));
+				JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+				executor1.executeScript("arguments[0].click();",element1);
+			//	driver.findElement(By.xpath("//a[@class='prev  page-link']/i[@class='fas fa-angle-right']")).click();
+								
+			}
+			Thread.sleep(3000);
+			List<WebElement> CourseCount1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
+			// System.out.println(CourseCount1.size());
+						
+			totalCourseCount=totalCourseCount+ CourseCount1.size();
+			logger.info("---------Count the total courses on courses Page-------------");
+		}
+		System.out.println("Courses available on course page =" + totalCourseCount);
+		Assert.assertEquals(DashboardCourseCount,totalCourseCount);
+		logger.info("---------Match the courses cout with the dashboard count-------------");
 		
-	}
-	
+	}	
+		
+		
 	public void verifyBlogsCount() throws InterruptedException
 	{
+		int totalBlogCount=0;
 	// Counting blogs on dashboard
-		Thread.sleep(9000);
-		WebElement countCourse= driver.findElement(By.xpath("//a[@class='latst-add-block latest-courses']//h2"));
-		String actual=countCourse.getText();
-		int n1= Integer.parseInt(actual);
-		System.out.println("Blogs count on dashboard=" + n1);
-		logger.info("-----------Count the Blogs on dashboard-------------");
+		Thread.sleep(3000);
+		WebElement DashboardCount= driver.findElement(By.xpath("//a[@class='latst-add-block new-blogs animated']//h2"));
+		String actual1=DashboardCount.getText();
+		int DashboardBlogCount= Integer.parseInt(actual1);
+		System.out.println("Blogs count on dashboard=" + DashboardBlogCount);
+		logger.info("---------Count the Blogs Count on the Dashboard page-------------");
 		
 	//Counting blogs on blogs page
 		//BlogsLink.click();
 		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Blog')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
-		Thread.sleep(4000);
-		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
-		logger.info("-----------Count the blogs on blogs page-------------");
-		int n2=m1.size();
-		System.out.println("Blogs available on blogs page =" + n2);
-		Assert.assertEquals(n1,n2);
-		logger.info("-----------Match the blogs count-------------");
-		
+		logger.info("---------click on the Blogs Page-------------");
+		while(totalBlogCount < DashboardBlogCount)
+		{
+			if(totalBlogCount != 0)
+			{
+				// fetch for first page
+				WebElement element1 = driver.findElement(By.xpath("//a[@class='prev  page-link']/i[@class='fas fa-angle-right']"));
+				JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+				executor1.executeScript("arguments[0].click();",element1);
+			//	driver.findElement(By.xpath("//a[@class='prev  page-link']/i[@class='fas fa-angle-right']")).click();
+								
+			}
+			Thread.sleep(3000);
+			List<WebElement> BlogCount1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
+			// System.out.println(BlogCount1.size());
+						
+			totalBlogCount=totalBlogCount+ BlogCount1.size();
+			logger.info("---------Count the blogs on the Blogs Page-------------");
+		}
+		System.out.println("Courses available on course page =" + totalBlogCount);
+		Assert.assertEquals(DashboardBlogCount,totalBlogCount);
+		logger.info("---------Match the blogs count with dashboard count-------------");
 		
 	}
 	
 	public void verifyEventsCount() throws InterruptedException
 	{
+		int totalEventCount=0;
 	// Counting events on dashboard
-		Thread.sleep(9000);
-		WebElement countCourse= driver.findElement(By.xpath("//a[@class='latst-add-block new-events animated']//h2"));
-		String actual=countCourse.getText();
-		int n1= Integer.parseInt(actual);
-		System.out.println("Events count on dashboard=" + n1);
-		logger.info("-----------Count the Events on the dashboard page-------------");
+		Thread.sleep(3000);
+		WebElement Dashboardcount= driver.findElement(By.xpath("//a[@class='latst-add-block new-events animated']//h2"));
+		String actual=Dashboardcount.getText();
+		int DashboardEventCount= Integer.parseInt(actual);
+		System.out.println("Events count on dashboard=" + DashboardEventCount);
+		logger.info("---------Count the events on the dashboard-------------");
 		
 	//Counting events on events page
 		//EventsTab.click();
 		WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
-		Thread.sleep(4000);
-		List<WebElement> m1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
-		logger.info("-----------Count the Events on the events page-------------");
-		int n2=m1.size();
-		System.out.println("Events available on events page =" + n2);
-		Assert.assertEquals(n1,n2);
-		logger.info("-----------Compare and match the events-------------");
-		
+		logger.info("---------click on the Events page-------------");
+		while(totalEventCount < DashboardEventCount)
+		{
+			if(totalEventCount != 0)
+			{
+				// fetch for first page
+				WebElement element1 = driver.findElement(By.xpath("//a[@class='prev  page-link']/i[@class='fas fa-angle-right']"));
+				JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+				executor1.executeScript("arguments[0].click();",element1);
+			//	driver.findElement(By.xpath("//a[@class='prev  page-link']/i[@class='fas fa-angle-right']")).click();
+								
+			}
+			Thread.sleep(3000);
+			List<WebElement> EventCount1= driver.findElements(By.xpath("//a[@class='blue-btn']"));
+			// System.out.println(EventCount1.size());
+						
+			totalEventCount=totalEventCount+ EventCount1.size();
+			logger.info("---------Count the events on the events page-------------");
+		}
+		System.out.println("Courses available on course page =" + totalEventCount);
+		Assert.assertEquals(DashboardEventCount,totalEventCount);
+		logger.info("---------Match the count of events with the dashboard count-------------");
 	}
 	
 	public boolean verifyLearningPathLabel()

@@ -12,6 +12,7 @@
           <include name="setUp"/>
           <include name="tearDown"/>
           <include name="BlogsCountTest"/>
+          <include name="EventsCountTest"/>
         </methods>
       </class> <!-- com.product.qa.testcases.DashboardPageTest -->
     </classes>

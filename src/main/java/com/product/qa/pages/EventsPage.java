@@ -48,6 +48,40 @@ public class EventsPage extends TestBase {
 	@FindBy(xpath = "//div[@class='blog-info']//a[text()='View']")
 	WebElement ViewLink;
 	
+	@FindBy(xpath="//a[@class='blue-btn'][1]")
+	WebElement viewBtn;
+	
+	@FindBy(xpath="//a[@xpath='1']")
+	WebElement eventName;
+	
+	public void test() throws InterruptedException
+	{
+		viewBtn.click();
+		Thread.sleep(3000);
+		String EventName=eventName.getText();
+		String  Btntext=subscribeUnsubscribeBtn.getText();
+		if(Btntext.equals("Subscribe"))
+		{
+	// Subscribing the event
+			subscribeUnsubscribeBtn.click();
+			Thread.sleep(5000);
+			logger.info("-----------Click on subscribe button-------------");
+			Yesbtn.click();
+			logger.info("-----------Click on yes button-------------");
+			System.out.println("Event Subscribed");
+			Thread.sleep(5000);
+			//Checking subscribed event in MYEvent
+			//Profile.click();
+	
+		
+		
+		
+		}
+		
+	}
+	
+	
+	
 	public EventsPage()
 	{
 		//Initializing WebElements
