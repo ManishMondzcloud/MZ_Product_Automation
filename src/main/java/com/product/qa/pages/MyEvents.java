@@ -43,6 +43,12 @@ public class MyEvents extends TestBase{
 	@FindBy(xpath="//div[contains(@class,'_loading_overlay_wrapper css-79elbk')]//li[6]//a[1]")
 	WebElement nextpage;
 	
+	@FindBy(xpath="//div[@class='h-100']//div[2]//div[1]//div[1]//div[2]//div[1]//h2[1]//a[1]")
+	WebElement FirstEvent;
+	
+	@FindBy(xpath=" //h1[@class='mb-2']//a")
+	WebElement EventTitle;
+	
 	public MyEvents()
 	{
 		//Initializing WebElements
@@ -58,14 +64,18 @@ public class MyEvents extends TestBase{
 		
 		Thread.sleep(5000);
 		
-		WebElement elementA1=nextpage;
-		Actions actions = new Actions(driver);
-		actions.moveToElement(elementA1).click().build().perform();
-		logger.info("-----------Click on the next Page-------------");
-		Thread.sleep(7000);
-		ReactjsEvent.click();
-		logger.info("-----------open the ReactJS event-------------");
+		 WebElement elementa1 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+		 JavascriptExecutor executora1 = (JavascriptExecutor)driver;
+		 executor.executeScript("arguments[0].click();",elementa1);
+		 
+		
+		
+		//FirstEvent.click();
 		Thread.sleep(5000);
+		logger.info("-----------Open the Event-------------");
+		//String eventTxt=EventTitle.getText();
+		Thread.sleep(7000);
+		
 		String  Btntext=subscribeUnsubscribeBtn.getText();
 		if(Btntext.equals("Subscribe"))
 		{
@@ -77,6 +87,7 @@ public class MyEvents extends TestBase{
 			logger.info("-----------Click on yes button-------------");
 			System.out.println("Event Subscribed");
 			Thread.sleep(5000);
+			logger.info("-----------Event Subscribed-------------");
 			
    //Checking subscribed event in MYEvent
 			//Profile.click();
@@ -89,8 +100,9 @@ public class MyEvents extends TestBase{
 			Myevents.click();
 			logger.info("-----------Click on the My Events-------------");
 			Thread.sleep(5000);
+			
 			ReactjsEvent.isDisplayed();
-			logger.info("-----------ReactJS event is display in my events-------------");
+			logger.info("-----------Event is display in my events-------------");
 			System.out.println("Subscribed event is displayed in MyEvent");
 			
 	//Unsubscribing the subscribe event 
@@ -100,11 +112,12 @@ public class MyEvents extends TestBase{
 			executor.executeScript("arguments[0].click();",element2);
 			logger.info("-----------Click on the My Event-------------");
 			
-			Thread.sleep(5000);
-			nextpage.click();
 			Thread.sleep(3000);
-			ReactjsEvent.click();
-			logger.info("-----------Open the Reactjs Event -------------");
+			
+			 WebElement elementa2 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+			 JavascriptExecutor executora2 = (JavascriptExecutor)driver;
+			 executor.executeScript("arguments[0].click();",elementa2);
+			logger.info("-----------Open the Event -------------");
 			Thread.sleep(5000);
 			subscribeUnsubscribeBtn.click();
 			logger.info("-----------Click on the unsubscribe button-------------");
@@ -112,6 +125,7 @@ public class MyEvents extends TestBase{
 			logger.info("-----------Click on the yes button-------------");
 			Thread.sleep(5000);
 			System.out.println("Event is unsubscribed successful");
+			logger.info("-----------Event is Unsubscribed-------------");
 			
 	//Check Unsubscribe event is removed from myEvent
 			
@@ -154,7 +168,7 @@ public class MyEvents extends TestBase{
 			logger.info("-----------Click on the My Events-------------");
 			Thread.sleep(5000);
 			ReactjsEvent.isDisplayed();
-			logger.info("-----------Open the ReactJS event-------------");
+			logger.info("-----------Subscribed event is displayed in My event-------------");
 			System.out.println("Subscribed event is displayed in MyEvent");
 			
 	//Unsubscribe the subscribed event
@@ -164,9 +178,10 @@ public class MyEvents extends TestBase{
 			executor.executeScript("arguments[0].click();",element5);
 			logger.info("-----------Click on the Event Tab-------------");
 			Thread.sleep(5000);
-			nextpage.click();
-			Thread.sleep(3000);
-			ReactjsEvent.click();
+		
+			 WebElement elementa3 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+			 JavascriptExecutor executora3 = (JavascriptExecutor)driver;
+			 executor.executeScript("arguments[0].click();",elementa3);
 			logger.info("-----------Open ReactJS event-------------");
 			Thread.sleep(5000);
 			subscribeUnsubscribeBtn.click();
@@ -175,6 +190,7 @@ public class MyEvents extends TestBase{
 			logger.info("-----------Click on the Yes button-------------");
 			Thread.sleep(5000);
 			System.out.println("Event is unsubscribed successful");
+			logger.info("-----------Event is unsubscribed-------------");
 			
 	//Checking unsubscribe event is removed from MyEvents
 			//Profile.click();
@@ -206,9 +222,10 @@ public class MyEvents extends TestBase{
 			executor.executeScript("arguments[0].click();",element7);
 			logger.info("-----------Click on the My Events-------------");
 			Thread.sleep(3000);
-			nextpage.click();
 			Thread.sleep(3000);
-			ReactjsEvent.click();
+			 WebElement elementa4 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+			 JavascriptExecutor executora4 = (JavascriptExecutor)driver;
+			 executor.executeScript("arguments[0].click();",elementa4);
 			logger.info("-----------Open the ReactJS event-------------");
 			Thread.sleep(3000);
 			String  Btntext1=subscribeUnsubscribeBtn.getText();
@@ -221,6 +238,7 @@ public class MyEvents extends TestBase{
 				logger.info("-----------Click on the Yes Button-------------");
 				System.out.println("Event Subscribed");
 				Thread.sleep(2000);
+				logger.info("-----------Event is subscribed-------------");
 			}
 			else
 			{

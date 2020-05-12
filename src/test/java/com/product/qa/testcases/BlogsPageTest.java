@@ -47,12 +47,12 @@ public class BlogsPageTest extends TestBase
     {
     	blog.verifyReadMoreBtn();
     }
-	@Test(priority = 4,enabled = true)
+	@Test(priority = 4,enabled = false)//related course removed from demo website
     public void relatedCourseOpenTest() throws InterruptedException, AWTException
     {
     	blog.verifyRelatedCourseOpen();
     }
-	@Test(priority = 5,enabled = true)
+	@Test(priority = 5,enabled = false)//related course event from demo website
     public void relatedEventsOpenTest() throws InterruptedException
     {
     	blog.verifyRelatedEventsOpen();

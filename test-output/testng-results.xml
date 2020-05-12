@@ -1,49 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="113634" started-at="2020-05-07T09:20:04Z" finished-at="2020-05-07T09:21:57Z">
+  <suite name="Default suite" duration-ms="208582" started-at="2020-05-12T16:39:29Z" finished-at="2020-05-12T16:42:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="113634" started-at="2020-05-07T09:20:04Z" finished-at="2020-05-07T09:21:57Z">
-      <class name="com.product.qa.testcases.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="setUp" is-config="true" duration-ms="36877" started-at="2020-05-07T14:50:04Z" finished-at="2020-05-07T14:50:41Z">
+    <test name="Default test" duration-ms="208582" started-at="2020-05-12T16:39:29Z" finished-at="2020-05-12T16:42:58Z">
+      <class name="com.product.qa.testcases.MyProfileTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="setUp" is-config="true" duration-ms="74431" started-at="2020-05-12T22:09:29Z" finished-at="2020-05-12T22:10:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyHomePageTitleTest()[pri:1, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="VerifyHomePageTitleTest" duration-ms="7020" started-at="2020-05-07T14:50:41Z" finished-at="2020-05-07T14:50:48Z">
+        <test-method status="PASS" signature="ValidateUpdateProfileTest()[pri:3, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="ValidateUpdateProfileTest" duration-ms="52762" started-at="2020-05-12T22:10:44Z" finished-at="2020-05-12T22:11:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyHomePageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="tearDown" is-config="true" duration-ms="641" started-at="2020-05-07T14:50:48Z" finished-at="2020-05-07T14:50:48Z">
+        </test-method> <!-- ValidateUpdateProfileTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="tearDown" is-config="true" duration-ms="1998" started-at="2020-05-12T22:11:37Z" finished-at="2020-05-12T22:11:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="setUp" is-config="true" duration-ms="32544" started-at="2020-05-07T14:50:48Z" finished-at="2020-05-07T14:51:21Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="setUp" is-config="true" duration-ms="67661" started-at="2020-05-12T22:11:39Z" finished-at="2020-05-12T22:12:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyMzLogotest()[pri:2, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="VerifyMzLogotest" duration-ms="5105" started-at="2020-05-07T14:51:21Z" finished-at="2020-05-07T14:51:26Z">
+        <test-method status="PASS" signature="ValidateRemoveImageTest()[pri:4, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="ValidateRemoveImageTest" duration-ms="10606" started-at="2020-05-12T22:12:46Z" finished-at="2020-05-12T22:12:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyMzLogotest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="tearDown" is-config="true" duration-ms="616" started-at="2020-05-07T14:51:26Z" finished-at="2020-05-07T14:51:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="setUp" is-config="true" duration-ms="30030" started-at="2020-05-07T14:51:27Z" finished-at="2020-05-07T14:51:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="VerifyCoursesLinkTest()[pri:3, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="VerifyCoursesLinkTest" duration-ms="69" started-at="2020-05-07T14:51:57Z" finished-at="2020-05-07T14:51:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- VerifyCoursesLinkTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.HomePageTest@63753b6d]" name="tearDown" is-config="true" duration-ms="646" started-at="2020-05-07T14:51:57Z" finished-at="2020-05-07T14:51:57Z">
+        </test-method> <!-- ValidateRemoveImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="tearDown" is-config="true" duration-ms="1066" started-at="2020-05-12T22:12:57Z" finished-at="2020-05-12T22:12:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.product.qa.testcases.HomePageTest -->
+      </class> <!-- com.product.qa.testcases.MyProfileTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

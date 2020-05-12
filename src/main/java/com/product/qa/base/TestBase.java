@@ -80,12 +80,12 @@ public class TestBase
 			
 			
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("headless").setHeadless(true);
-	        options.addArguments("window-size=1920x1080","--disable-gpu","--ignore-certificate-errors", "--silent");
-	        options.addArguments("--disable-features=VizDisplayCompositor");
+			//options.addArguments("headless").setHeadless(true);
+	       // options.addArguments("window-size=1920x1080","--disable-gpu","--ignore-certificate-errors", "--silent");
+	       // options.addArguments("--disable-features=VizDisplayCompositor");
 	       
-	        options.addArguments("--disable-dev-shm-usage");
-	        options.addArguments("--no-sandbox");
+	       // options.addArguments("--disable-dev-shm-usage");
+	       // options.addArguments("--no-sandbox");
 			
 			
 			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
@@ -94,7 +94,7 @@ public class TestBase
 			//ChromeOptions options = new ChromeOptions();
 			//options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
 			//		"--ignore-certificate-errors", "--silent");
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 
 		} else if (browserName.equals("edge")) {
 			// Set the path for EdgeDriver

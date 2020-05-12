@@ -65,7 +65,7 @@ public class CoursesPage extends TestBase {
 	
 	
 	public CoursesPage ValidateFilterLinks() throws InterruptedException {
-		  List<WebElement>  FilterLinks = driver.findElements(By.xpath("//div[@id='accordion']//li//a"));
+		  List<WebElement>  FilterLinks = driver.findElements(By.xpath("//div[@class='section-title']/following::h2[text()='Filters'][2]"));  
 		  System.out.println(FilterLinks.size());
 		
 		  for(int i=8; i<FilterLinks.size();i++) {

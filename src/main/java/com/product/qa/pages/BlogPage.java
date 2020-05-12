@@ -72,7 +72,7 @@ public class BlogPage extends TestBase{
 	@FindBy(xpath="//button[text()='No']")
     WebElement NoBtnDoyouWantToEdit;
    
-	@FindBy(xpath="//div[@class='5ea5474dbb352818dc762b7c']//button[2]")
+	@FindBy(xpath="//div[@class='_loading_overlay_wrapper css-79elbk']//button[2]")
 	WebElement DeleteComment;
 	@FindBy(xpath="//button[@class='btn-danger btn btn-secondary' and text()='Delete']")
 	WebElement DoyouWantToDeleteYesBtn;

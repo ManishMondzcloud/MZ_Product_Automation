@@ -64,7 +64,7 @@ public class HomePage extends TestBase {
 	   public void clickOnProfile()
 	   {
 		   //Profile.click();
-		   WebElement element = driver.findElement(By.xpath("//li[@class='nav-item dropdown desktop-search']/a[@id=\"userDropdown\"]/span[text()='SA']"));
+		   WebElement element = driver.findElement(By.xpath("//li[@class='nav-item dropdown desktop-search']//a[@id='userDropdown'][1][@role='button']"));//li[@class='nav-item dropdown desktop-search']/a[@id=\"userDropdown\"]/span[text()='SA']"));
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();",element);
 			 logger.info("-----------click on Profile-------------");

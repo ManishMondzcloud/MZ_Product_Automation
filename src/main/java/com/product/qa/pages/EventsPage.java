@@ -73,9 +73,6 @@ public class EventsPage extends TestBase {
 			//Checking subscribed event in MYEvent
 			//Profile.click();
 	
-		
-		
-		
 		}
 		
 	}
@@ -118,179 +115,202 @@ public class EventsPage extends TestBase {
 		
 		}
 	
-	
-	
-	public void VerfyEventSubscribe() throws InterruptedException
-	{
-		//EventsTab.click();
-		 WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
-		 JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();",element);
-		logger.info("-----------Click on the event tab-------------");
-		Thread.sleep(5000);
-		ReactjsEvent.click();
-		logger.info("-----------Click on React js event tab-------------");
-		Thread.sleep(5000);
-		String  Btntext=subscribeUnsubscribeBtn.getText();
-		if(Btntext.equals("Subscribe"))
-		{
+
 	// Subscribing the event
-			subscribeUnsubscribeBtn.click();
-			Thread.sleep(5000);
-			logger.info("-----------Click on subscribe button-------------");
-			Yesbtn.click();
-			logger.info("-----------Click on yes button-------------");
-			System.out.println("Event Subscribed");
-			Thread.sleep(5000);
-			
-   //Checking subscribed event in MYEvent
-			//Profile.click();
-			WebElement element1 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
-			JavascriptExecutor executor1 = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element1);
-			logger.info("-----------Click on the Profile-------------");
-			Thread.sleep(5000);
-			Myevents.click();
-			logger.info("-----------Click on My Events-------------");
-			Thread.sleep(5000);
-			ReactjsEvent.isDisplayed();
-			logger.info("-----------Event is dispplayed in my events-------------");
-			System.out.println("Subscribed event is displayed in MyEvent");
-			
-	//Unsubscribing the subscribe event 
-			//EventsTab.click();
-			 WebElement element2 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
-			 JavascriptExecutor executor2 = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element2);
-			logger.info("-----------Click on the event tab-------------");
-			Thread.sleep(5000);
-			ReactjsEvent.click();
-			logger.info("-----------Click on the ReactJS events-------------");
-			Thread.sleep(5000);
-			subscribeUnsubscribeBtn.click();
-			logger.info("-----------Click on the ReactJS events-------------");
-			Yesbtn.click();
-			logger.info("-----------Click on yes button-------------");
-			Thread.sleep(5000);
-			System.out.println("Event is unsubscribed successful");
-			
-	//Check Unsubscribe event is removed from myEvent
-			
-			
-			//Profile.click();
-			
-			WebElement element3 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
-			JavascriptExecutor executor3= (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element3);
-			logger.info("-----------Click on the profile-------------");
-			Thread.sleep(5000);
-			Myevents.click();
-			logger.info("-----------Click on the Myevents-------------");
-
-			Thread.sleep(5000);
-		   // String m1=ReactjsEvent.getText();
-			if(driver.getPageSource().contains("React JSS"))
+			public void VerfyEventSubscribe() throws InterruptedException
 			{
-				System.out.println("Event is not removed from my event. Please check ");
-				logger.info("-----------Events is not removed from My events-------------");
-
-			}
-			else
-			{
-				System.out.println("Event is successfully removed from MyEvent");
-				logger.info("-----------Events is removed from My events-------------");
-
-			}
+				//EventsTab.click();
+				 WebElement element = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+				 JavascriptExecutor executor = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element);
+				logger.info("-----------Click on the 'Event Tab'-------------");
+				
+				Thread.sleep(5000);
+				
+				 WebElement elementa1 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+				 JavascriptExecutor executora1 = (JavascriptExecutor)driver;
+				 executor.executeScript("arguments[0].click();",elementa1);
+				 
+				
+				
+				//FirstEvent.click();
+				Thread.sleep(5000);
+				logger.info("-----------Open the Event-------------");
+				//String eventTxt=EventTitle.getText();
+				Thread.sleep(7000);
+				
+				String  Btntext=subscribeUnsubscribeBtn.getText();
+				if(Btntext.equals("Subscribe"))
+				{
+			// Subscribing the event
+					subscribeUnsubscribeBtn.click();
+					logger.info("-----------Click on subscribe button-------------");
+					Thread.sleep(5000);
+					Yesbtn.click();
+					logger.info("-----------Click on yes button-------------");
+					System.out.println("Event Subscribed");
+					Thread.sleep(5000);
+					logger.info("-----------Event Subscribed-------------");
+					
+		   //Checking subscribed event in MYEvent
+					//Profile.click();
+					WebElement element1 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+					JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+					executor.executeScript("arguments[0].click();",element1);
+					logger.info("-----------Click on the profile-------------");
+					
+					Thread.sleep(5000);
+					Myevents.click();
+					logger.info("-----------Click on the My Events-------------");
+					Thread.sleep(5000);
+					
+					ReactjsEvent.isDisplayed();
+					logger.info("-----------Event is display in my events-------------");
+					System.out.println("Subscribed event is displayed in MyEvent");
+					
+			//Unsubscribing the subscribe event 
+					//EventsTab.click();
+					 WebElement element2 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+					 JavascriptExecutor executor2 = (JavascriptExecutor)driver;
+					executor.executeScript("arguments[0].click();",element2);
+					logger.info("-----------Click on the My Event-------------");
+					
+					Thread.sleep(3000);
+					
+					 WebElement elementa2 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+					 JavascriptExecutor executora2 = (JavascriptExecutor)driver;
+					 executor.executeScript("arguments[0].click();",elementa2);
+					logger.info("-----------Open the Event -------------");
+					Thread.sleep(5000);
+					subscribeUnsubscribeBtn.click();
+					logger.info("-----------Click on the unsubscribe button-------------");
+					Yesbtn.click();
+					logger.info("-----------Click on the yes button-------------");
+					Thread.sleep(5000);
+					System.out.println("Event is unsubscribed successful");
+					logger.info("-----------Event is Unsubscribed-------------");
+					
+			//Check Unsubscribe event is removed from myEvent
+					
+					
+					//Profile.click();
+					
+					WebElement element3 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+					JavascriptExecutor executor3= (JavascriptExecutor)driver;
+					executor.executeScript("arguments[0].click();",element3);
+					logger.info("-----------Click on the Profile-------------");
+					
+					Thread.sleep(5000);
+					Myevents.click();
+					logger.info("-----------Click on the My Events-------------");
+					Thread.sleep(5000);
+				   // String m1=ReactjsEvent.getText();
+					if(driver.getPageSource().contains("React JSS"))
+					{
+						System.out.println("Event is not removed from my event. Please check ");
+						logger.info("-----------Event is not removed from my event-------------");
+					}
+					else
+					{
+						System.out.println("Event is successfully removed from MyEvent");
+						logger.info("-----------Event is removed from My Events-------------");
+					}
+					
+					
+				}
+		  else
+				{
+			//Checking subscribed event in MyEvents
+					//Profile.click();
+			    WebElement element4 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+				JavascriptExecutor executor4= (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",element4);
+				logger.info("-----------Click on the Profile-------------");
+					Thread.sleep(5000);
+					Myevents.click();
+					logger.info("-----------Click on the My Events-------------");
+					Thread.sleep(5000);
+					ReactjsEvent.isDisplayed();
+					logger.info("-----------Subscribed event is displayed in My event-------------");
+					System.out.println("Subscribed event is displayed in MyEvent");
+					
+			//Unsubscribe the subscribed event
+					//EventsTab.click();
+					 WebElement element5 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+					 JavascriptExecutor executor5 = (JavascriptExecutor)driver;
+					executor.executeScript("arguments[0].click();",element5);
+					logger.info("-----------Click on the Event Tab-------------");
+					Thread.sleep(5000);
+				
+					 WebElement elementa3 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+					 JavascriptExecutor executora3 = (JavascriptExecutor)driver;
+					 executor.executeScript("arguments[0].click();",elementa3);
+					logger.info("-----------Open ReactJS event-------------");
+					Thread.sleep(5000);
+					subscribeUnsubscribeBtn.click();
+					logger.info("-----------Click on the Unsubscribe button-------------");
+					Yesbtn.click();
+					logger.info("-----------Click on the Yes button-------------");
+					Thread.sleep(5000);
+					System.out.println("Event is unsubscribed successful");
+					logger.info("-----------Event is unsubscribed-------------");
+					
+			//Checking unsubscribe event is removed from MyEvents
+					//Profile.click();
+					WebElement element6 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
+					JavascriptExecutor executor6= (JavascriptExecutor)driver;
+					executor.executeScript("arguments[0].click();",element6);
+					logger.info("-----------Click on the Profile-------------");
+					
+					Thread.sleep(5000);
+					Myevents.click();
+					logger.info("-----------Click on the My Events-------------");
+					Thread.sleep(5000);
+				   // String m1=ReactjsEvent.getText();
+					if(driver.getPageSource().contains("React JSS"))
+					{
+						System.out.println("Event is not removed from my event. Please check ");
+						logger.info("-----------ReactJS event is not removed from My Event-------------");
+					}
+					else
+					{
+						System.out.println("Event is successfully removed from MyEvent");
+						logger.info("-----------ReactJS event is removed from My Event-------------");
+					}
+					
+			 //Subscribe the event
+					//EventsTab.click();
+					 WebElement element7 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
+					 JavascriptExecutor executor7 = (JavascriptExecutor)driver;
+					executor.executeScript("arguments[0].click();",element7);
+					logger.info("-----------Click on the My Events-------------");
+					Thread.sleep(3000);
+					Thread.sleep(3000);
+					 WebElement elementa4 = driver.findElement(By.xpath("//a[contains(text(),'React JS')]"));
+					 JavascriptExecutor executora4 = (JavascriptExecutor)driver;
+					 executor.executeScript("arguments[0].click();",elementa4);
+					logger.info("-----------Open the ReactJS event-------------");
+					Thread.sleep(3000);
+					String  Btntext1=subscribeUnsubscribeBtn.getText();
+					if(Btntext1.equals("Subscribe"))
+					{
+						subscribeUnsubscribeBtn.click();
+						logger.info("-----------Click on the Subscribe button-------------");
+						Thread.sleep(3000);
+						Yesbtn.click();
+						logger.info("-----------Click on the Yes Button-------------");
+						System.out.println("Event Subscribed");
+						Thread.sleep(2000);
+						logger.info("-----------Event is subscribed-------------");
+					}
+					else
+					{
+						System.out.println("Event is not subscribed Please check");
+						logger.info("-----------Event is not subscribed-------------");
+					}
 			
-			
+				
+			}
+
 		}
-  else
-		{
-	//Checking subscribed event in MyEvents
-			//Profile.click();
-	    WebElement element4 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
-		JavascriptExecutor executor4= (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();",element4);
-		logger.info("-----------Click on the Profile-------------");
-			Thread.sleep(5000);
-			Myevents.click();
-			logger.info("-----------Click on My events-------------");
-			Thread.sleep(5000);
-			ReactjsEvent.isDisplayed();
-			logger.info("-----------Subscribe event is displayed in MyEvents-------------");
-
-			System.out.println("Subscribed event is displayed in MyEvent");
-			
-	//Unsubscribe the subscribed event
-			//EventsTab.click();
-			 WebElement element5 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
-			 JavascriptExecutor executor5 = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element5);
-			logger.info("-----------Click on event tab-------------");
-            Thread.sleep(5000);
-			ReactjsEvent.click();
-			logger.info("-----------Click on the ReactJs event-------------");
-			Thread.sleep(5000);
-			subscribeUnsubscribeBtn.click();
-			logger.info("-----------Click on Unsubscribe button-------------");
-			Yesbtn.click();
-			logger.info("-----------Click on Yes button-------------");
-			Thread.sleep(5000);
-			System.out.println("Event is unsubscribed successful");
-			
-	//Checking unsubscribe event is removed from MyEvents
-			//Profile.click();
-			WebElement element6 = driver.findElement(By.xpath("//div[@id='navbarText']//a[@id='userDropdown']/span"));
-			JavascriptExecutor executor6= (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element6);
-			logger.info("-----------Click on MyProfile-------------");
-			
-			Thread.sleep(5000);
-			Myevents.click();
-			logger.info("-----------Click on My Events-------------");
-			Thread.sleep(5000);
-		   // String m1=ReactjsEvent.getText();
-			if(driver.getPageSource().contains("React JSS"))
-			{
-				System.out.println("Event is not removed from my event. Please check ");
-				logger.info("-----------Events is not removed from My Events-------------");
 			}
-			else
-			{
-				System.out.println("Event is successfully removed from MyEvent");
-				logger.info("-----------Events is removed from My Events-------------");
-			}
-			
-	 //Subscribe the event
-			//EventsTab.click();
-			 WebElement element7 = driver.findElement(By.xpath("//a[@class='nav-link'][contains(text(),'Events')]"));
-			 JavascriptExecutor executor7 = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element7);
-			logger.info("-----------Click on events tab-------------");
-			Thread.sleep(3000);
-			ReactjsEvent.click();
-			logger.info("-----------Click on the react js events-------------");
-			Thread.sleep(3000);
-			String  Btntext1=subscribeUnsubscribeBtn.getText();
-			if(Btntext1.equals("Subscribe"))
-			{
-				subscribeUnsubscribeBtn.click();
-				logger.info("-----------Click on subscribe button-------------");
-				Thread.sleep(3000);
-				Yesbtn.click();
-				logger.info("-----------Events subscribed-------------");
-				System.out.println("Event Subscribed");
-				Thread.sleep(2000);
-			}
-			else
-			{
-				System.out.println("Event is not subscribed Please check");
-				logger.info("-----------Event is not subscribed please check-------------");
-			}
-	
-		
-	}
-
-
-	}
-	}
