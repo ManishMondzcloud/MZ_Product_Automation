@@ -39,7 +39,7 @@ public class TestBase
 			// By using fileInputStream we have to give Path of config.properties file
 			// fileInputStream making a Streaming between your java code and
 			// config.properties file.
-			FileInputStream ip = new FileInputStream("src\\main\\java\\com\\product\\qa\\config\\config.properties");
+			FileInputStream ip = new FileInputStream("src//main//java//com//product//qa//config//config.properties");
 			try {
 				// Load all the properties which are available in config.properties file.
 				prop.load(ip);
