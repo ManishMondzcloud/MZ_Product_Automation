@@ -88,7 +88,7 @@ public class TestBase
 	        //options.addArguments("--no-sandbox");
 			
 			
-			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "driver//chromedriver.exe");
 			// Create object for ChromeDriver
 
 			driver = new ChromeDriver();
