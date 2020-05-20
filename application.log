@@ -1,17 +1,36 @@
-2020-05-12 22:09:53,161  INFO [main] LoginPage:61 - ---------Send User Name -------------
-2020-05-12 22:09:53,516  INFO [main] LoginPage:63 - ---------Send Password -------------
-2020-05-12 22:09:55,428  INFO [main] LoginPage:65 - ---------Click on login button-------------
-2020-05-12 22:10:28,135  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-05-12 22:10:35,377  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
-2020-05-12 22:10:44,640  INFO [main] MyProfile:136 - -----------Click on Edit button-------------
-2020-05-12 22:10:49,951  INFO [main] MyProfile:142 - -----------Click on the state-------------
-2020-05-12 22:10:50,696  INFO [main] MyProfile:151 - -----------State is selected-------------
-2020-05-12 22:10:51,008  INFO [main] MyProfile:158 - -----------Click on the city-------------
-2020-05-12 22:10:58,984  INFO [main] MyProfile:172 - -----------Click on the choose image button -------------
-2020-05-12 22:11:57,107  INFO [main] LoginPage:61 - ---------Send User Name -------------
-2020-05-12 22:11:57,293  INFO [main] LoginPage:63 - ---------Send Password -------------
-2020-05-12 22:11:58,047  INFO [main] LoginPage:65 - ---------Click on login button-------------
-2020-05-12 22:12:30,722  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-05-12 22:12:37,818  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
-2020-05-12 22:12:47,204  INFO [main] MyProfile:207 - -----------Click On the Edit button-------------
-2020-05-12 22:12:52,425  INFO [main] MyProfile:210 - -----------Click on the removed image button-------------
+2020-05-20 13:03:58,514  INFO [main] LoginPage:61 - ---------Send User Name -------------
+2020-05-20 13:03:58,656  INFO [main] LoginPage:63 - ---------Send Password -------------
+2020-05-20 13:03:58,813  INFO [main] LoginPage:65 - ---------Click on login button-------------
+2020-05-20 13:04:47,226  INFO [main] BlogPage:172 - -----------Click on Blogs link-------------
+2020-05-20 13:05:07,813  INFO [main] BlogPage:175 - -----------Click on Read More-------------
+2020-05-20 13:05:21,951  INFO [main] BlogPage:184 - -----------Click on Android development tag-------------
+2020-05-20 13:05:57,740  INFO [main] LoginPage:61 - ---------Send User Name -------------
+2020-05-20 13:05:58,007  INFO [main] LoginPage:63 - ---------Send Password -------------
+2020-05-20 13:05:58,588  INFO [main] LoginPage:65 - ---------Click on login button-------------
+2020-05-20 13:06:45,090  INFO [main] BlogPage:195 - -----------Click on the Blogs link-------------
+2020-05-20 13:06:55,030  INFO [main] BlogPage:198 - -----------open the blog -------------
+2020-05-20 13:06:58,341  INFO [main] BlogPage:201 - -----------Enter Text in comment box-------------
+2020-05-20 13:07:00,531  INFO [main] BlogPage:204 - -----------Click on the subit button-------------
+2020-05-20 13:07:23,686  INFO [main] LoginPage:61 - ---------Send User Name -------------
+2020-05-20 13:07:23,863  INFO [main] LoginPage:63 - ---------Send Password -------------
+2020-05-20 13:07:24,000  INFO [main] LoginPage:65 - ---------Click on login button-------------
+2020-05-20 13:08:10,513  INFO [main] BlogPage:214 - -----------Click on the Blogs link-------------
+2020-05-20 13:08:30,740  INFO [main] BlogPage:218 - -----------Open the blog-------------
+2020-05-20 13:08:35,806  INFO [main] BlogPage:223 - -----------Click on Edit comment button-------------
+2020-05-20 13:08:41,034  INFO [main] BlogPage:231 - -----------Enter Edited text-------------
+2020-05-20 13:08:46,179  INFO [main] BlogPage:234 - -----------Enter Edited text-------------
+2020-05-20 13:09:18,582  INFO [main] LoginPage:61 - ---------Send User Name -------------
+2020-05-20 13:09:18,705  INFO [main] LoginPage:63 - ---------Send Password -------------
+2020-05-20 13:09:18,819  INFO [main] LoginPage:65 - ---------Click on login button-------------
+2020-05-20 13:10:05,267  INFO [main] BlogPage:246 - -----------Click on Blogs link-------------
+2020-05-20 13:10:10,416  INFO [main] BlogPage:250 - -----------Click on Read more button-------------
+2020-05-20 13:10:15,655  INFO [main] BlogPage:255 - -----------Click on delete comment-------------
+2020-05-20 13:10:20,755  INFO [main] BlogPage:264 - -----------Click on yes button-------------
+2020-05-20 13:10:43,730  INFO [main] LoginPage:61 - ---------Send User Name -------------
+2020-05-20 13:10:44,144  INFO [main] LoginPage:63 - ---------Send Password -------------
+2020-05-20 13:10:44,271  INFO [main] LoginPage:65 - ---------Click on login button-------------
+2020-05-20 13:11:31,123  INFO [main] BlogPage:277 - -----------Click on Blogs link-------------
+2020-05-20 13:11:40,702  INFO [main] BlogPage:280 - -----------Open the Blog-------------
+2020-05-20 13:11:44,021  INFO [main] BlogPage:283 - -----------send abusing words in text box-------------
+2020-05-20 13:11:46,154  INFO [main] BlogPage:286 - -----------click on the submit button-------------
+2020-05-20 13:11:48,382  INFO [main] BlogPage:290 - -----------compare the warning message-------------

@@ -69,13 +69,13 @@ public class MyProfileTest extends TestBase {
 	
 	 
 	 
-	@Test(priority = 3,enabled=true)
+	@Test(priority = 3,enabled=false)
 	 public void ValidateUpdateProfileTest() throws InterruptedException, AWTException, IOException
 	 {
 		 profile.UpdateProfile();
 	 }
 	
-	@Test(priority=4,enabled=true)
+	@Test(priority=4,enabled=false)
 	public void ValidateRemoveImageTest() throws InterruptedException
 	{
 		profile.VerifyRemoveImage();

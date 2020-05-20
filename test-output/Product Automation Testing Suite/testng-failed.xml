@@ -4,17 +4,42 @@
   <listeners>
     <listener class-name="com.product.qa.extentReportListener.Listeners"/>
   </listeners>
-  <test name="MZ Prduct Page Test Cases(failed)">
+  <test name="Home Page Test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.DashboardPageTest">
+      <class name="com.product.qa.testcases.HomePageTest">
         <methods>
-          <include name="courseCountTest"/>
-          <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="BlogsCountTest"/>
-          <include name="EventsCountTest"/>
+          <include name="setUp"/>
+          <include name="VerifyMzLogotest"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.DashboardPageTest -->
+      </class> <!-- com.product.qa.testcases.HomePageTest -->
     </classes>
-  </test> <!-- MZ Prduct Page Test Cases(failed) -->
+  </test> <!-- Home Page Test(failed) -->
+  <test name="My Profile Test(failed)">
+    <classes>
+      <class name="com.product.qa.testcases.MyProfileTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="ValidateRemoveImageTest"/>
+          <include name="tearDown"/>
+          <include name="verifyBesicDetailTest"/>
+        </methods>
+      </class> <!-- com.product.qa.testcases.MyProfileTest -->
+    </classes>
+  </test> <!-- My Profile Test(failed) -->
+  <test name="Blogs Page Test(failed)">
+    <classes>
+      <class name="com.product.qa.testcases.BlogsPageTest">
+        <methods>
+          <include name="EditCommentTest"/>
+          <include name="setUp"/>
+          <include name="deleteCommentTest"/>
+          <include name="relatedTagsOpenTest"/>
+          <include name="addingCommentTest"/>
+          <include name="tearDown"/>
+          <include name="AbusingWordTest"/>
+        </methods>
+      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
+    </classes>
+  </test> <!-- Blogs Page Test(failed) -->
 </suite> <!-- Failed suite [Product Automation Testing Suite] -->

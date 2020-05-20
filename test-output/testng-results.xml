@@ -1,37 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+<testng-results skipped="0" failed="0" ignored="5" total="10" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="208582" started-at="2020-05-12T16:39:29Z" finished-at="2020-05-12T16:42:58Z">
+  <suite name="Default suite" duration-ms="502791" started-at="2020-05-20T07:33:28Z" finished-at="2020-05-20T07:41:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="208582" started-at="2020-05-12T16:39:29Z" finished-at="2020-05-12T16:42:58Z">
-      <class name="com.product.qa.testcases.MyProfileTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="setUp" is-config="true" duration-ms="74431" started-at="2020-05-12T22:09:29Z" finished-at="2020-05-12T22:10:44Z">
+    <test name="Default test" duration-ms="502791" started-at="2020-05-20T07:33:28Z" finished-at="2020-05-20T07:41:51Z">
+      <class name="com.product.qa.testcases.BlogsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="78377" started-at="2020-05-20T13:03:28Z" finished-at="2020-05-20T13:04:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateUpdateProfileTest()[pri:3, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="ValidateUpdateProfileTest" duration-ms="52762" started-at="2020-05-12T22:10:44Z" finished-at="2020-05-12T22:11:37Z">
+        <test-method status="PASS" signature="relatedTagsOpenTest()[pri:6, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="relatedTagsOpenTest" duration-ms="44815" started-at="2020-05-20T13:04:47Z" finished-at="2020-05-20T13:05:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateUpdateProfileTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="tearDown" is-config="true" duration-ms="1998" started-at="2020-05-12T22:11:37Z" finished-at="2020-05-12T22:11:39Z">
+        </test-method> <!-- relatedTagsOpenTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="2319" started-at="2020-05-20T13:05:31Z" finished-at="2020-05-20T13:05:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="setUp" is-config="true" duration-ms="67661" started-at="2020-05-12T22:11:39Z" finished-at="2020-05-12T22:12:46Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="70712" started-at="2020-05-20T13:05:34Z" finished-at="2020-05-20T13:06:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ValidateRemoveImageTest()[pri:4, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="ValidateRemoveImageTest" duration-ms="10606" started-at="2020-05-12T22:12:46Z" finished-at="2020-05-12T22:12:57Z">
+        <test-method status="PASS" signature="addingCommentTest()[pri:7, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="addingCommentTest" duration-ms="17543" started-at="2020-05-20T13:06:44Z" finished-at="2020-05-20T13:07:02Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateRemoveImageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.MyProfileTest@63753b6d]" name="tearDown" is-config="true" duration-ms="1066" started-at="2020-05-12T22:12:57Z" finished-at="2020-05-12T22:12:58Z">
+        </test-method> <!-- addingCommentTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="926" started-at="2020-05-20T13:07:02Z" finished-at="2020-05-20T13:07:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.product.qa.testcases.MyProfileTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="66962" started-at="2020-05-20T13:07:03Z" finished-at="2020-05-20T13:08:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="EditCommentTest()[pri:8, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="EditCommentTest" duration-ms="40901" started-at="2020-05-20T13:08:10Z" finished-at="2020-05-20T13:08:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditCommentTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="902" started-at="2020-05-20T13:08:51Z" finished-at="2020-05-20T13:08:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="72930" started-at="2020-05-20T13:08:52Z" finished-at="2020-05-20T13:10:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="deleteCommentTest()[pri:9, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="deleteCommentTest" duration-ms="15595" started-at="2020-05-20T13:10:05Z" finished-at="2020-05-20T13:10:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCommentTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="824" started-at="2020-05-20T13:10:20Z" finished-at="2020-05-20T13:10:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="69454" started-at="2020-05-20T13:10:21Z" finished-at="2020-05-20T13:11:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="AbusingWordTest()[pri:10, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="AbusingWordTest" duration-ms="19345" started-at="2020-05-20T13:11:31Z" finished-at="2020-05-20T13:11:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AbusingWordTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.product.qa.testcases.BlogsPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="1111" started-at="2020-05-20T13:11:50Z" finished-at="2020-05-20T13:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

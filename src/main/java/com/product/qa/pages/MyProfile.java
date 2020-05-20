@@ -29,19 +29,19 @@ public class MyProfile extends TestBase{
 	@FindBy(xpath="//div[@id='navbarText']//ul//li//div//a[contains(text(),'My Profile')]")
 	WebElement MyProfileOption;
 	
-	@FindBy(xpath="//div[contains(text(),'Test Admin')]")
+	@FindBy(xpath="//div[contains(text(),'Super Administrator')]")
 	WebElement FullName;
 	
-	@FindBy(xpath="//div[contains(text(),'8833445555')]")
+	@FindBy(xpath="//div[contains(text(),'9143727472')]")
 	WebElement Phone;
 	
-	@FindBy(xpath="//div[@id='pills-home']//div//div//div//div[contains(text(),'admin@gmail.com')]")
+	@FindBy(xpath="//div[@class='col-lg-8'][contains(text(),'admin@gmail.com')]")
 	WebElement email;
 	
 	@FindBy(xpath="//div[@id='pills-tabContent']//div[2]//div[2]//div[2]")
 	WebElement location;
 	
-	@FindBy(xpath="//div[contains(text(),'MindZcloud Technologies')]")
+	@FindBy(xpath="//div[contains(text(),'Raisoni College')]")
 	WebElement college;
 	
 	@FindBy(xpath="//div[contains(text(),'Information Technology')]")
@@ -170,23 +170,11 @@ public class MyProfile extends TestBase{
 				
 				chooseimageBtn.click();
 				logger.info("-----------Click on the choose image button -------------");
-				
+				Thread.sleep(5000);
 				
 			//Uploading image
-				/*Robot r= new Robot();
-				r.setAutoDelay(5000);
-		
-				    
-				StringSelection s= new StringSelection("Images/img_1.jpg");
-				Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s,null); 
-				r.keyPress(KeyEvent.VK_CONTROL);
-				r.keyPress(KeyEvent.VK_V);
-				r.keyRelease(KeyEvent.VK_CONTROL);
-				r.keyRelease(KeyEvent.VK_V);
-				r.keyPress(KeyEvent.VK_ENTER);
-				Thread.sleep(5000);*/
 				
-				Runtime.getRuntime().exec("Images/UploadFile.exe");
+				Runtime.getRuntime().exec("driver/UploadFile.exe");
 				System.out.println("Profile Image Selected");
 				Thread.sleep(5000);
 				

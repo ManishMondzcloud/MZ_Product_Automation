@@ -67,7 +67,7 @@ public class LoginPage extends TestBase {
 		
 			
 			// Allowing the notification pop-up
-		/*  String MainWindow=driver.getWindowHandle();		
+		  String MainWindow=driver.getWindowHandle();		
 			
 	        // To handle all new opened window.				
 	            Set<String> s1=driver.getWindowHandles();		
@@ -100,7 +100,7 @@ public class LoginPage extends TestBase {
 	            driver.switchTo().window(MainWindow);	
 	            Thread.sleep(3000);
 				popUpAllow.click();
-				Thread.sleep(3000);  */  
+				Thread.sleep(3000);   
 				return new HomePage();
 		}
 }

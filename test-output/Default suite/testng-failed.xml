@@ -3,14 +3,16 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.MyProfileTest">
+      <class name="com.product.qa.testcases.BlogsPageTest">
         <methods>
+          <include name="EditCommentTest"/>
           <include name="setUp"/>
-          <include name="ValidateRemoveImageTest"/>
+          <include name="deleteCommentTest"/>
+          <include name="relatedTagsOpenTest"/>
           <include name="tearDown"/>
-          <include name="ValidateUpdateProfileTest"/>
+          <include name="AbusingWordTest"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.MyProfileTest -->
+      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

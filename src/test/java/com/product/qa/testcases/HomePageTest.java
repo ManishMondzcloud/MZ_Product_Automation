@@ -33,20 +33,20 @@ public class HomePageTest extends TestBase{
 		}
 	 
 	 
-	 @Test(priority=1)
+	 @Test(priority=1,enabled = true)
 	 public void VerifyHomePageTitleTest() throws InterruptedException {
 		 Thread.sleep(7000);
 		 String homepagetitle=homepage.VerifyHomepageTitle();
 		 Assert.assertEquals(homepagetitle,"MZ Training Portal - Dashboard", "Home Page Title is not Matched");
 	 }
 	 
-	 @Test(priority=2)
+	 @Test(priority=2,enabled=true)
 	 public void VerifyMzLogotest() throws InterruptedException {
 		 Thread.sleep(5000);
 		 Assert.assertTrue(homepage.VerifyMzLogo());
 	 }
 	 
-	 @Test(priority=3)
+	 @Test(priority=3,enabled=true)
 	 public void VerifyCoursesLinkTest() {
 		 coursespage=homepage.ClickOnCoursesLink();
 	 }

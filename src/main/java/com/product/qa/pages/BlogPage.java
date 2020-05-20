@@ -136,8 +136,8 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
-				ReadMorebtn.click();
-				logger.info("-----------Click on Read More button-------------");
+				AndroidAppDevelopmentBlogs.click();
+				logger.info("-----------Open the blog button-------------");
 				Thread.sleep(10000);
 				AndroidRelatedCourse.click();
 				logger.info("-----------Click on Android related course-------------");
@@ -153,8 +153,8 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
-				ReadMorebtn.click();
-				logger.info("-----------Click on Read More button-------------");
+				AndroidAppDevelopmentBlogs.click();
+				logger.info("-----------open the Blog button-------------");
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				js.executeScript("arguments[0].click();", JavaScriptRelaterEvent);
@@ -171,7 +171,7 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
-				ReadMorebtn.click();
+				AndroidAppDevelopmentBlogs.click();
 				logger.info("-----------Click on Read More-------------");
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
@@ -194,8 +194,8 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on the Blogs link-------------");
 				Thread.sleep(5000);
-				ReadMorebtn.click();
-				logger.info("-----------Click on Read More button -------------");
+				AndroidAppDevelopmentBlogs.click();
+				logger.info("-----------open the blog -------------");
 				Thread.sleep(3000);
 				Textbox.sendKeys("Test11");
 				logger.info("-----------Enter Text in comment box-------------");
@@ -214,8 +214,8 @@ public class BlogPage extends TestBase{
 				logger.info("-----------Click on the Blogs link-------------");
 				
 				Thread.sleep(5000);
-				ReadMorebtn.click();
-				logger.info("-----------Click on the Read More button-------------");
+				AndroidAppDevelopmentBlogs.click();
+				logger.info("-----------Open the blog-------------");
 				Thread.sleep(5000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
 				//js.executeScript("window.scrollBy(0,1000)");
@@ -276,8 +276,8 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(5000);
-				ReadMorebtn.click();
-				logger.info("-----------Click on Read More button-------------");
+				AndroidAppDevelopmentBlogs.click();
+				logger.info("-----------Open the Blog-------------");
 				Thread.sleep(3000);
 				Textbox.sendKeys("Fuck");
 				logger.info("-----------send abusing words in text box-------------");
