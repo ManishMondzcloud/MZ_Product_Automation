@@ -91,7 +91,7 @@ public class TestBase
 			 */
 			
 			
-			System.setProperty("webdriver.chrome.driver", "C://Users//Manish Patil//Documents//GitHub//MZ_Product_Automation//driver//chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "MZ//driver//chromedriver.exe");
 			// Create object for ChromeDriver
 
 			driver = new ChromeDriver();
