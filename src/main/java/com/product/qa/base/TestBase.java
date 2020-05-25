@@ -91,7 +91,7 @@ public class TestBase
 			 
 			
 			
-			System.setProperty("webdriver.chrome.driver", "driver/chromedriver.deb");
+			System.setProperty("webdriver.chrome.driver", "/var/lib/jenkins/plugins/chromedriver");
 			// Create object for ChromeDriver
 
 			driver = new ChromeDriver(options);
