@@ -38,7 +38,7 @@ public class TestUtil extends TestBase {
 
 	public static long PAGE_LOAD_TIMEOUT = 40;
 	public static long IMPICIT_WAIT = 15; 
-	static String test_Data="src\\main\\java\\com\\product\\qa\\testdata\\TestData2.xlsx";
+	static String test_Data="src/main/java/com/product/qa/testdata/TestData2.xlsx";
 	static Workbook book;
 	static Sheet sheet;
 	//static Workbook book1;
