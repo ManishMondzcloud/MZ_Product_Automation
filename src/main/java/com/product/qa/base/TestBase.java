@@ -1,8 +1,6 @@
  package com.product.qa.base;
 
 import java.awt.AWTException;
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -78,9 +76,6 @@ public class TestBase
             //Headless testing 
 			
 			
-			
-			
-			
 			  ChromeOptions options = new ChromeOptions();
 			  options.addArguments("headless").setHeadless(true);
 			  options.addArguments("window-size=1920x1080","--disable-gpu",
@@ -90,7 +85,6 @@ public class TestBase
 			  options.addArguments("--disable-dev-shm-usage");
 			  options.addArguments("--no-sandbox");
 			 
-			  options.addArguments("--remote-debugging-port=9222");
 			 
 			
 			
