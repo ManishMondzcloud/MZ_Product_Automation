@@ -84,6 +84,8 @@ public class TestBase
 			  
 			  options.addArguments("--disable-dev-shm-usage");
 			  options.addArguments("--no-sandbox");
+			  
+			  options.addArguments("--remote-debugging-port=9222");
 			 
 			 
 			
