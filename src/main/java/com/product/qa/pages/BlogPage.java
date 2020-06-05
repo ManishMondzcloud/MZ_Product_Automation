@@ -106,8 +106,13 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				
-				Thread.sleep(2000);
-				AndroidAppDevelopmentBlogs.click();
+				Thread.sleep(4000);
+				//AndroidAppDevelopmentBlogs.click();
+				WebElement elementB = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App Development')]"));
+				JavascriptExecutor executorB = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",elementB);
+				
+				
 				logger.info("-----------Android appdevelopment blog open-------------");
 				Thread.sleep(3000);
 				System.out.println("Blog open by link");
@@ -171,7 +176,11 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(10000);
-				AndroidAppDevelopmentBlogs.click();
+				//AndroidAppDevelopmentBlogs.click();
+				WebElement elementB = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App Development')]"));
+				JavascriptExecutor executorB = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",elementB);
+				//AndroidAppDevelopmentBlogs.click();
 				logger.info("-----------Click on Read More-------------");
 				Thread.sleep(10000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
@@ -194,7 +203,11 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on the Blogs link-------------");
 				Thread.sleep(5000);
-				AndroidAppDevelopmentBlogs.click();
+				//AndroidAppDevelopmentBlogs.click();
+				WebElement elementB = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App Development')]"));
+				JavascriptExecutor executorB = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",elementB);
+				//AndroidAppDevelopmentBlogs.click();
 				logger.info("-----------open the blog -------------");
 				Thread.sleep(3000);
 				Textbox.sendKeys("Test11");
@@ -214,7 +227,11 @@ public class BlogPage extends TestBase{
 				logger.info("-----------Click on the Blogs link-------------");
 				
 				Thread.sleep(5000);
-				AndroidAppDevelopmentBlogs.click();
+				//AndroidAppDevelopmentBlogs.click();
+				WebElement elementB = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App Development')]"));
+				JavascriptExecutor executorB = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",elementB);
+				//AndroidAppDevelopmentBlogs.click();
 				logger.info("-----------Open the blog-------------");
 				Thread.sleep(5000);
 				JavascriptExecutor js= (JavascriptExecutor)driver;
@@ -276,7 +293,11 @@ public class BlogPage extends TestBase{
 				executor.executeScript("arguments[0].click();",element);
 				logger.info("-----------Click on Blogs link-------------");
 				Thread.sleep(5000);
-				AndroidAppDevelopmentBlogs.click();
+				//AndroidAppDevelopmentBlogs.click();
+				WebElement elementB = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App Development')]"));
+				JavascriptExecutor executorB = (JavascriptExecutor)driver;
+				executor.executeScript("arguments[0].click();",elementB);
+				//AndroidAppDevelopmentBlogs.click();
 				logger.info("-----------Open the Blog-------------");
 				Thread.sleep(3000);
 				Textbox.sendKeys("Fuck");

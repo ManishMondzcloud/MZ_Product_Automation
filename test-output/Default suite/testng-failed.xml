@@ -3,16 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.BlogsPageTest">
+      <class name="com.product.qa.testcases.CoursesPageTest">
         <methods>
-          <include name="EditCommentTest"/>
-          <include name="setUp"/>
-          <include name="deleteCommentTest"/>
-          <include name="relatedTagsOpenTest"/>
           <include name="tearDown"/>
-          <include name="AbusingWordTest"/>
+          <include name="setup"/>
+          <include name="VerifyCoursesSessionTest" invocation-numbers="0 1 2"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
+      </class> <!-- com.product.qa.testcases.CoursesPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

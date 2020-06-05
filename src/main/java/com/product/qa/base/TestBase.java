@@ -1,6 +1,8 @@
  package com.product.qa.base;
 
 import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -76,24 +78,23 @@ public class TestBase
             //Headless testing 
 			
 			
-			  ChromeOptions options = new ChromeOptions();
-			  options.addArguments("headless").setHeadless(true);
-			  options.addArguments("window-size=1920x1080","--disable-gpu",
-			  "--ignore-certificate-errors", "--silent");
-			  options.addArguments("--disable-features=VizDisplayCompositor");
-			  
-			  options.addArguments("--disable-dev-shm-usage");
-			  options.addArguments("--no-sandbox");
-			  
-			  options.addArguments("--remote-debugging-port=9222");
-			 
-			 
+			
+			/*
+			 * ChromeOptions options = new ChromeOptions();
+			 * options.addArguments("headless").setHeadless(true);
+			 * options.addArguments("window-size=1920x1080","--disable-gpu",
+			 * "--ignore-certificate-errors", "--silent");
+			 * options.addArguments("--disable-features=VizDisplayCompositor");
+			 * 
+			 * options.addArguments("--disable-dev-shm-usage");
+			 * options.addArguments("--no-sandbox");
+			 */
 			
 			
 			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
 			// Create object for ChromeDriver
 
-			driver = new ChromeDriver(options);
+			driver = new ChromeDriver();
 
 		} else if (browserName.equals("edge")) {
 			// Set the path for EdgeDriver

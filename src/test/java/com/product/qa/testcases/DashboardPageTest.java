@@ -59,18 +59,18 @@ public class DashboardPageTest extends TestBase {
 	}
 	
 
-	@Test(priority=6, enabled = true)
+	@Test(priority=6, enabled = false)//Events are not availabe in website
 	public void upcomingEventLabelTest() 
 	{
       dashboard.verifyUpcomingEventlabel();
 	}
 	
-	@Test(priority=7,enabled= true)
+	@Test(priority=7,enabled= false)//Event are not available in website
 	public void verifyEventOpenTest() throws InterruptedException
 	{
 		dashboard.verifyEventOpen();
 	}
-	@Test(priority=8,enabled = true)
+	@Test(priority=8,enabled = false)//Event are not avalable in website.
 	public void EventViewAllBtnTest() throws InterruptedException
 	{
 		dashboard.verifyEventViewAllBtn();

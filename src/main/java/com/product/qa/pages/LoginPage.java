@@ -34,6 +34,9 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//button[@id='onesignal-popover-allow-button']")
 	WebElement popUpAllow;
 	
+	@FindBy(xpath="//*[name()='path' and contains(@fill,'currentCol')]")
+	WebElement Guide;
+	
 	
 	
 	
@@ -67,7 +70,7 @@ public class LoginPage extends TestBase {
 		
 			
 			// Allowing the notification pop-up
-		/*  String MainWindow=driver.getWindowHandle();		
+		  String MainWindow=driver.getWindowHandle();		
 			
 	        // To handle all new opened window.				
 	            Set<String> s1=driver.getWindowHandles();		
@@ -100,7 +103,10 @@ public class LoginPage extends TestBase {
 	            driver.switchTo().window(MainWindow);	
 	            Thread.sleep(3000);
 				popUpAllow.click();
-				Thread.sleep(3000);   */
+				Thread.sleep(5000);
+			//Closing guide pop-up
+				Guide.click();
+				Thread.sleep(2000);
 				return new HomePage();
 		}
 }

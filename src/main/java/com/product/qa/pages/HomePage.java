@@ -54,7 +54,7 @@ public class HomePage extends TestBase {
 	   
 	   public CoursesPage ClickOnCoursesLink() {
 		   //CoursesLink.click();
-		   WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[text()='Courses']"));
+		   WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Courses')]"));
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();",element);
 			  logger.info("-----------click on Courses link-------------");

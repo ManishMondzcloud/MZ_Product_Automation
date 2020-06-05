@@ -19,7 +19,7 @@ public class CoursesPage extends TestBase {
 	
 	private static final Logger logger = LogManager.getLogger(CoursesPage.class);
 
-	@FindBy(xpath = "//li[@class='nav-item linkmenu']//a[text()='Courses']")
+	@FindBy(xpath = "//a[contains(text(),'Courses')]")
 	@CacheLookup
 	WebElement CoursesLink;
 	
@@ -99,6 +99,7 @@ public class CoursesPage extends TestBase {
 				//for(int j=0; j<ListViewlink.size();j++) {
 			boolean ismatch=false;		
 			Thread.sleep(5000);
+			
 			ListViewlink.click();
 			Thread.sleep(5000);
 			List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"));

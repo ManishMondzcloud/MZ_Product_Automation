@@ -29,31 +29,31 @@ public class MyProfile extends TestBase{
 	@FindBy(xpath="//div[@id='navbarText']//ul//li//div//a[contains(text(),'My Profile')]")
 	WebElement MyProfileOption;
 	
-	@FindBy(xpath="//div[contains(text(),'Super Administrator')]")
+	@FindBy(xpath="//div[contains(text(),'Super Admin')]")
 	WebElement FullName;
 	
-	@FindBy(xpath="//div[contains(text(),'9143727472')]")
+	@FindBy(xpath="//div[contains(text(),'8833445533')]")
 	WebElement Phone;
 	
-	@FindBy(xpath="//div[@class='col-lg-8'][contains(text(),'admin@gmail.com')]")
+	@FindBy(xpath="//div[@class='col-lg-8'][contains(text(),'admin@mindzcloud.com')]")
 	WebElement email;
 	
 	@FindBy(xpath="//div[@id='pills-tabContent']//div[2]//div[2]//div[2]")
 	WebElement location;
 	
-	@FindBy(xpath="//div[contains(text(),'Raisoni College')]")
+	@FindBy(xpath="//div[contains(text(),'MindZcloud Technologies')]")
 	WebElement college;
 	
 	@FindBy(xpath="//div[contains(text(),'Information Technology')]")
 	WebElement Department;
 	
-	@FindBy(xpath="//div[text()='admin@gmail.com']")
+	@FindBy(xpath="//div[text()='admin@mindzcloud.com']")
 	WebElement ContactEmail;
 	
 	@FindBy(xpath="//div[3]//div[2]//div[1]")
 	WebElement contactLocation;
 	
-	@FindBy(xpath="//body/div/div/div/div/div/div/div/div/div/div[1]/div[2]/div[1]")
+	@FindBy(xpath="//div[@class='main-profile-contact-list']//div[1]//div[2]//div[1]")
 	WebElement ContactMobile;
 	
 	@FindBy(xpath="//button[contains(text(),'Choose image')]")
