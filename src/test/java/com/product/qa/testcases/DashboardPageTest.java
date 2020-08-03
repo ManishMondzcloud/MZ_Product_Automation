@@ -1,7 +1,6 @@
 package com.product.qa.testcases;
 
 import java.awt.AWTException;
-
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.annotations.AfterMethod;
@@ -30,7 +29,8 @@ public class DashboardPageTest extends TestBase {
 		Thread.sleep(9000);
 	}
 	@Test(priority = 1,enabled = true)
-	public void courseCountTest() throws InterruptedException 
+	public void courseCountTest() throws InterruptedException 	
+	
 	{
 		dashboard.verifyCoursesCount();
 			

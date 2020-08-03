@@ -31,10 +31,13 @@ public class LoginPage extends TestBase {
 	@FindBy(xpath="//button[@id='unblocked-allow']")
 	WebElement PopUpContinueBtn;
 	
-	@FindBy(xpath="//button[@id='onesignal-popover-allow-button']")
-	WebElement popUpAllow;
 	
-	@FindBy(xpath="//*[name()='path' and contains(@fill,'currentCol')]")
+	@FindBy(xpath="//button[@id='onesignal-slidedown-allow-button']")
+	WebElement popUpAllow;
+	 
+	
+	//@FindBy(xpath="//button[@class='sc-bdVaJa cYQqRL sc-bxivhb eTpeTG reactour__close")                        //*[name()='path' and contains(@fill,'currentCol')]")
+	@FindBy(xpath="")
 	WebElement Guide;
 	
 	
@@ -66,7 +69,7 @@ public class LoginPage extends TestBase {
 			logger.info("---------Send Password -------------");
 			loginBtn.click();
 			logger.info("---------Click on login button-------------");
-			Thread.sleep(9000);
+			Thread.sleep(15000);
 		
 			
 			// Allowing the notification pop-up
@@ -84,29 +87,42 @@ public class LoginPage extends TestBase {
 	            {    		
 	                 
 	                    // Switching to Child window
-	                    driver.switchTo().window(ChildWindow);                                                                         			
+	                    driver.switchTo().window(ChildWindow); 
 	                    Thread.sleep(8000);	
+	                    System.out.println("switched to child window");
 	        			PopUpContinueBtn.click();
-	        			Thread.sleep(2000);
-	        			
+	        			System.out.println("Click on Continue button");
+	        			Thread.sleep(4000);
 	        			Robot robot = new Robot();
 	        			robot.delay(3000);
 	        			robot.keyPress(KeyEvent.VK_TAB);
+	        			robot.keyPress(KeyEvent.VK_TAB);
+	        			Thread.sleep(2000);
 	        			robot.keyPress(KeyEvent.VK_ENTER);
+	        			Thread.sleep(5000);
+	        			//Sub-Allow pop-up
+	        			popUpAllow.click();
+	        			 Thread.sleep(3000);
 	        				
 	        	        //Thread.sleep(8000);
 	                   // Closing the Child Window.
-	                      // driver.close();		
+	                    driver.close();		
+	                    Thread.sleep(5000);
+	                     
+	                   
 	            }		
 	        }		
 	        // Switching to Parent window i.e Main Window.
-	            driver.switchTo().window(MainWindow);	
-	            Thread.sleep(3000);
-				popUpAllow.click();
-				Thread.sleep(5000);
+	          //  driver.switchTo().window(MainWindow);	
+	         //   Thread.sleep(3000);
+			//	popUpAllow.click();
+			//	Thread.sleep(6000);
+			// New notification allow pop-up
+				
 			//Closing guide pop-up
-				Guide.click();
-				Thread.sleep(2000);
+			//	Guide.click();
+			//Thread.sleep(2000);
+				
 				return new HomePage();
 		}
 }
