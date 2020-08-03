@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Product Automation Testing Suite]">
+  <listeners>
+    <listener class-name="com.product.qa.extentReportListener.Listeners"/>
+  </listeners>
+  <test name="Test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.DashboardPageTest">
+      <class name="com.product.qa.testcases.LoginTest">
         <methods>
-          <include name="courseCountTest"/>
-          <include name="BlogsOpenTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="BlogsViewAllBtnTest"/>
-          <include name="BlogsCountTest"/>
-          <include name="EventsCountTest"/>
-          <include name="resumeButtonTest"/>
-          <include name="BlogsLabelTest"/>
-          <include name="LearnigPathLabelTest"/>
+          <include name="ValidateLogin"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.DashboardPageTest -->
+      </class> <!-- com.product.qa.testcases.LoginTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Product Automation Testing Suite] -->
