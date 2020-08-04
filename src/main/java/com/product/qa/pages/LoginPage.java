@@ -36,9 +36,8 @@ public class LoginPage extends TestBase {
 	WebElement popUpAllow;
 	 
 	
-	//@FindBy(xpath="//button[@class='sc-bdVaJa cYQqRL sc-bxivhb eTpeTG reactour__close")                        //*[name()='path' and contains(@fill,'currentCol')]")
-	@FindBy(xpath="")
-	WebElement Guide;
+	@FindBy(xpath="//*[name()='path' and contains(@fill,'currentCol')]")
+	WebElement CloseGuide;
 	
 	
 	
@@ -100,29 +99,27 @@ public class LoginPage extends TestBase {
 	        			Thread.sleep(2000);
 	        			robot.keyPress(KeyEvent.VK_ENTER);
 	        			Thread.sleep(5000);
-	        			//Sub-Allow pop-up
-	        			popUpAllow.click();
-	        			 Thread.sleep(3000);
+	        			//driver.close();	
+	        			//Thread.sleep(5000);
+	        			
+	        			
+	        			 
 	        				
-	        	        //Thread.sleep(8000);
-	                   // Closing the Child Window.
-	                    driver.close();		
-	                    Thread.sleep(5000);
-	                     
+	        	       
+	                    	
+	                    
 	                   
 	            }		
 	        }		
-	        // Switching to Parent window i.e Main Window.
-	          //  driver.switchTo().window(MainWindow);	
-	         //   Thread.sleep(3000);
-			//	popUpAllow.click();
-			//	Thread.sleep(6000);
-			// New notification allow pop-up
-				
-			//Closing guide pop-up
-			//	Guide.click();
-			//Thread.sleep(2000);
-				
+	        
+	     // Switching to Parent window i.e Main Window.
+	            driver.switchTo().window(MainWindow);	
+	            Thread.sleep(3000);
+				popUpAllow.click();
+				Thread.sleep(3000);
+				CloseGuide.click();
+				Thread.sleep(3000);
 				return new HomePage();
+				
 		}
 }

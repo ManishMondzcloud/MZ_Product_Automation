@@ -5,7 +5,6 @@
     <classes>
       <class name="com.product.qa.testcases.DashboardPageTest">
         <methods>
-          <include name="courseCountTest"/>
           <include name="BlogsOpenTest"/>
           <include name="setUp"/>
           <include name="tearDown"/>
