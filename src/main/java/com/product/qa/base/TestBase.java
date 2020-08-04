@@ -79,22 +79,22 @@ public class TestBase
 			
 			
 			
-			/*
-			 * ChromeOptions options = new ChromeOptions();
-			 * options.addArguments("headless").setHeadless(true);
-			 * options.addArguments("window-size=1920x1080","--disable-gpu",
-			 * "--ignore-certificate-errors", "--silent");
-			 * options.addArguments("--disable-features=VizDisplayCompositor");
-			 * 
-			 * options.addArguments("--disable-dev-shm-usage");
-			 * options.addArguments("--no-sandbox");
-			 */
+			
+			  ChromeOptions options = new ChromeOptions();
+			  options.addArguments("headless").setHeadless(true);
+			  options.addArguments("window-size=1920x1080","--disable-gpu",
+			  "--ignore-certificate-errors", "--silent");
+			  options.addArguments("--disable-features=VizDisplayCompositor");
+			  
+			  options.addArguments("--disable-dev-shm-usage");
+			  options.addArguments("--no-sandbox");
+			 
 			
 			
 			System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
 			// Create object for ChromeDriver
 
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 
 		} else if (browserName.equals("edge")) {
 			// Set the path for EdgeDriver

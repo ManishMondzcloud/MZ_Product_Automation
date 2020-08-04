@@ -72,50 +72,30 @@ public class LoginPage extends TestBase {
 		
 			
 			// Allowing the notification pop-up
-		  String MainWindow=driver.getWindowHandle();		
-			
-	        // To handle all new opened window.				
-	            Set<String> s1=driver.getWindowHandles();		
-	        Iterator<String> i1=s1.iterator();		
-	        		
-	        while(i1.hasNext())			
-	        {		
-	            String ChildWindow=i1.next();		
-	            		
-	            if(!MainWindow.equalsIgnoreCase(ChildWindow))			
-	            {    		
-	                 
-	                    // Switching to Child window
-	                    driver.switchTo().window(ChildWindow); 
-	                    Thread.sleep(8000);	
-	                    System.out.println("switched to child window");
-	        			PopUpContinueBtn.click();
-	        			System.out.println("Click on Continue button");
-	        			Thread.sleep(4000);
-	        			Robot robot = new Robot();
-	        			robot.delay(3000);
-	        			robot.keyPress(KeyEvent.VK_TAB);
-	        			robot.keyPress(KeyEvent.VK_TAB);
-	        			Thread.sleep(2000);
-	        			robot.keyPress(KeyEvent.VK_ENTER);
-	        			Thread.sleep(5000);
-	        			//driver.close();	
-	        			//Thread.sleep(5000);
-	        			
-	        			
-	        			 
-	        				
-	        	       
-	                    	
-	                    
-	                   
-	            }		
-	        }		
-	        
-	     // Switching to Parent window i.e Main Window.
-	            driver.switchTo().window(MainWindow);	
-	            Thread.sleep(3000);
-				popUpAllow.click();
+		/*
+		 * String MainWindow=driver.getWindowHandle();
+		 * 
+		 * // To handle all new opened window. Set<String> s1=driver.getWindowHandles();
+		 * Iterator<String> i1=s1.iterator();
+		 * 
+		 * while(i1.hasNext()) { String ChildWindow=i1.next();
+		 * 
+		 * if(!MainWindow.equalsIgnoreCase(ChildWindow)) {
+		 * 
+		 * // Switching to Child window driver.switchTo().window(ChildWindow);
+		 * Thread.sleep(8000); //System.out.println("switched to child window");
+		 * PopUpContinueBtn.click(); //System.out.println("Click on Continue button");
+		 * Thread.sleep(4000); Robot robot = new Robot(); robot.delay(3000);
+		 * robot.keyPress(KeyEvent.VK_TAB); robot.keyPress(KeyEvent.VK_TAB);
+		 * Thread.sleep(2000); robot.keyPress(KeyEvent.VK_ENTER); Thread.sleep(5000);
+		 * //driver.close(); //Thread.sleep(5000);
+		 * 
+		 * 
+		 * } }
+		 * 
+		 * // Switching to Parent window i.e Main Window.
+		 * driver.switchTo().window(MainWindow); Thread.sleep(3000); popUpAllow.click();
+		 */
 				Thread.sleep(3000);
 				CloseGuide.click();
 				Thread.sleep(3000);

@@ -265,7 +265,7 @@ import com.product.qa.base.TestBase;
 	public void verifyBlogOpen() throws InterruptedException
 	{
 		Thread.sleep(6000);
-		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in Android App De...')]"));
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Future Opportunities in A...')]"));
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();",element);
 		logger.info("---------click on Android app developenemt blog -------------");
