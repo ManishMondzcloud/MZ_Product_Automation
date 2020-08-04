@@ -1,20 +1,8 @@
-2020-08-04 07:11:41,057  INFO [main] LoginPage:66 - ---------Send User Name -------------
-2020-08-04 07:11:41,233  INFO [main] LoginPage:68 - ---------Send Password -------------
-2020-08-04 07:11:41,391  INFO [main] LoginPage:70 - ---------Click on login button-------------
-2020-08-04 07:12:02,630  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-04 07:13:04,998  INFO [main] LoginPage:66 - ---------Send User Name -------------
-2020-08-04 07:13:05,173  INFO [main] LoginPage:68 - ---------Send Password -------------
-2020-08-04 07:13:05,302  INFO [main] LoginPage:70 - ---------Click on login button-------------
-2020-08-04 07:13:26,466  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-04 07:14:28,546  INFO [main] LoginPage:66 - ---------Send User Name -------------
-2020-08-04 07:14:28,728  INFO [main] LoginPage:68 - ---------Send Password -------------
-2020-08-04 07:14:28,911  INFO [main] LoginPage:70 - ---------Click on login button-------------
-2020-08-04 07:14:50,126  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-04 07:15:50,905  INFO [main] LoginPage:66 - ---------Send User Name -------------
-2020-08-04 07:15:51,047  INFO [main] LoginPage:68 - ---------Send Password -------------
-2020-08-04 07:15:51,223  INFO [main] LoginPage:70 - ---------Click on login button-------------
-2020-08-04 07:16:12,407  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-04 07:17:16,814  INFO [main] LoginPage:66 - ---------Send User Name -------------
-2020-08-04 07:17:16,971  INFO [main] LoginPage:68 - ---------Send Password -------------
-2020-08-04 07:17:17,135  INFO [main] LoginPage:70 - ---------Click on login button-------------
-2020-08-04 07:17:38,354  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-08-04 15:11:52,062  INFO [main] LoginPage:66 - ---------Send User Name -------------
+2020-08-04 15:11:52,928  INFO [main] LoginPage:68 - ---------Send Password -------------
+2020-08-04 15:11:53,188  INFO [main] LoginPage:70 - ---------Click on login button-------------
+2020-08-04 15:12:14,498  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-08-04 15:12:31,570  INFO [main] LoginPage:66 - ---------Send User Name -------------
+2020-08-04 15:12:31,753  INFO [main] LoginPage:68 - ---------Send Password -------------
+2020-08-04 15:12:31,937  INFO [main] LoginPage:70 - ---------Click on login button-------------
+2020-08-04 15:12:53,200  INFO [main] HomePage:60 - -----------click on Courses link-------------

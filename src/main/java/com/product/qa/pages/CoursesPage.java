@@ -49,7 +49,7 @@ public class CoursesPage extends TestBase {
 	@FindBy(xpath = "//div[@class='blog-info']//a[text()='View']")
 	WebElement ViewLink;
 	
-	@FindBy(xpath = "//div[@class='chapter-unlock']//p/following::a[text()='Access Course']")
+	@FindBy(xpath = "//div[@class='chapter-unlock']//p/following::a[text()='Access Course']") 
 	WebElement AccessCourse;
 	
 	public CoursesPage() {
@@ -102,8 +102,8 @@ public class CoursesPage extends TestBase {
 			
 			ListViewlink.click();
 			Thread.sleep(5000);
-			List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold\"]"));
-					for(int k=0; k<SessionList.size();k++) {
+			List<WebElement> SessionList=driver.findElements(By.xpath("//div[@class='card-header collapsed']//a[@class=\"card-title font-weight-bold disabled-session\"]"));
+					for(int k=0; k<SessionList.size();k++) {              
 							//System.out.println(SessionList.get(k).getText());
 						//	System.out.println(session);
 							if(session.equalsIgnoreCase(SessionList.get(k).getText())) {

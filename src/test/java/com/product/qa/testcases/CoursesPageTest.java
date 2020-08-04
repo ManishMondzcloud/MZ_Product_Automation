@@ -36,12 +36,12 @@ public class CoursesPageTest extends TestBase {
 		coursespage=homepage.ClickOnCoursesLink();
 	}
 	
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
 	public void VerifyCoursesPageLabelTest() {
 		Assert.assertTrue(coursespage.VerifyCoursesLabel());
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	public void VerifyCoursesPageFilterLinksTest() throws InterruptedException {
 		coursespage.ValidateFilterLinks();
 	}	
@@ -53,7 +53,7 @@ public class CoursesPageTest extends TestBase {
 		return data;
 	}
 	
-	@Test(priority=3,enabled=true, dataProvider="getTestData2")
+	@Test(priority=3,enabled=false, dataProvider="getTestData2")
 	public void VerifyCoursesSessionTest(String session) throws InterruptedException {
 		coursespage.VerifyCoursesSession(session);
 	}
