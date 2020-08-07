@@ -3,10 +3,13 @@
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Base64;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
@@ -20,7 +23,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.io.Zip;
 import org.openqa.selenium.support.FindBy;
+
+
+
+
 
 
 
@@ -62,6 +70,17 @@ public class TestBase
 		return destPath;
 		
 	}
+	
+	
+	public void ZipFile() throws IOException
+	{
+		String zip=Zip.zip(new File("./null/reports")); 
+		BufferedOutputStream stream= new BufferedOutputStream(new FileOutputStream("./reports.zip"),10000);
+		byte[] decode=Base64.getDecoder().decode(zip);
+		stream.write(decode);
+		stream.close();
+	}
+	
     
 	public static void initialization() throws InterruptedException, AWTException {
 		// by using getProperty we are using the value of 'browser' from

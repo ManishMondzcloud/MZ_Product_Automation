@@ -10,6 +10,8 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
+          <include name="MzLogoImagetest"/>
+          <include name="LoginPageTitletest"/>
           <include name="ValidateLogin"/>
         </methods>
       </class> <!-- com.product.qa.testcases.LoginTest -->

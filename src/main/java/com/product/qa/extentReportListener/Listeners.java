@@ -14,6 +14,7 @@ import com.product.qa.base.TestBase;
 
 public class Listeners extends TestBase implements ITestListener {
 	
+	TestBase ba=new TestBase();
 	ExtentReports extent=ExtentReportNG.extentReportGenrator();
 	ExtentTest test;
 	private static ThreadLocal<ExtentTest> extentTest= new ThreadLocal<ExtentTest>();
@@ -69,8 +70,16 @@ public class Listeners extends TestBase implements ITestListener {
 		
 	}
 
-	public void onFinish(ITestContext context) {
+	public void onFinish(ITestContext context)
+	{
 		// TODO Auto-generated method stub
+	    
+        try {
+			ba.ZipFile();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		extent.flush();
 		
 	}
