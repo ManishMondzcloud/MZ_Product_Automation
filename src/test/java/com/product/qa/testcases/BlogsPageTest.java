@@ -42,7 +42,7 @@ public class BlogsPageTest extends TestBase
     {
      blog.verifyBlogOpenByLink();	
     }
-	@Test(priority = 3,enabled = true)
+	@Test(priority = 3,enabled = false)
     public void verifyReadMoreBtnTest() throws InterruptedException
     {
     	blog.verifyReadMoreBtn();

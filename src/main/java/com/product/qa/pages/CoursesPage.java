@@ -7,6 +7,7 @@ import javax.xml.xpath.XPath;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -51,6 +52,31 @@ public class CoursesPage extends TestBase {
 	
 	@FindBy(xpath = "//div[@class='chapter-unlock']//p/following::a[text()='Access Course']") 
 	WebElement AccessCourse;
+	
+	@FindBy(xpath = "//a[contains(text(),'Java')]") 
+	WebElement JavaCourse;
+	
+	@FindBy(xpath = "//button[contains(text(),'Course Reviews')]") 
+	WebElement CoursesReview;
+	
+	@FindBy(xpath = "//textarea[@placeholder='Add some doubt...']") 
+	WebElement AddSomeDoubt;
+	
+	@FindBy(xpath = "//button[contains(text(),'Submit')]") 
+	WebElement DoubtSubmitBtn;
+	
+	@FindBy(xpath = "//li[1]//div[1]//div[2]//small[1]//a[1]") 
+	WebElement DoubtReply;
+	
+	@FindBy(xpath = "//textarea[@placeholder='Add your reply...']") 
+	WebElement DoubtAddyourReply;
+	
+	@FindBy(xpath = "//button[contains(text(),'Submit')]") 
+	WebElement DoubtReplySubmitBtn;
+	
+	
+	
+	
 	
 	public CoursesPage() {
 		//initializing WebElement
@@ -118,6 +144,33 @@ public class CoursesPage extends TestBase {
 						
 							return new CoursesPage();
 				}
+		
+		
+		public void verifyCourseReviewButton()
+		{
+			WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Java')]"));        
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element);
+			//JavaCourse.click();
+			CoursesReview.click();
+		}
+		
+		public void verifyAskYourDoubt() throws InterruptedException
+		{
+			JavaCourse.click();
+			Thread.sleep(4000);
+			AddSomeDoubt.sendKeys("Test");
+			Thread.sleep(3000);
+			DoubtSubmitBtn.click();
+			Thread.sleep(2000);
+			DoubtReply.click();
+			Thread.sleep(2000);
+			DoubtAddyourReply.sendKeys("TestReply");
+			Thread.sleep(2000);
+			DoubtReplySubmitBtn.click();
+		}
+		
+		
 
 	}
 

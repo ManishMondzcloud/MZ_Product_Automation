@@ -73,7 +73,13 @@ public class Listeners extends TestBase implements ITestListener {
 	public void onFinish(ITestContext context)
 	{
 		// TODO Auto-generated method stub
-	    
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+	
         try {
 			ba.ZipFile();
 		} catch (IOException e) {

@@ -72,6 +72,8 @@ public class LoginPage extends TestBase {
 		
 			
 			// Allowing the notification pop-up
+		
+		
 		/*
 		 * String MainWindow=driver.getWindowHandle();
 		 * 
@@ -82,7 +84,7 @@ public class LoginPage extends TestBase {
 		 * 
 		 * if(!MainWindow.equalsIgnoreCase(ChildWindow)) {
 		 * 
-		 * // Switching to Child window driver.switchTo().window(ChildWindow);
+		 * //Switching to Child window driver.switchTo().window(ChildWindow);
 		 * Thread.sleep(8000); //System.out.println("switched to child window");
 		 * PopUpContinueBtn.click(); //System.out.println("Click on Continue button");
 		 * Thread.sleep(4000); Robot robot = new Robot(); robot.delay(3000);
@@ -95,7 +97,8 @@ public class LoginPage extends TestBase {
 		 * 
 		 * // Switching to Parent window i.e Main Window.
 		 * driver.switchTo().window(MainWindow); Thread.sleep(3000); popUpAllow.click();
-		 */
+		 * 
+		 */ 
 				Thread.sleep(3000);
 				CloseGuide.click();
 				Thread.sleep(3000);

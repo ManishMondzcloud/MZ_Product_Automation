@@ -36,15 +36,29 @@ public class CoursesPageTest extends TestBase {
 		coursespage=homepage.ClickOnCoursesLink();
 	}
 	
-	@Test(priority=2,enabled=true)
+	@Test(priority=2,enabled=false)
 	public void VerifyCoursesPageLabelTest() {
 		Assert.assertTrue(coursespage.VerifyCoursesLabel());
 	}
 	
-	@Test(priority=1, enabled=true)
+	@Test(priority=1, enabled=false)
 	public void VerifyCoursesPageFilterLinksTest() throws InterruptedException {
 		coursespage.ValidateFilterLinks();
 	}	
+	
+	@Test(priority=3, enabled=false)
+	public void VerifyCoursesReviewTest() throws InterruptedException {
+		coursespage.verifyCourseReviewButton();
+	}	
+	
+	@Test(priority=4, enabled=false)
+	public void VerifyDoubtTest() throws InterruptedException {
+		coursespage.verifyAskYourDoubt();
+	}	
+	
+	
+	
+	
 	
 	
 	@DataProvider

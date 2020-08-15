@@ -97,8 +97,6 @@ public class TestBase
             //Headless testing 
 			
 			
-			
-			
 			  ChromeOptions options = new ChromeOptions();
 			  options.addArguments("headless").setHeadless(true);
 			  options.addArguments("window-size=1920x1080","--disable-gpu",
@@ -107,6 +105,7 @@ public class TestBase
 			  
 			  options.addArguments("--disable-dev-shm-usage");
 			  options.addArguments("--no-sandbox");
+			 
 			 
 			
 			
