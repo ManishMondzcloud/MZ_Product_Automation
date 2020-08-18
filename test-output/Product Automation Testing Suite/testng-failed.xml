@@ -6,15 +6,20 @@
   </listeners>
   <test name="Test(failed)">
     <classes>
-      <class name="com.product.qa.testcases.LoginTest">
+      <class name="com.product.qa.testcases.MyProfileTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="MzLogoImagetest"/>
-          <include name="LoginPageTitletest"/>
-          <include name="ValidateLogin"/>
+          <include name="verifyBesicDetailTest"/>
         </methods>
-      </class> <!-- com.product.qa.testcases.LoginTest -->
+      </class> <!-- com.product.qa.testcases.MyProfileTest -->
+      <class name="com.product.qa.testcases.BlogsPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="verifyBlogLabelTest"/>
+        </methods>
+      </class> <!-- com.product.qa.testcases.BlogsPageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Product Automation Testing Suite] -->
