@@ -23,6 +23,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.io.Zip;
 import org.openqa.selenium.support.FindBy;
 
@@ -98,6 +100,8 @@ public class TestBase
 			
 			
 			  ChromeOptions options = new ChromeOptions();
+
+			  
 			  options.addArguments("headless").setHeadless(true);
 			  options.addArguments("window-size=1920x1080","--disable-gpu",
 			  "--ignore-certificate-errors", "--silent");
@@ -121,6 +125,28 @@ public class TestBase
 			// Create Object for EdgeDriver
 			driver = new EdgeDriver();
 		}
+		 else if (browserName.equals("firefox")) {
+			 
+			 
+			 //Headless Testing
+			 
+			 FirefoxOptions options = new FirefoxOptions();
+			  
+			  
+			  
+			  options.addArguments("headless").setHeadless(true);
+			  options.addArguments("window-size=1920x1080","--disable-gpu",
+			  "--ignore-certificate-errors", "--silent");
+			  options.addArguments("--disable-features=VizDisplayCompositor");
+			  
+			  options.addArguments("--disable-dev-shm-usage");
+			  options.addArguments("--no-sandbox");
+
+				// Set the path for FirefoxDriver
+				System.setProperty("webdriver.gecko.driver", "driver\\geckodriver.exe");
+				// Create Object for FirefoxDriver
+				driver = new FirefoxDriver(options);
+			}
 
 		
 
@@ -131,6 +157,7 @@ public class TestBase
 		driver.manage().timeouts().pageLoadTimeout(40,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(40,TimeUnit.SECONDS);
 		driver.get(prop.getProperty("url"));
+		Thread.sleep(3000);
 	
 
 }

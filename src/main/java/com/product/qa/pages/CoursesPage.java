@@ -146,23 +146,40 @@ public class CoursesPage extends TestBase {
 				}
 		
 		
-		public void verifyCourseReviewButton()
+		public void verifyCourseReviewButton() throws InterruptedException
 		{
+			Thread.sleep(5000);
 			WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Java')]"));        
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();",element);
+			Thread.sleep(7000);
 			//JavaCourse.click();
 			CoursesReview.click();
 		}
 		
 		public void verifyAskYourDoubt() throws InterruptedException
 		{
-			JavaCourse.click();
-			Thread.sleep(4000);
+			
+			Thread.sleep(5000);
+			WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Java')]"));        
+			JavascriptExecutor executor = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element);
+			Thread.sleep(7000);
+			System.out.println("Open java course");
+			JavascriptExecutor js = (JavascriptExecutor) driver;
+			js.executeScript("arguments[0].scrollIntoView();", AddSomeDoubt);
+			
 			AddSomeDoubt.sendKeys("Test");
-			Thread.sleep(3000);
-			DoubtSubmitBtn.click();
-			Thread.sleep(2000);
+			System.out.println("send Doubt in box");
+			Thread.sleep(4000);
+			WebElement element1 = driver.findElement(By.xpath("//button[contains(text(),'Submit')]"));        
+			JavascriptExecutor executor1 = (JavascriptExecutor)driver;
+			executor.executeScript("arguments[0].click();",element1);
+			js.executeScript("arguments[0].scrollIntoView();", element1);
+			
+			//DoubtSubmitBtn.click();
+			System.out.println("Click on submit button");
+			Thread.sleep(4000);
 			DoubtReply.click();
 			Thread.sleep(2000);
 			DoubtAddyourReply.sendKeys("TestReply");

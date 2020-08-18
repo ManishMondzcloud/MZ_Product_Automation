@@ -2,6 +2,7 @@ package com.product.qa.testcases;
 
 import java.awt.AWTException;
 
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -27,25 +28,25 @@ public class HelpTest extends TestBase {
 		homepage=login.login();
 		Thread.sleep(9000);
 	}
-	@Test(priority = 1,enabled = false)
+	@Test(priority = 1,enabled = true)
 	public void verifyPleaseEnterYourMessage() throws InterruptedException
 	{
 		help.verifyPleaseEnterYourMessage();
 	}
 	
-	@Test(priority = 2,enabled = false)
-	public void verifyCharecterCount() throws InterruptedException
-	{
-		help.verifyCharecterCount();
-	}
 	
-	@Test(priority = 3,enabled = false)
-	public void VerifyHelpTest() throws InterruptedException 	
+	@Test(priority = 2,enabled = true)
+	public void VerifyContactUsTest() throws InterruptedException 	
 	
 	{
 		help.verifyContactUS();
 			
 	}
+	
+	@AfterMethod
+	public void tearDown() {
+		driver.quit();
+}
 	
 	
 }

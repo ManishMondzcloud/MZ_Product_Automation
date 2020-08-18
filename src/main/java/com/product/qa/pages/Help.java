@@ -24,7 +24,7 @@ public class Help extends TestBase{
 	@FindBy(xpath="//input[@id='contactPhone']")
 	WebElement ContactPhone;
 	
-	@FindBy(xpath="//textarea[@placeholder='Your message']")
+	@FindBy(xpath="//textarea[@id='contactMessage']")
 	WebElement Messsage;
 	
 	@FindBy(xpath="//button[@class='btn btn-primary-grd btn-round uppr btn-round-help']")
@@ -53,54 +53,48 @@ public class Help extends TestBase{
 			WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[@class='nav-link']"));        
 			JavascriptExecutor executor = (JavascriptExecutor)driver;
 			executor.executeScript("arguments[0].click();",element);
-		
+			System.out.println("Click on the help link");
+			
+			
 			//Click on submit button
 			  WebElement element1 = driver.findElement(By.xpath("//button[text()='Submit']"));
 			  JavascriptExecutor executor1 = (JavascriptExecutor)driver;
-			  executor.executeScript("arguments[0].click();",element1); 
+			  executor1.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+			  executor1.executeScript("arguments[0].click();",element1); 
 			  element1.click();
+			  System.out.println("Click on submit button");
 			//Verify the warning message
 			  String s=PleaseEnterYourMessage.getText();
+			  System.out.println("Read the warning message");
 			  Assert.assertEquals(s,"Please enter your message");
-		}
-		public void verifyCharecterCount() throws InterruptedException
-		{
-			//Click on the help link
-			Thread.sleep(5000);
-			WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[@class='nav-link']"));        
-			JavascriptExecutor executor = (JavascriptExecutor)driver;
-			executor.executeScript("arguments[0].click();",element);
-			Messsage.sendKeys("Test");
-			String s=charecterLimit.getText();
-			System.out.println(s);
-		
+			  System.out.println("Compare the message");
 		}
 		
 	   public void verifyContactUS() throws InterruptedException
 	   {
-		//Click on the help link
-		Thread.sleep(5000);
-		WebElement element = driver.findElement(By.xpath("//li[@class='nav-item linkmenu']//a[@class='nav-link']"));        
-		JavascriptExecutor executor = (JavascriptExecutor)driver;
-		executor.executeScript("arguments[0].click();",element);
-		//HelpLink.click();
-		
-		//Enter the message
-	     Messsage.sendKeys("Test");
-		
-		Thread.sleep(3000);
-		//Click on submit button
-		  //WebElement element1 = driver.findElement(By.xpath("//button[text()='Submit']"));
-		  //JavascriptExecutor executor1 = (JavascriptExecutor)driver;
-		  //executor.executeScript("arguments[0].click();",element1); 
-		  //element1.click();
 		 
-		//SubmitButton.click();
-		SubmitButton.submit();
-		Thread.sleep(3000);
-		
+			  
+			  
+		       driver.findElement(By.xpath("//a[contains(text(),'Help')]")).click();
+			   Thread.sleep(1500);
+			  
+			  driver.findElement(By.id("contactMessage")).sendKeys("Test");
+				Thread.sleep(1500);
+				
+				JavascriptExecutor js = (JavascriptExecutor) driver;
+		        //This will scroll the web page till end.		
+		        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		        Thread.sleep(1500);
+				driver.findElement(By.xpath("//button[@class='btn btn-primary-grd btn-round uppr btn-round-help']")).click();
+				
+				
+				Thread.sleep(2000);
+			  
+			  
+			 
 	}
 	
 	
+	   
 
 }

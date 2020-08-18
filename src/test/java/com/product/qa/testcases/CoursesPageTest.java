@@ -36,41 +36,27 @@ public class CoursesPageTest extends TestBase {
 		coursespage=homepage.ClickOnCoursesLink();
 	}
 	
-	@Test(priority=2,enabled=false)
+	@Test(priority=2,enabled=true)
 	public void VerifyCoursesPageLabelTest() {
 		Assert.assertTrue(coursespage.VerifyCoursesLabel());
 	}
 	
-	@Test(priority=1, enabled=false)
+	@Test(priority=1, enabled=true)
 	public void VerifyCoursesPageFilterLinksTest() throws InterruptedException {
 		coursespage.ValidateFilterLinks();
 	}	
 	
-	@Test(priority=3, enabled=false)
+	@Test(priority=3, enabled=true)
 	public void VerifyCoursesReviewTest() throws InterruptedException {
 		coursespage.verifyCourseReviewButton();
 	}	
 	
-	@Test(priority=4, enabled=false)
+	@Test(priority=4, enabled=true)
 	public void VerifyDoubtTest() throws InterruptedException {
 		coursespage.verifyAskYourDoubt();
 	}	
 	
 	
-	
-	
-	
-	
-	@DataProvider
-	public Object[][] getTestData2() {
-		Object data[][]=TestUtil.getTestData(sheetName2);
-		return data;
-	}
-	
-	@Test(priority=3,enabled=false, dataProvider="getTestData2")
-	public void VerifyCoursesSessionTest(String session) throws InterruptedException {
-		coursespage.VerifyCoursesSession(session);
-	}
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

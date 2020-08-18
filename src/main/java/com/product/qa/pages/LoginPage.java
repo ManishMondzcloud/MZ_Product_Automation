@@ -34,6 +34,9 @@ public class LoginPage extends TestBase {
 	
 	@FindBy(xpath="//button[@id='onesignal-slidedown-allow-button']")
 	WebElement popUpAllow;
+	
+	@FindBy(xpath="//button[@id='onesignal-slidedown-cancel-button']")
+	WebElement Nothanks;
 	 
 	
 	@FindBy(xpath="//*[name()='path' and contains(@fill,'currentCol')]")
@@ -74,6 +77,7 @@ public class LoginPage extends TestBase {
 			// Allowing the notification pop-up
 		
 		
+		
 		/*
 		 * String MainWindow=driver.getWindowHandle();
 		 * 
@@ -90,19 +94,28 @@ public class LoginPage extends TestBase {
 		 * Thread.sleep(4000); Robot robot = new Robot(); robot.delay(3000);
 		 * robot.keyPress(KeyEvent.VK_TAB); robot.keyPress(KeyEvent.VK_TAB);
 		 * Thread.sleep(2000); robot.keyPress(KeyEvent.VK_ENTER); Thread.sleep(5000);
-		 * //driver.close(); //Thread.sleep(5000);
+		 * 
+		 * 
+		 * // Switching to Parent window i.e Main Window.
+		 * driver.switchTo().window(MainWindow); Thread.sleep(3000);
+		 * //popUpAllow.click(); Nothanks.click(); Thread.sleep(5000);
+		 * 
+		 * 
 		 * 
 		 * 
 		 * } }
 		 * 
-		 * // Switching to Parent window i.e Main Window.
-		 * driver.switchTo().window(MainWindow); Thread.sleep(3000); popUpAllow.click();
 		 * 
 		 */ 
-				Thread.sleep(3000);
-				CloseGuide.click();
+		  if(CloseGuide.isDisplayed())
+	        {
+			Thread.sleep(3000);
+			CloseGuide.click();
+	        }
+		       
 				Thread.sleep(3000);
 				return new HomePage();
+		        
 				
 		}
 }
