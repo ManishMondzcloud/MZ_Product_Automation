@@ -1,117 +1,135 @@
-2020-08-18 18:53:54,493  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-18 18:53:54,662  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-18 18:53:54,856  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-18 18:54:28,503  INFO [main] DashboardPage:94 - ---------Count the course on dashboard-------------
-2020-08-18 18:54:28,583  INFO [main] DashboardPage:100 - ---------click on Courses Page-------------
-2020-08-18 18:54:31,693  INFO [main] DashboardPage:119 - ---------Count the total courses on courses Page-------------
-2020-08-18 18:54:31,694  INFO [main] DashboardPage:123 - ---------Match the courses cout with the dashboard count-------------
-2020-08-18 18:55:11,689  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-18 18:55:11,851  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-18 18:55:12,053  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-18 18:55:33,371  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-18 18:55:33,437  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-18 18:55:57,780  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-18 18:55:57,915  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-18 18:55:58,029  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-18 18:56:19,306  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-18 18:56:26,397  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
-2020-08-18 18:58:00,497  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-18 18:58:00,631  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-18 18:58:00,743  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-18 18:58:22,108  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-18 18:58:22,258  INFO [main] Feedback:52 - -----------Click on the feedback option-------------
-2020-08-18 18:58:54,652  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-18 18:58:54,896  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-18 18:58:55,008  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-18 19:00:58,779  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-18 19:00:58,984  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-18 19:00:59,133  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-18 19:01:21,053  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-18 19:02:25,549 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:25,552 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en_IN.ftl"): Not found
-2020-08-18 19:02:25,557 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa_en.ftl"): Not found
-2020-08-18 19:02:25,560 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/spark.spa.ftl"): Found
-2020-08-18 19:02:25,561 DEBUG [main] cache:44 - Loading template for "spark/spark.spa.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/spark.spa.ftl"
-2020-08-18 19:02:25,980 DEBUG [main] cache:44 - Couldn't find template in cache for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:25,981 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en_IN.ftl"): Not found
-2020-08-18 19:02:25,982 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables_en.ftl"): Not found
-2020-08-18 19:02:25,983 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-variables.ftl"): Found
-2020-08-18 19:02:25,984 DEBUG [main] cache:44 - Loading template for "commons/commons-variables.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/commons/commons-variables.ftl"
-2020-08-18 19:02:26,111 DEBUG [main] cache:44 - Couldn't find template in cache for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,111 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en_IN.ftl"): Not found
-2020-08-18 19:02:26,113 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros_en.ftl"): Not found
-2020-08-18 19:02:26,114 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-macros.ftl"): Found
-2020-08-18 19:02:26,114 DEBUG [main] cache:44 - Loading template for "commons/commons-macros.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/commons/commons-macros.ftl"
-2020-08-18 19:02:26,134 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,136 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en_IN.ftl"): Not found
-2020-08-18 19:02:26,137 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes_en.ftl"): Not found
-2020-08-18 19:02:26,138 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/attributes.ftl"): Found
-2020-08-18 19:02:26,139 DEBUG [main] cache:44 - Loading template for "spark/macros/attributes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/macros/attributes.ftl"
-2020-08-18 19:02:26,142 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/macros/log.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,145 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en_IN.ftl"): Not found
-2020-08-18 19:02:26,147 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/log_en.ftl"): Not found
-2020-08-18 19:02:26,149 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/log.ftl"): Found
-2020-08-18 19:02:26,151 DEBUG [main] cache:44 - Loading template for "spark/macros/log.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/macros/log.ftl"
-2020-08-18 19:02:26,155 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,157 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en_IN.ftl"): Not found
-2020-08-18 19:02:26,159 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes_en.ftl"): Not found
-2020-08-18 19:02:26,160 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/macros/recurse_nodes.ftl"): Found
-2020-08-18 19:02:26,161 DEBUG [main] cache:44 - Loading template for "spark/macros/recurse_nodes.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/macros/recurse_nodes.ftl"
-2020-08-18 19:02:26,166 DEBUG [main] cache:44 - "spark/macros/log.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,184 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/head.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,186 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en_IN.ftl"): Not found
-2020-08-18 19:02:26,189 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/head_en.ftl"): Not found
-2020-08-18 19:02:26,190 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/head.ftl"): Found
-2020-08-18 19:02:26,191 DEBUG [main] cache:44 - Loading template for "spark/partials/head.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/head.ftl"
-2020-08-18 19:02:26,195 DEBUG [main] cache:44 - Couldn't find template in cache for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,196 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en_IN.ftl"): Not found
-2020-08-18 19:02:26,197 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css_en.ftl"): Not found
-2020-08-18 19:02:26,198 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-css.ftl"): Found
-2020-08-18 19:02:26,198 DEBUG [main] cache:44 - Loading template for "commons/commons-inject-css.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/commons/commons-inject-css.ftl"
-2020-08-18 19:02:26,201 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,203 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en_IN.ftl"): Not found
-2020-08-18 19:02:26,205 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar_en.ftl"): Not found
-2020-08-18 19:02:26,217 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/navbar.ftl"): Found
-2020-08-18 19:02:26,218 DEBUG [main] cache:44 - Loading template for "spark/partials/navbar.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/navbar.ftl"
-2020-08-18 19:02:26,240 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,241 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en_IN.ftl"): Not found
-2020-08-18 19:02:26,242 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav_en.ftl"): Not found
-2020-08-18 19:02:26,243 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/sidenav.ftl"): Found
-2020-08-18 19:02:26,244 DEBUG [main] cache:44 - Loading template for "spark/partials/sidenav.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/sidenav.ftl"
-2020-08-18 19:02:26,249 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/test.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,250 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en_IN.ftl"): Not found
-2020-08-18 19:02:26,253 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/test_en.ftl"): Not found
-2020-08-18 19:02:26,255 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/test.ftl"): Found
-2020-08-18 19:02:26,255 DEBUG [main] cache:44 - Loading template for "spark/partials/test.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/test.ftl"
-2020-08-18 19:02:26,301 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,303 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en_IN.ftl"): Not found
-2020-08-18 19:02:26,304 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content_en.ftl"): Not found
-2020-08-18 19:02:26,305 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/standard-content.ftl"): Found
-2020-08-18 19:02:26,306 DEBUG [main] cache:44 - Loading template for "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/standard-content.ftl"
-2020-08-18 19:02:26,316 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,318 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,320 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,326 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,328 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,330 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,334 DEBUG [main] cache:44 - "spark/partials/standard-content.ftl"("en_IN", UTF-8, parsed) cached copy not yet stale; using cached.
-2020-08-18 19:02:26,337 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/exception.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,340 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/exception_en_IN.ftl"): Not found
-2020-08-18 19:02:26,341 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/exception_en.ftl"): Not found
-2020-08-18 19:02:26,342 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/exception.ftl"): Found
-2020-08-18 19:02:26,343 DEBUG [main] cache:44 - Loading template for "spark/partials/exception.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/exception.ftl"
-2020-08-18 19:02:26,353 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,355 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en_IN.ftl"): Not found
-2020-08-18 19:02:26,357 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard_en.ftl"): Not found
-2020-08-18 19:02:26,358 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/dashboard.ftl"): Found
-2020-08-18 19:02:26,359 DEBUG [main] cache:44 - Loading template for "spark/partials/dashboard.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/dashboard.ftl"
-2020-08-18 19:02:26,531 DEBUG [main] cache:44 - Couldn't find template in cache for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,534 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en_IN.ftl"): Not found
-2020-08-18 19:02:26,537 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts_en.ftl"): Not found
-2020-08-18 19:02:26,540 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("spark/partials/scripts.ftl"): Found
-2020-08-18 19:02:26,542 DEBUG [main] cache:44 - Loading template for "spark/partials/scripts.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/spark/partials/scripts.ftl"
-2020-08-18 19:02:26,549 DEBUG [main] cache:44 - Couldn't find template in cache for "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed); will try to load it.
-2020-08-18 19:02:26,551 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en_IN.ftl"): Not found
-2020-08-18 19:02:26,554 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-js_en.ftl"): Not found
-2020-08-18 19:02:26,555 DEBUG [main] cache:44 - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
-2020-08-18 19:02:26,556 DEBUG [main] cache:44 - Loading template for "commons/commons-inject-js.ftl"("en_IN", UTF-8, parsed) from "jar:file:/C:/Users/Manish%20Patil/.m2/repository/com/aventstack/extentreports/4.1.5/extentreports-4.1.5.jar!/com/aventstack/extentreports/view/commons/commons-inject-js.ftl"
+2020-08-19 12:38:05,960  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:38:06,198  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:38:06,379  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:38:52,585  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:38:52,719  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:38:53,108  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:39:36,520  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:39:36,652  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:39:36,783  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:39:58,437  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-08-19 12:40:14,801  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:40:14,953  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:40:15,063  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:40:48,580  INFO [main] DashboardPage:94 - ---------Count the course on dashboard-------------
+2020-08-19 12:40:48,955  INFO [main] DashboardPage:100 - ---------click on Courses Page-------------
+2020-08-19 12:40:52,046  INFO [main] DashboardPage:119 - ---------Count the total courses on courses Page-------------
+2020-08-19 12:40:52,047  INFO [main] DashboardPage:123 - ---------Match the courses cout with the dashboard count-------------
+2020-08-19 12:41:10,848  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:41:11,014  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:41:11,119  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:41:44,385  INFO [main] DashboardPage:137 - ---------Count the Blogs Count on the Dashboard page-------------
+2020-08-19 12:41:44,451  INFO [main] DashboardPage:144 - ---------click on the Blogs Page-------------
+2020-08-19 12:41:47,471  INFO [main] DashboardPage:161 - ---------Count the blogs on the Blogs Page-------------
+2020-08-19 12:41:50,567  INFO [main] DashboardPage:161 - ---------Count the blogs on the Blogs Page-------------
+2020-08-19 12:41:50,569  INFO [main] DashboardPage:165 - ---------Match the blogs count with dashboard count-------------
+2020-08-19 12:42:06,919  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:42:07,053  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:42:07,179  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:42:40,787  INFO [main] DashboardPage:178 - ---------Count the events on the dashboard-------------
+2020-08-19 12:42:40,924  INFO [main] DashboardPage:185 - ---------click on the Events page-------------
+2020-08-19 12:42:40,924  INFO [main] DashboardPage:206 - ---------Match the count of events with the dashboard count-------------
+2020-08-19 12:42:57,787  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:42:57,974  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:42:58,119  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:43:28,827  INFO [main] DashboardPage:221 - -----------Click on the resume button-------------
+2020-08-19 12:43:32,193  INFO [main] DashboardPage:224 - -----------Resume button work properly-------------
+2020-08-19 12:43:49,362  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:43:49,485  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:43:49,591  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:44:57,206  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:44:57,693  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:44:57,827  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:45:43,309  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:45:43,440  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:45:43,592  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:46:20,101  INFO [main] DashboardPage:271 - ---------click on Android app developenemt blog -------------
+2020-08-19 12:47:04,861  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:47:04,987  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:47:05,156  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:47:35,728  INFO [main] DashboardPage:282 - ---------click on Blogs View all button -------------
+2020-08-19 12:48:07,554  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:48:07,973  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:48:08,148  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:49:02,939  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:49:03,060  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:49:03,170  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:49:50,679  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:49:50,821  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:49:51,255  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:50:12,952  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:50:13,006  INFO [main] ChangePassword:61 - -----------Click on change password-------------
+2020-08-19 12:50:36,155  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:50:36,280  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:50:36,386  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:50:57,724  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:50:57,777  INFO [main] ChangePassword:61 - -----------Click on change password-------------
+2020-08-19 12:51:02,956  INFO [main] ChangePassword:124 - -----------Enter current password-------------
+2020-08-19 12:51:03,104  INFO [main] ChangePassword:126 - -----------Enter New Password-------------
+2020-08-19 12:51:03,267  INFO [main] ChangePassword:128 - -----------Enter confirm password-------------
+2020-08-19 12:51:03,268  INFO [main] ChangePassword:130 - -----------Update button click-------------
+2020-08-19 12:51:37,893  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:51:38,910  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:51:39,018  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:52:00,388  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:52:00,475  INFO [main] ChangePassword:61 - -----------Click on change password-------------
+2020-08-19 12:52:05,636  INFO [main] ChangePassword:72 - -----------Click on the update button-------------
+2020-08-19 12:52:05,684  INFO [main] ChangePassword:75 - -----------Please enter a password text display -------------
+2020-08-19 12:52:40,810  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:52:41,285  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:52:41,406  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:53:02,719  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:53:02,773  INFO [main] ChangePassword:61 - -----------Click on change password-------------
+2020-08-19 12:53:08,002  INFO [main] ChangePassword:81 - -----------Current password send -------------
+2020-08-19 12:53:08,122  INFO [main] ChangePassword:83 - -----------New password send -------------
+2020-08-19 12:53:08,230  INFO [main] ChangePassword:85 - -----------click on conferm password-------------
+2020-08-19 12:53:08,267  INFO [main] ChangePassword:88 - -----------Please enter a valid password message display-------------
+2020-08-19 12:53:26,344  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:53:26,746  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:53:26,874  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:53:48,579  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:53:48,634  INFO [main] ChangePassword:61 - -----------Click on change password-------------
+2020-08-19 12:53:53,795  INFO [main] ChangePassword:94 - -----------Enter current password-------------
+2020-08-19 12:53:54,030  INFO [main] ChangePassword:96 - -----------Enter New password-------------
+2020-08-19 12:53:54,120  INFO [main] ChangePassword:98 - -----------Click on  the update button-------------
+2020-08-19 12:53:54,157  INFO [main] ChangePassword:101 - -----------Please re-enter password test is display-------------
+2020-08-19 12:54:09,359  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:54:11,949  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:54:12,060  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:54:33,514  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:54:33,613  INFO [main] ChangePassword:61 - -----------Click on change password-------------
+2020-08-19 12:54:38,868  INFO [main] ChangePassword:108 - -----------Enter current password-------------
+2020-08-19 12:54:39,095  INFO [main] ChangePassword:110 - -----------Enter New password-------------
+2020-08-19 12:54:39,463  INFO [main] ChangePassword:112 - -----------Enter confirm password-------------
+2020-08-19 12:54:39,546  INFO [main] ChangePassword:115 - -----------Click on the Update button-------------
+2020-08-19 12:54:39,582  INFO [main] ChangePassword:118 - -----------Password Missmatched message display-------------
+2020-08-19 12:55:00,415  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:55:00,546  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:55:00,683  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:55:22,296  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:55:29,405  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
+2020-08-19 12:56:40,114  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:56:40,242  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:56:40,625  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:57:01,989  INFO [main] HomePage:70 - -----------click on Profile-------------
+2020-08-19 12:57:09,124  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
+2020-08-19 12:59:09,250  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:59:09,684  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:59:10,074  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 12:59:49,807  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 12:59:49,977  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 12:59:50,149  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 13:00:51,952  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 13:00:52,136  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 13:00:52,250  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 13:01:27,581  INFO [main] BlogPage:107 - -----------Click on Blogs link-------------
+2020-08-19 13:01:37,840  INFO [main] BlogPage:116 - -----------Android appdevelopment blog open-------------
+2020-08-19 13:02:21,942  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 13:02:22,070  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 13:02:22,227  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 13:02:57,569  INFO [main] BlogPage:177 - -----------Click on Blogs link-------------
+2020-08-19 13:03:10,753  INFO [main] BlogPage:184 - -----------Click on Read More-------------
+2020-08-19 13:03:24,913  INFO [main] BlogPage:193 - -----------Click on Android development tag-------------
+2020-08-19 13:04:07,245  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 13:04:07,409  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 13:04:07,529  INFO [main] LoginPage:73 - ---------Click on login button-------------
