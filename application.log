@@ -1,135 +1,16 @@
-2020-08-19 12:38:05,960  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:38:06,198  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:38:06,379  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:38:52,585  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:38:52,719  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:38:53,108  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:39:36,520  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:39:36,652  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:39:36,783  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:39:58,437  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-19 12:40:14,801  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:40:14,953  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:40:15,063  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:40:48,580  INFO [main] DashboardPage:94 - ---------Count the course on dashboard-------------
-2020-08-19 12:40:48,955  INFO [main] DashboardPage:100 - ---------click on Courses Page-------------
-2020-08-19 12:40:52,046  INFO [main] DashboardPage:119 - ---------Count the total courses on courses Page-------------
-2020-08-19 12:40:52,047  INFO [main] DashboardPage:123 - ---------Match the courses cout with the dashboard count-------------
-2020-08-19 12:41:10,848  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:41:11,014  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:41:11,119  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:41:44,385  INFO [main] DashboardPage:137 - ---------Count the Blogs Count on the Dashboard page-------------
-2020-08-19 12:41:44,451  INFO [main] DashboardPage:144 - ---------click on the Blogs Page-------------
-2020-08-19 12:41:47,471  INFO [main] DashboardPage:161 - ---------Count the blogs on the Blogs Page-------------
-2020-08-19 12:41:50,567  INFO [main] DashboardPage:161 - ---------Count the blogs on the Blogs Page-------------
-2020-08-19 12:41:50,569  INFO [main] DashboardPage:165 - ---------Match the blogs count with dashboard count-------------
-2020-08-19 12:42:06,919  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:42:07,053  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:42:07,179  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:42:40,787  INFO [main] DashboardPage:178 - ---------Count the events on the dashboard-------------
-2020-08-19 12:42:40,924  INFO [main] DashboardPage:185 - ---------click on the Events page-------------
-2020-08-19 12:42:40,924  INFO [main] DashboardPage:206 - ---------Match the count of events with the dashboard count-------------
-2020-08-19 12:42:57,787  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:42:57,974  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:42:58,119  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:43:28,827  INFO [main] DashboardPage:221 - -----------Click on the resume button-------------
-2020-08-19 12:43:32,193  INFO [main] DashboardPage:224 - -----------Resume button work properly-------------
-2020-08-19 12:43:49,362  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:43:49,485  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:43:49,591  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:44:57,206  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:44:57,693  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:44:57,827  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:45:43,309  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:45:43,440  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:45:43,592  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:46:20,101  INFO [main] DashboardPage:271 - ---------click on Android app developenemt blog -------------
-2020-08-19 12:47:04,861  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:47:04,987  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:47:05,156  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:47:35,728  INFO [main] DashboardPage:282 - ---------click on Blogs View all button -------------
-2020-08-19 12:48:07,554  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:48:07,973  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:48:08,148  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:49:02,939  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:49:03,060  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:49:03,170  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:49:50,679  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:49:50,821  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:49:51,255  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:50:12,952  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:50:13,006  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-19 12:50:36,155  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:50:36,280  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:50:36,386  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:50:57,724  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:50:57,777  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-19 12:51:02,956  INFO [main] ChangePassword:124 - -----------Enter current password-------------
-2020-08-19 12:51:03,104  INFO [main] ChangePassword:126 - -----------Enter New Password-------------
-2020-08-19 12:51:03,267  INFO [main] ChangePassword:128 - -----------Enter confirm password-------------
-2020-08-19 12:51:03,268  INFO [main] ChangePassword:130 - -----------Update button click-------------
-2020-08-19 12:51:37,893  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:51:38,910  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:51:39,018  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:52:00,388  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:52:00,475  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-19 12:52:05,636  INFO [main] ChangePassword:72 - -----------Click on the update button-------------
-2020-08-19 12:52:05,684  INFO [main] ChangePassword:75 - -----------Please enter a password text display -------------
-2020-08-19 12:52:40,810  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:52:41,285  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:52:41,406  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:53:02,719  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:53:02,773  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-19 12:53:08,002  INFO [main] ChangePassword:81 - -----------Current password send -------------
-2020-08-19 12:53:08,122  INFO [main] ChangePassword:83 - -----------New password send -------------
-2020-08-19 12:53:08,230  INFO [main] ChangePassword:85 - -----------click on conferm password-------------
-2020-08-19 12:53:08,267  INFO [main] ChangePassword:88 - -----------Please enter a valid password message display-------------
-2020-08-19 12:53:26,344  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:53:26,746  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:53:26,874  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:53:48,579  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:53:48,634  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-19 12:53:53,795  INFO [main] ChangePassword:94 - -----------Enter current password-------------
-2020-08-19 12:53:54,030  INFO [main] ChangePassword:96 - -----------Enter New password-------------
-2020-08-19 12:53:54,120  INFO [main] ChangePassword:98 - -----------Click on  the update button-------------
-2020-08-19 12:53:54,157  INFO [main] ChangePassword:101 - -----------Please re-enter password test is display-------------
-2020-08-19 12:54:09,359  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:54:11,949  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:54:12,060  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:54:33,514  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:54:33,613  INFO [main] ChangePassword:61 - -----------Click on change password-------------
-2020-08-19 12:54:38,868  INFO [main] ChangePassword:108 - -----------Enter current password-------------
-2020-08-19 12:54:39,095  INFO [main] ChangePassword:110 - -----------Enter New password-------------
-2020-08-19 12:54:39,463  INFO [main] ChangePassword:112 - -----------Enter confirm password-------------
-2020-08-19 12:54:39,546  INFO [main] ChangePassword:115 - -----------Click on the Update button-------------
-2020-08-19 12:54:39,582  INFO [main] ChangePassword:118 - -----------Password Missmatched message display-------------
-2020-08-19 12:55:00,415  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:55:00,546  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:55:00,683  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:55:22,296  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:55:29,405  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
-2020-08-19 12:56:40,114  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:56:40,242  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:56:40,625  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:57:01,989  INFO [main] HomePage:70 - -----------click on Profile-------------
-2020-08-19 12:57:09,124  INFO [main] MyProfile:91 - -----------Click on the My Profile Option-------------
-2020-08-19 12:59:09,250  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:59:09,684  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:59:10,074  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 12:59:49,807  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 12:59:49,977  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 12:59:50,149  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 13:00:51,952  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 13:00:52,136  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 13:00:52,250  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 13:01:27,581  INFO [main] BlogPage:107 - -----------Click on Blogs link-------------
-2020-08-19 13:01:37,840  INFO [main] BlogPage:116 - -----------Android appdevelopment blog open-------------
-2020-08-19 13:02:21,942  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 13:02:22,070  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 13:02:22,227  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 13:02:57,569  INFO [main] BlogPage:177 - -----------Click on Blogs link-------------
-2020-08-19 13:03:10,753  INFO [main] BlogPage:184 - -----------Click on Read More-------------
-2020-08-19 13:03:24,913  INFO [main] BlogPage:193 - -----------Click on Android development tag-------------
-2020-08-19 13:04:07,245  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 13:04:07,409  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 13:04:07,529  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 19:23:33,405  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 19:23:33,887  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 19:23:34,062  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 19:23:55,610  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-08-19 19:24:35,038  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 19:24:35,175  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 19:24:35,297  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 19:24:57,127  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-08-19 19:25:34,995  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 19:25:35,143  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 19:25:35,602  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 19:25:57,139  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-08-19 19:26:34,151  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-08-19 19:26:34,562  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-08-19 19:26:34,672  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-08-19 19:26:56,017  INFO [main] HomePage:60 - -----------click on Courses link-------------

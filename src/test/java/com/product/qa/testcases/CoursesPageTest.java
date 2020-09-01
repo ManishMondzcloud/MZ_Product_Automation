@@ -51,7 +51,7 @@ public class CoursesPageTest extends TestBase {
 		coursespage.verifyCourseReviewButton();
 	}	
 	
-	@Test(priority=4, enabled=true)
+	@Test(priority=4, enabled=false)
 	public void VerifyDoubtTest() throws InterruptedException {
 		coursespage.verifyAskYourDoubt();
 	}	

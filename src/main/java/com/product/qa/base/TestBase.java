@@ -28,14 +28,6 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.io.Zip;
 import org.openqa.selenium.support.FindBy;
 
-
-
-
-
-
-
-
-
 public class TestBase 
 {
 	public static WebDriver driver;
