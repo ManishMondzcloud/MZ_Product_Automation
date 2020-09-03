@@ -1,16 +1,13 @@
-2020-08-19 19:23:33,405  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 19:23:33,887  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 19:23:34,062  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 19:23:55,610  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-19 19:24:35,038  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 19:24:35,175  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 19:24:35,297  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 19:24:57,127  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-19 19:25:34,995  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 19:25:35,143  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 19:25:35,602  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 19:25:57,139  INFO [main] HomePage:60 - -----------click on Courses link-------------
-2020-08-19 19:26:34,151  INFO [main] LoginPage:69 - ---------Send User Name -------------
-2020-08-19 19:26:34,562  INFO [main] LoginPage:71 - ---------Send Password -------------
-2020-08-19 19:26:34,672  INFO [main] LoginPage:73 - ---------Click on login button-------------
-2020-08-19 19:26:56,017  INFO [main] HomePage:60 - -----------click on Courses link-------------
+2020-09-03 15:00:36,592  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-09-03 15:00:36,751  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-09-03 15:00:36,866  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-09-03 15:01:28,816  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-09-03 15:01:28,962  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-09-03 15:01:29,100  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-09-03 15:02:04,335  INFO [main] BlogPage:107 - -----------Click on Blogs link-------------
+2020-09-03 15:02:10,903  INFO [main] BlogPage:116 - -----------Android appdevelopment blog open-------------
+2020-09-03 15:02:28,786  INFO [main] LoginPage:69 - ---------Send User Name -------------
+2020-09-03 15:02:28,901  INFO [main] LoginPage:71 - ---------Send Password -------------
+2020-09-03 15:02:29,034  INFO [main] LoginPage:73 - ---------Click on login button-------------
+2020-09-03 15:03:04,294  INFO [main] BlogPage:177 - -----------Click on Blogs link-------------
+2020-09-03 15:03:16,244  INFO [main] BlogPage:184 - -----------Click on Read More-------------
